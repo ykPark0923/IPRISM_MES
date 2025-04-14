@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace OJT_MES
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
+            
+            // 테두리 제거
+            this.FormBorderStyle = FormBorderStyle.None;
+            // 작업 표시줄을 포함한 화면 전체로 설정
+            this.WindowState = FormWindowState.Maximized;
         }
     }
 }
