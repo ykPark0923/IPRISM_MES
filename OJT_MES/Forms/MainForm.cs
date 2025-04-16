@@ -109,8 +109,6 @@ namespace LotteMES.Forms
 
         protected override void SetStyles()
         {
-            #region MainForm
-
             #region BackColor
             panelHeader.BackColor = Style.CommonBackgroundColorTransparent;
             panelCommStatus.BackColor = Style.CommonBackgroundColorTransparent;
@@ -319,9 +317,7 @@ namespace LotteMES.Forms
             buttonPrintTest.Font = Style.CommonFont;
             buttonHelp.Font = Style.CommonFont;
             buttonExit.Font = Style.CommonFont;
-            #endregion
-            
-            #endregion
+            #endregion            
         }
     }
 }
