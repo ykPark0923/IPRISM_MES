@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.labelCurrentDateTime = new System.Windows.Forms.Label();
-            this.tbxManagerName = new System.Windows.Forms.TextBox();
+            this.textBoxManagerName = new System.Windows.Forms.TextBox();
             this.buttonPause = new System.Windows.Forms.Button();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -79,8 +79,6 @@
             this.textBoxProductionLine = new System.Windows.Forms.TextBox();
             this.labelRemainingRibbon = new System.Windows.Forms.Label();
             this.textBoxRemainingRibbon = new System.Windows.Forms.TextBox();
-            this.labelPlannedQuantity = new System.Windows.Forms.Label();
-            this.textBoxPlannedQuantity = new System.Windows.Forms.TextBox();
             this.panelButton = new System.Windows.Forms.Panel();
             this.buttonResultTransferHistory = new System.Windows.Forms.Button();
             this.buttonVariousHistoryInquiry = new System.Windows.Forms.Button();
@@ -93,12 +91,14 @@
             this.buttonHardwareEnvironmentSettings = new System.Windows.Forms.Button();
             this.buttonSystemEnvironmentSettings = new System.Windows.Forms.Button();
             this.buttonWorkEnvironmentSettings = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.buttonHelp = new System.Windows.Forms.Button();
             this.buttonPrintTest = new System.Windows.Forms.Button();
             this.buttonReissue = new System.Windows.Forms.Button();
             this.buttonReset = new System.Windows.Forms.Button();
             this.buttonStop = new System.Windows.Forms.Button();
+            this.textBoxPlannedQuantity = new System.Windows.Forms.TextBox();
+            this.labelPlannedQuantity = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxServer)).BeginInit();
@@ -121,16 +121,16 @@
             this.labelCurrentDateTime.Text = "03월 12일 14:33:46";
             this.labelCurrentDateTime.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // tbxManagerName
+            // textBoxManagerName
             // 
-            this.tbxManagerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbxManagerName.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tbxManagerName.ForeColor = System.Drawing.Color.White;
-            this.tbxManagerName.Location = new System.Drawing.Point(126, 16);
-            this.tbxManagerName.Name = "tbxManagerName";
-            this.tbxManagerName.Size = new System.Drawing.Size(485, 27);
-            this.tbxManagerName.TabIndex = 2;
-            this.tbxManagerName.Text = "유재영";
+            this.textBoxManagerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBoxManagerName.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBoxManagerName.ForeColor = System.Drawing.Color.White;
+            this.textBoxManagerName.Location = new System.Drawing.Point(137, 31);
+            this.textBoxManagerName.Name = "textBoxManagerName";
+            this.textBoxManagerName.Size = new System.Drawing.Size(485, 27);
+            this.textBoxManagerName.TabIndex = 2;
+            this.textBoxManagerName.Text = "유재영";
             // 
             // buttonPause
             // 
@@ -140,7 +140,7 @@
             this.buttonPause.ForeColor = System.Drawing.Color.White;
             this.buttonPause.Image = ((System.Drawing.Image)(resources.GetObject("buttonPause.Image")));
             this.buttonPause.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonPause.Location = new System.Drawing.Point(218, 6);
+            this.buttonPause.Location = new System.Drawing.Point(228, 27);
             this.buttonPause.Name = "buttonPause";
             this.buttonPause.Size = new System.Drawing.Size(106, 63);
             this.buttonPause.TabIndex = 3;
@@ -165,7 +165,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("돋움체", 30F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(19, 29);
+            this.label2.Location = new System.Drawing.Point(33, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(437, 40);
             this.label2.TabIndex = 5;
@@ -226,7 +226,7 @@
             this.labelManagerName.AutoSize = true;
             this.labelManagerName.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelManagerName.ForeColor = System.Drawing.Color.Cyan;
-            this.labelManagerName.Location = new System.Drawing.Point(35, 19);
+            this.labelManagerName.Location = new System.Drawing.Point(46, 34);
             this.labelManagerName.Name = "labelManagerName";
             this.labelManagerName.Size = new System.Drawing.Size(84, 17);
             this.labelManagerName.TabIndex = 16;
@@ -294,7 +294,7 @@
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(985, 46);
+            this.panelHeader.Size = new System.Drawing.Size(1008, 51);
             this.panelHeader.TabIndex = 23;
             // 
             // panelCommStatus
@@ -307,9 +307,9 @@
             this.panelCommStatus.Controls.Add(this.labelDemon);
             this.panelCommStatus.Controls.Add(this.labelServer);
             this.panelCommStatus.Controls.Add(this.pictureBoxServer);
-            this.panelCommStatus.Location = new System.Drawing.Point(0, 45);
+            this.panelCommStatus.Location = new System.Drawing.Point(0, 55);
             this.panelCommStatus.Name = "panelCommStatus";
-            this.panelCommStatus.Size = new System.Drawing.Size(985, 36);
+            this.panelCommStatus.Size = new System.Drawing.Size(1008, 34);
             this.panelCommStatus.TabIndex = 24;
             // 
             // panel
@@ -317,9 +317,9 @@
             this.panel.Controls.Add(this.label1);
             this.panel.Controls.Add(this.label2);
             this.panel.Controls.Add(this.label3);
-            this.panel.Location = new System.Drawing.Point(0, 81);
+            this.panel.Location = new System.Drawing.Point(0, 92);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(985, 102);
+            this.panel.Size = new System.Drawing.Size(1008, 113);
             this.panel.TabIndex = 25;
             // 
             // label1
@@ -327,7 +327,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.Color.Cyan;
-            this.label1.Location = new System.Drawing.Point(841, 45);
+            this.label1.Location = new System.Drawing.Point(841, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 54);
             this.label1.TabIndex = 7;
@@ -369,10 +369,10 @@
             this.panelData.Controls.Add(this.labelPlannedQuantity);
             this.panelData.Controls.Add(this.textBoxPlannedQuantity);
             this.panelData.Controls.Add(this.labelManagerName);
-            this.panelData.Controls.Add(this.tbxManagerName);
-            this.panelData.Location = new System.Drawing.Point(0, 183);
+            this.panelData.Controls.Add(this.textBoxManagerName);
+            this.panelData.Location = new System.Drawing.Point(0, 211);
             this.panelData.Name = "panelData";
-            this.panelData.Size = new System.Drawing.Size(634, 471);
+            this.panelData.Size = new System.Drawing.Size(656, 518);
             this.panelData.TabIndex = 26;
             // 
             // labelProducedQuantity
@@ -380,7 +380,7 @@
             this.labelProducedQuantity.AutoSize = true;
             this.labelProducedQuantity.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelProducedQuantity.ForeColor = System.Drawing.Color.Cyan;
-            this.labelProducedQuantity.Location = new System.Drawing.Point(336, 62);
+            this.labelProducedQuantity.Location = new System.Drawing.Point(347, 82);
             this.labelProducedQuantity.Name = "labelProducedQuantity";
             this.labelProducedQuantity.Size = new System.Drawing.Size(84, 17);
             this.labelProducedQuantity.TabIndex = 48;
@@ -392,7 +392,7 @@
             this.textBoxProducedQuantity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.textBoxProducedQuantity.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBoxProducedQuantity.ForeColor = System.Drawing.Color.White;
-            this.textBoxProducedQuantity.Location = new System.Drawing.Point(428, 59);
+            this.textBoxProducedQuantity.Location = new System.Drawing.Point(439, 79);
             this.textBoxProducedQuantity.Name = "textBoxProducedQuantity";
             this.textBoxProducedQuantity.Size = new System.Drawing.Size(183, 27);
             this.textBoxProducedQuantity.TabIndex = 47;
@@ -403,7 +403,7 @@
             this.labelRemainingLabel.AutoSize = true;
             this.labelRemainingLabel.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelRemainingLabel.ForeColor = System.Drawing.Color.Cyan;
-            this.labelRemainingLabel.Location = new System.Drawing.Point(337, 105);
+            this.labelRemainingLabel.Location = new System.Drawing.Point(348, 128);
             this.labelRemainingLabel.Name = "labelRemainingLabel";
             this.labelRemainingLabel.Size = new System.Drawing.Size(84, 17);
             this.labelRemainingLabel.TabIndex = 46;
@@ -415,7 +415,7 @@
             this.textBoxRemainingLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBoxRemainingLabel.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBoxRemainingLabel.ForeColor = System.Drawing.Color.White;
-            this.textBoxRemainingLabel.Location = new System.Drawing.Point(428, 102);
+            this.textBoxRemainingLabel.Location = new System.Drawing.Point(439, 125);
             this.textBoxRemainingLabel.Name = "textBoxRemainingLabel";
             this.textBoxRemainingLabel.Size = new System.Drawing.Size(183, 27);
             this.textBoxRemainingLabel.TabIndex = 45;
@@ -426,7 +426,7 @@
             this.labelShiftType.AutoSize = true;
             this.labelShiftType.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelShiftType.ForeColor = System.Drawing.Color.Cyan;
-            this.labelShiftType.Location = new System.Drawing.Point(337, 195);
+            this.labelShiftType.Location = new System.Drawing.Point(348, 221);
             this.labelShiftType.Name = "labelShiftType";
             this.labelShiftType.Size = new System.Drawing.Size(84, 17);
             this.labelShiftType.TabIndex = 44;
@@ -438,7 +438,7 @@
             this.textBoxShiftType.BackColor = System.Drawing.Color.Gray;
             this.textBoxShiftType.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBoxShiftType.ForeColor = System.Drawing.Color.White;
-            this.textBoxShiftType.Location = new System.Drawing.Point(428, 192);
+            this.textBoxShiftType.Location = new System.Drawing.Point(439, 218);
             this.textBoxShiftType.Name = "textBoxShiftType";
             this.textBoxShiftType.Size = new System.Drawing.Size(183, 27);
             this.textBoxShiftType.TabIndex = 43;
@@ -449,7 +449,7 @@
             this.labelSerialNumber.AutoSize = true;
             this.labelSerialNumber.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelSerialNumber.ForeColor = System.Drawing.Color.Cyan;
-            this.labelSerialNumber.Location = new System.Drawing.Point(337, 282);
+            this.labelSerialNumber.Location = new System.Drawing.Point(348, 308);
             this.labelSerialNumber.Name = "labelSerialNumber";
             this.labelSerialNumber.Size = new System.Drawing.Size(84, 17);
             this.labelSerialNumber.TabIndex = 42;
@@ -461,7 +461,7 @@
             this.textBoxSerialNumber.BackColor = System.Drawing.Color.Gray;
             this.textBoxSerialNumber.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBoxSerialNumber.ForeColor = System.Drawing.Color.White;
-            this.textBoxSerialNumber.Location = new System.Drawing.Point(428, 279);
+            this.textBoxSerialNumber.Location = new System.Drawing.Point(439, 305);
             this.textBoxSerialNumber.Name = "textBoxSerialNumber";
             this.textBoxSerialNumber.Size = new System.Drawing.Size(183, 27);
             this.textBoxSerialNumber.TabIndex = 41;
@@ -472,7 +472,7 @@
             this.labelStorageLocation.AutoSize = true;
             this.labelStorageLocation.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelStorageLocation.ForeColor = System.Drawing.Color.Cyan;
-            this.labelStorageLocation.Location = new System.Drawing.Point(337, 328);
+            this.labelStorageLocation.Location = new System.Drawing.Point(348, 356);
             this.labelStorageLocation.Name = "labelStorageLocation";
             this.labelStorageLocation.Size = new System.Drawing.Size(84, 17);
             this.labelStorageLocation.TabIndex = 40;
@@ -484,7 +484,7 @@
             this.textBoxStorageLocation.BackColor = System.Drawing.Color.Gray;
             this.textBoxStorageLocation.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBoxStorageLocation.ForeColor = System.Drawing.Color.White;
-            this.textBoxStorageLocation.Location = new System.Drawing.Point(428, 325);
+            this.textBoxStorageLocation.Location = new System.Drawing.Point(439, 353);
             this.textBoxStorageLocation.Name = "textBoxStorageLocation";
             this.textBoxStorageLocation.Size = new System.Drawing.Size(183, 27);
             this.textBoxStorageLocation.TabIndex = 39;
@@ -495,7 +495,7 @@
             this.labelBoxCode.AutoSize = true;
             this.labelBoxCode.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelBoxCode.ForeColor = System.Drawing.Color.Cyan;
-            this.labelBoxCode.Location = new System.Drawing.Point(337, 373);
+            this.labelBoxCode.Location = new System.Drawing.Point(348, 403);
             this.labelBoxCode.Name = "labelBoxCode";
             this.labelBoxCode.Size = new System.Drawing.Size(84, 17);
             this.labelBoxCode.TabIndex = 38;
@@ -507,7 +507,7 @@
             this.textBoxBoxCode.BackColor = System.Drawing.Color.Gray;
             this.textBoxBoxCode.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBoxBoxCode.ForeColor = System.Drawing.Color.White;
-            this.textBoxBoxCode.Location = new System.Drawing.Point(428, 370);
+            this.textBoxBoxCode.Location = new System.Drawing.Point(439, 400);
             this.textBoxBoxCode.Name = "textBoxBoxCode";
             this.textBoxBoxCode.Size = new System.Drawing.Size(183, 27);
             this.textBoxBoxCode.TabIndex = 37;
@@ -517,7 +517,7 @@
             this.labelShelfLife.AutoSize = true;
             this.labelShelfLife.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelShelfLife.ForeColor = System.Drawing.Color.Cyan;
-            this.labelShelfLife.Location = new System.Drawing.Point(337, 420);
+            this.labelShelfLife.Location = new System.Drawing.Point(348, 453);
             this.labelShelfLife.Name = "labelShelfLife";
             this.labelShelfLife.Size = new System.Drawing.Size(84, 17);
             this.labelShelfLife.TabIndex = 36;
@@ -529,7 +529,7 @@
             this.textBoxShelfLife.BackColor = System.Drawing.Color.Gray;
             this.textBoxShelfLife.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBoxShelfLife.ForeColor = System.Drawing.Color.White;
-            this.textBoxShelfLife.Location = new System.Drawing.Point(428, 417);
+            this.textBoxShelfLife.Location = new System.Drawing.Point(439, 450);
             this.textBoxShelfLife.Name = "textBoxShelfLife";
             this.textBoxShelfLife.Size = new System.Drawing.Size(183, 27);
             this.textBoxShelfLife.TabIndex = 35;
@@ -540,7 +540,7 @@
             this.labelExpirationDate.AutoSize = true;
             this.labelExpirationDate.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelExpirationDate.ForeColor = System.Drawing.Color.Cyan;
-            this.labelExpirationDate.Location = new System.Drawing.Point(35, 420);
+            this.labelExpirationDate.Location = new System.Drawing.Point(46, 453);
             this.labelExpirationDate.Name = "labelExpirationDate";
             this.labelExpirationDate.Size = new System.Drawing.Size(84, 17);
             this.labelExpirationDate.TabIndex = 34;
@@ -552,7 +552,7 @@
             this.textBoxExpirationDate.BackColor = System.Drawing.Color.Gray;
             this.textBoxExpirationDate.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBoxExpirationDate.ForeColor = System.Drawing.Color.White;
-            this.textBoxExpirationDate.Location = new System.Drawing.Point(126, 417);
+            this.textBoxExpirationDate.Location = new System.Drawing.Point(137, 450);
             this.textBoxExpirationDate.Name = "textBoxExpirationDate";
             this.textBoxExpirationDate.Size = new System.Drawing.Size(183, 27);
             this.textBoxExpirationDate.TabIndex = 33;
@@ -563,7 +563,7 @@
             this.labelBoxPerPallet.AutoSize = true;
             this.labelBoxPerPallet.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelBoxPerPallet.ForeColor = System.Drawing.Color.Cyan;
-            this.labelBoxPerPallet.Location = new System.Drawing.Point(35, 373);
+            this.labelBoxPerPallet.Location = new System.Drawing.Point(46, 403);
             this.labelBoxPerPallet.Name = "labelBoxPerPallet";
             this.labelBoxPerPallet.Size = new System.Drawing.Size(68, 17);
             this.labelBoxPerPallet.TabIndex = 32;
@@ -575,7 +575,7 @@
             this.textBoxBoxPerPallet.BackColor = System.Drawing.Color.Gray;
             this.textBoxBoxPerPallet.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBoxBoxPerPallet.ForeColor = System.Drawing.Color.White;
-            this.textBoxBoxPerPallet.Location = new System.Drawing.Point(126, 370);
+            this.textBoxBoxPerPallet.Location = new System.Drawing.Point(137, 400);
             this.textBoxBoxPerPallet.Name = "textBoxBoxPerPallet";
             this.textBoxBoxPerPallet.Size = new System.Drawing.Size(183, 27);
             this.textBoxBoxPerPallet.TabIndex = 31;
@@ -586,7 +586,7 @@
             this.labelBomVersion.AutoSize = true;
             this.labelBomVersion.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelBomVersion.ForeColor = System.Drawing.Color.Cyan;
-            this.labelBomVersion.Location = new System.Drawing.Point(35, 328);
+            this.labelBomVersion.Location = new System.Drawing.Point(46, 356);
             this.labelBomVersion.Name = "labelBomVersion";
             this.labelBomVersion.Size = new System.Drawing.Size(76, 17);
             this.labelBomVersion.TabIndex = 30;
@@ -598,7 +598,7 @@
             this.textBoxBomVersion.BackColor = System.Drawing.Color.Gray;
             this.textBoxBomVersion.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBoxBomVersion.ForeColor = System.Drawing.Color.White;
-            this.textBoxBomVersion.Location = new System.Drawing.Point(126, 325);
+            this.textBoxBomVersion.Location = new System.Drawing.Point(137, 353);
             this.textBoxBomVersion.Name = "textBoxBomVersion";
             this.textBoxBomVersion.Size = new System.Drawing.Size(183, 27);
             this.textBoxBomVersion.TabIndex = 29;
@@ -609,7 +609,7 @@
             this.labelUnit.AutoSize = true;
             this.labelUnit.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelUnit.ForeColor = System.Drawing.Color.Cyan;
-            this.labelUnit.Location = new System.Drawing.Point(35, 282);
+            this.labelUnit.Location = new System.Drawing.Point(46, 308);
             this.labelUnit.Name = "labelUnit";
             this.labelUnit.Size = new System.Drawing.Size(46, 17);
             this.labelUnit.TabIndex = 28;
@@ -621,7 +621,7 @@
             this.textBoxUnit.BackColor = System.Drawing.Color.Gray;
             this.textBoxUnit.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBoxUnit.ForeColor = System.Drawing.Color.White;
-            this.textBoxUnit.Location = new System.Drawing.Point(126, 279);
+            this.textBoxUnit.Location = new System.Drawing.Point(137, 305);
             this.textBoxUnit.Name = "textBoxUnit";
             this.textBoxUnit.Size = new System.Drawing.Size(183, 27);
             this.textBoxUnit.TabIndex = 27;
@@ -632,7 +632,7 @@
             this.labelProductName.AutoSize = true;
             this.labelProductName.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelProductName.ForeColor = System.Drawing.Color.Cyan;
-            this.labelProductName.Location = new System.Drawing.Point(35, 240);
+            this.labelProductName.Location = new System.Drawing.Point(46, 266);
             this.labelProductName.Name = "labelProductName";
             this.labelProductName.Size = new System.Drawing.Size(65, 17);
             this.labelProductName.TabIndex = 26;
@@ -644,7 +644,7 @@
             this.textBoxProductName.BackColor = System.Drawing.Color.Gray;
             this.textBoxProductName.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBoxProductName.ForeColor = System.Drawing.Color.White;
-            this.textBoxProductName.Location = new System.Drawing.Point(126, 237);
+            this.textBoxProductName.Location = new System.Drawing.Point(137, 263);
             this.textBoxProductName.Name = "textBoxProductName";
             this.textBoxProductName.Size = new System.Drawing.Size(485, 27);
             this.textBoxProductName.TabIndex = 25;
@@ -655,7 +655,7 @@
             this.labelProductionDate.AutoSize = true;
             this.labelProductionDate.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelProductionDate.ForeColor = System.Drawing.Color.Cyan;
-            this.labelProductionDate.Location = new System.Drawing.Point(35, 195);
+            this.labelProductionDate.Location = new System.Drawing.Point(46, 221);
             this.labelProductionDate.Name = "labelProductionDate";
             this.labelProductionDate.Size = new System.Drawing.Size(84, 17);
             this.labelProductionDate.TabIndex = 24;
@@ -667,7 +667,7 @@
             this.textBoxProductionDate.BackColor = System.Drawing.Color.Gray;
             this.textBoxProductionDate.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBoxProductionDate.ForeColor = System.Drawing.Color.White;
-            this.textBoxProductionDate.Location = new System.Drawing.Point(126, 192);
+            this.textBoxProductionDate.Location = new System.Drawing.Point(137, 218);
             this.textBoxProductionDate.Name = "textBoxProductionDate";
             this.textBoxProductionDate.Size = new System.Drawing.Size(183, 27);
             this.textBoxProductionDate.TabIndex = 23;
@@ -678,7 +678,7 @@
             this.labelProductionLine.AutoSize = true;
             this.labelProductionLine.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelProductionLine.ForeColor = System.Drawing.Color.Cyan;
-            this.labelProductionLine.Location = new System.Drawing.Point(35, 151);
+            this.labelProductionLine.Location = new System.Drawing.Point(46, 174);
             this.labelProductionLine.Name = "labelProductionLine";
             this.labelProductionLine.Size = new System.Drawing.Size(84, 17);
             this.labelProductionLine.TabIndex = 22;
@@ -690,7 +690,7 @@
             this.textBoxProductionLine.BackColor = System.Drawing.Color.Gray;
             this.textBoxProductionLine.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBoxProductionLine.ForeColor = System.Drawing.Color.White;
-            this.textBoxProductionLine.Location = new System.Drawing.Point(126, 148);
+            this.textBoxProductionLine.Location = new System.Drawing.Point(137, 171);
             this.textBoxProductionLine.Name = "textBoxProductionLine";
             this.textBoxProductionLine.Size = new System.Drawing.Size(485, 27);
             this.textBoxProductionLine.TabIndex = 21;
@@ -701,7 +701,7 @@
             this.labelRemainingRibbon.AutoSize = true;
             this.labelRemainingRibbon.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelRemainingRibbon.ForeColor = System.Drawing.Color.Cyan;
-            this.labelRemainingRibbon.Location = new System.Drawing.Point(35, 105);
+            this.labelRemainingRibbon.Location = new System.Drawing.Point(46, 128);
             this.labelRemainingRibbon.Name = "labelRemainingRibbon";
             this.labelRemainingRibbon.Size = new System.Drawing.Size(84, 17);
             this.labelRemainingRibbon.TabIndex = 20;
@@ -713,34 +713,11 @@
             this.textBoxRemainingRibbon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBoxRemainingRibbon.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBoxRemainingRibbon.ForeColor = System.Drawing.Color.White;
-            this.textBoxRemainingRibbon.Location = new System.Drawing.Point(126, 102);
+            this.textBoxRemainingRibbon.Location = new System.Drawing.Point(137, 125);
             this.textBoxRemainingRibbon.Name = "textBoxRemainingRibbon";
             this.textBoxRemainingRibbon.Size = new System.Drawing.Size(183, 27);
             this.textBoxRemainingRibbon.TabIndex = 19;
             this.textBoxRemainingRibbon.Text = "4214";
-            // 
-            // labelPlannedQuantity
-            // 
-            this.labelPlannedQuantity.AutoSize = true;
-            this.labelPlannedQuantity.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.labelPlannedQuantity.ForeColor = System.Drawing.Color.Cyan;
-            this.labelPlannedQuantity.Location = new System.Drawing.Point(35, 62);
-            this.labelPlannedQuantity.Name = "labelPlannedQuantity";
-            this.labelPlannedQuantity.Size = new System.Drawing.Size(84, 17);
-            this.labelPlannedQuantity.TabIndex = 18;
-            this.labelPlannedQuantity.Text = "계획수량";
-            this.labelPlannedQuantity.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // textBoxPlannedQuantity
-            // 
-            this.textBoxPlannedQuantity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBoxPlannedQuantity.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBoxPlannedQuantity.ForeColor = System.Drawing.Color.White;
-            this.textBoxPlannedQuantity.Location = new System.Drawing.Point(126, 59);
-            this.textBoxPlannedQuantity.Name = "textBoxPlannedQuantity";
-            this.textBoxPlannedQuantity.Size = new System.Drawing.Size(183, 27);
-            this.textBoxPlannedQuantity.TabIndex = 17;
-            this.textBoxPlannedQuantity.Text = "20,000";
             // 
             // panelButton
             // 
@@ -755,16 +732,16 @@
             this.panelButton.Controls.Add(this.buttonHardwareEnvironmentSettings);
             this.panelButton.Controls.Add(this.buttonSystemEnvironmentSettings);
             this.panelButton.Controls.Add(this.buttonWorkEnvironmentSettings);
-            this.panelButton.Controls.Add(this.button6);
+            this.panelButton.Controls.Add(this.buttonExit);
             this.panelButton.Controls.Add(this.buttonHelp);
             this.panelButton.Controls.Add(this.buttonPrintTest);
             this.panelButton.Controls.Add(this.buttonReissue);
             this.panelButton.Controls.Add(this.buttonReset);
             this.panelButton.Controls.Add(this.buttonStop);
             this.panelButton.Controls.Add(this.buttonPause);
-            this.panelButton.Location = new System.Drawing.Point(640, 183);
+            this.panelButton.Location = new System.Drawing.Point(657, 211);
             this.panelButton.Name = "panelButton";
-            this.panelButton.Size = new System.Drawing.Size(341, 471);
+            this.panelButton.Size = new System.Drawing.Size(351, 518);
             this.panelButton.TabIndex = 27;
             // 
             // buttonResultTransferHistory
@@ -772,7 +749,7 @@
             this.buttonResultTransferHistory.BackColor = System.Drawing.Color.Black;
             this.buttonResultTransferHistory.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.buttonResultTransferHistory.ForeColor = System.Drawing.Color.Cyan;
-            this.buttonResultTransferHistory.Location = new System.Drawing.Point(5, 330);
+            this.buttonResultTransferHistory.Location = new System.Drawing.Point(15, 362);
             this.buttonResultTransferHistory.Name = "buttonResultTransferHistory";
             this.buttonResultTransferHistory.Size = new System.Drawing.Size(106, 63);
             this.buttonResultTransferHistory.TabIndex = 20;
@@ -784,7 +761,7 @@
             this.buttonVariousHistoryInquiry.BackColor = System.Drawing.Color.Black;
             this.buttonVariousHistoryInquiry.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.buttonVariousHistoryInquiry.ForeColor = System.Drawing.Color.Cyan;
-            this.buttonVariousHistoryInquiry.Location = new System.Drawing.Point(5, 266);
+            this.buttonVariousHistoryInquiry.Location = new System.Drawing.Point(15, 296);
             this.buttonVariousHistoryInquiry.Name = "buttonVariousHistoryInquiry";
             this.buttonVariousHistoryInquiry.Size = new System.Drawing.Size(106, 63);
             this.buttonVariousHistoryInquiry.TabIndex = 19;
@@ -796,7 +773,7 @@
             this.buttonProductionResult.BackColor = System.Drawing.Color.Black;
             this.buttonProductionResult.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.buttonProductionResult.ForeColor = System.Drawing.Color.Cyan;
-            this.buttonProductionResult.Location = new System.Drawing.Point(5, 201);
+            this.buttonProductionResult.Location = new System.Drawing.Point(15, 229);
             this.buttonProductionResult.Name = "buttonProductionResult";
             this.buttonProductionResult.Size = new System.Drawing.Size(106, 63);
             this.buttonProductionResult.TabIndex = 18;
@@ -808,7 +785,7 @@
             this.buttonPopDeviceHistory.BackColor = System.Drawing.Color.Black;
             this.buttonPopDeviceHistory.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.buttonPopDeviceHistory.ForeColor = System.Drawing.Color.Cyan;
-            this.buttonPopDeviceHistory.Location = new System.Drawing.Point(5, 136);
+            this.buttonPopDeviceHistory.Location = new System.Drawing.Point(15, 163);
             this.buttonPopDeviceHistory.Name = "buttonPopDeviceHistory";
             this.buttonPopDeviceHistory.Size = new System.Drawing.Size(106, 63);
             this.buttonPopDeviceHistory.TabIndex = 17;
@@ -820,7 +797,7 @@
             this.buttonBulkBarcodePrint.BackColor = System.Drawing.Color.Black;
             this.buttonBulkBarcodePrint.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.buttonBulkBarcodePrint.ForeColor = System.Drawing.Color.White;
-            this.buttonBulkBarcodePrint.Location = new System.Drawing.Point(5, 71);
+            this.buttonBulkBarcodePrint.Location = new System.Drawing.Point(15, 96);
             this.buttonBulkBarcodePrint.Name = "buttonBulkBarcodePrint";
             this.buttonBulkBarcodePrint.Size = new System.Drawing.Size(106, 63);
             this.buttonBulkBarcodePrint.TabIndex = 16;
@@ -832,7 +809,7 @@
             this.buttonProductionPlan.BackColor = System.Drawing.Color.Black;
             this.buttonProductionPlan.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.buttonProductionPlan.ForeColor = System.Drawing.Color.Cyan;
-            this.buttonProductionPlan.Location = new System.Drawing.Point(5, 6);
+            this.buttonProductionPlan.Location = new System.Drawing.Point(15, 27);
             this.buttonProductionPlan.Name = "buttonProductionPlan";
             this.buttonProductionPlan.Size = new System.Drawing.Size(106, 63);
             this.buttonProductionPlan.TabIndex = 15;
@@ -844,7 +821,7 @@
             this.buttonCreateWorker.BackColor = System.Drawing.Color.Black;
             this.buttonCreateWorker.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.buttonCreateWorker.ForeColor = System.Drawing.Color.Cyan;
-            this.buttonCreateWorker.Location = new System.Drawing.Point(111, 266);
+            this.buttonCreateWorker.Location = new System.Drawing.Point(121, 296);
             this.buttonCreateWorker.Name = "buttonCreateWorker";
             this.buttonCreateWorker.Size = new System.Drawing.Size(106, 63);
             this.buttonCreateWorker.TabIndex = 14;
@@ -856,7 +833,7 @@
             this.buttonCreateBasicInfo.BackColor = System.Drawing.Color.Black;
             this.buttonCreateBasicInfo.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.buttonCreateBasicInfo.ForeColor = System.Drawing.Color.White;
-            this.buttonCreateBasicInfo.Location = new System.Drawing.Point(111, 201);
+            this.buttonCreateBasicInfo.Location = new System.Drawing.Point(121, 229);
             this.buttonCreateBasicInfo.Name = "buttonCreateBasicInfo";
             this.buttonCreateBasicInfo.Size = new System.Drawing.Size(106, 63);
             this.buttonCreateBasicInfo.TabIndex = 13;
@@ -868,7 +845,7 @@
             this.buttonHardwareEnvironmentSettings.BackColor = System.Drawing.Color.Black;
             this.buttonHardwareEnvironmentSettings.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.buttonHardwareEnvironmentSettings.ForeColor = System.Drawing.Color.White;
-            this.buttonHardwareEnvironmentSettings.Location = new System.Drawing.Point(111, 136);
+            this.buttonHardwareEnvironmentSettings.Location = new System.Drawing.Point(121, 163);
             this.buttonHardwareEnvironmentSettings.Name = "buttonHardwareEnvironmentSettings";
             this.buttonHardwareEnvironmentSettings.Size = new System.Drawing.Size(106, 63);
             this.buttonHardwareEnvironmentSettings.TabIndex = 12;
@@ -880,7 +857,7 @@
             this.buttonSystemEnvironmentSettings.BackColor = System.Drawing.Color.Black;
             this.buttonSystemEnvironmentSettings.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.buttonSystemEnvironmentSettings.ForeColor = System.Drawing.Color.White;
-            this.buttonSystemEnvironmentSettings.Location = new System.Drawing.Point(111, 71);
+            this.buttonSystemEnvironmentSettings.Location = new System.Drawing.Point(121, 96);
             this.buttonSystemEnvironmentSettings.Name = "buttonSystemEnvironmentSettings";
             this.buttonSystemEnvironmentSettings.Size = new System.Drawing.Size(106, 63);
             this.buttonSystemEnvironmentSettings.TabIndex = 11;
@@ -892,31 +869,31 @@
             this.buttonWorkEnvironmentSettings.BackColor = System.Drawing.Color.Black;
             this.buttonWorkEnvironmentSettings.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.buttonWorkEnvironmentSettings.ForeColor = System.Drawing.Color.White;
-            this.buttonWorkEnvironmentSettings.Location = new System.Drawing.Point(111, 6);
+            this.buttonWorkEnvironmentSettings.Location = new System.Drawing.Point(121, 27);
             this.buttonWorkEnvironmentSettings.Name = "buttonWorkEnvironmentSettings";
             this.buttonWorkEnvironmentSettings.Size = new System.Drawing.Size(106, 63);
             this.buttonWorkEnvironmentSettings.TabIndex = 10;
             this.buttonWorkEnvironmentSettings.Text = "작업\r\n환경설정";
             this.buttonWorkEnvironmentSettings.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // buttonExit
             // 
-            this.button6.BackColor = System.Drawing.Color.Black;
-            this.button6.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(218, 395);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(106, 63);
-            this.button6.TabIndex = 9;
-            this.button6.Text = "종료";
-            this.button6.UseVisualStyleBackColor = false;
+            this.buttonExit.BackColor = System.Drawing.Color.Black;
+            this.buttonExit.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.buttonExit.ForeColor = System.Drawing.Color.White;
+            this.buttonExit.Location = new System.Drawing.Point(228, 428);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(106, 63);
+            this.buttonExit.TabIndex = 9;
+            this.buttonExit.Text = "종료";
+            this.buttonExit.UseVisualStyleBackColor = false;
             // 
             // buttonHelp
             // 
             this.buttonHelp.BackColor = System.Drawing.Color.Black;
             this.buttonHelp.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.buttonHelp.ForeColor = System.Drawing.Color.Cyan;
-            this.buttonHelp.Location = new System.Drawing.Point(218, 330);
+            this.buttonHelp.Location = new System.Drawing.Point(228, 362);
             this.buttonHelp.Name = "buttonHelp";
             this.buttonHelp.Size = new System.Drawing.Size(106, 63);
             this.buttonHelp.TabIndex = 8;
@@ -928,7 +905,7 @@
             this.buttonPrintTest.BackColor = System.Drawing.Color.Black;
             this.buttonPrintTest.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.buttonPrintTest.ForeColor = System.Drawing.Color.White;
-            this.buttonPrintTest.Location = new System.Drawing.Point(218, 266);
+            this.buttonPrintTest.Location = new System.Drawing.Point(228, 296);
             this.buttonPrintTest.Name = "buttonPrintTest";
             this.buttonPrintTest.Size = new System.Drawing.Size(106, 63);
             this.buttonPrintTest.TabIndex = 7;
@@ -940,7 +917,7 @@
             this.buttonReissue.BackColor = System.Drawing.Color.Black;
             this.buttonReissue.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.buttonReissue.ForeColor = System.Drawing.Color.White;
-            this.buttonReissue.Location = new System.Drawing.Point(218, 201);
+            this.buttonReissue.Location = new System.Drawing.Point(228, 229);
             this.buttonReissue.Name = "buttonReissue";
             this.buttonReissue.Size = new System.Drawing.Size(106, 63);
             this.buttonReissue.TabIndex = 6;
@@ -954,7 +931,7 @@
             this.buttonReset.ForeColor = System.Drawing.Color.White;
             this.buttonReset.Image = ((System.Drawing.Image)(resources.GetObject("buttonReset.Image")));
             this.buttonReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonReset.Location = new System.Drawing.Point(218, 136);
+            this.buttonReset.Location = new System.Drawing.Point(228, 163);
             this.buttonReset.Name = "buttonReset";
             this.buttonReset.Size = new System.Drawing.Size(106, 63);
             this.buttonReset.TabIndex = 5;
@@ -969,7 +946,7 @@
             this.buttonStop.ForeColor = System.Drawing.Color.White;
             this.buttonStop.Image = ((System.Drawing.Image)(resources.GetObject("buttonStop.Image")));
             this.buttonStop.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonStop.Location = new System.Drawing.Point(218, 71);
+            this.buttonStop.Location = new System.Drawing.Point(228, 96);
             this.buttonStop.Name = "buttonStop";
             this.buttonStop.Size = new System.Drawing.Size(106, 63);
             this.buttonStop.TabIndex = 4;
@@ -977,13 +954,36 @@
             this.buttonStop.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonStop.UseVisualStyleBackColor = false;
             // 
+            // textBoxPlannedQuantity
+            // 
+            this.textBoxPlannedQuantity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBoxPlannedQuantity.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBoxPlannedQuantity.ForeColor = System.Drawing.Color.White;
+            this.textBoxPlannedQuantity.Location = new System.Drawing.Point(137, 79);
+            this.textBoxPlannedQuantity.Name = "textBoxPlannedQuantity";
+            this.textBoxPlannedQuantity.Size = new System.Drawing.Size(183, 27);
+            this.textBoxPlannedQuantity.TabIndex = 17;
+            this.textBoxPlannedQuantity.Text = "20,000";
+            // 
+            // labelPlannedQuantity
+            // 
+            this.labelPlannedQuantity.AutoSize = true;
+            this.labelPlannedQuantity.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelPlannedQuantity.ForeColor = System.Drawing.Color.Cyan;
+            this.labelPlannedQuantity.Location = new System.Drawing.Point(46, 82);
+            this.labelPlannedQuantity.Name = "labelPlannedQuantity";
+            this.labelPlannedQuantity.Size = new System.Drawing.Size(84, 17);
+            this.labelPlannedQuantity.TabIndex = 18;
+            this.labelPlannedQuantity.Text = "계획수량";
+            this.labelPlannedQuantity.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(985, 654);
+            this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.panelButton);
             this.Controls.Add(this.panelData);
             this.Controls.Add(this.panel);
@@ -1010,7 +1010,7 @@
         #endregion
 
         private System.Windows.Forms.Label labelCurrentDateTime;
-        private System.Windows.Forms.TextBox tbxManagerName;
+        private System.Windows.Forms.TextBox textBoxManagerName;
         private System.Windows.Forms.Button buttonPause;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Label label2;
@@ -1032,8 +1032,6 @@
         private System.Windows.Forms.Panel panelButton;
         private System.Windows.Forms.Label labelRemainingRibbon;
         private System.Windows.Forms.TextBox textBoxRemainingRibbon;
-        private System.Windows.Forms.Label labelPlannedQuantity;
-        private System.Windows.Forms.TextBox textBoxPlannedQuantity;
         private System.Windows.Forms.Label labelProducedQuantity;
         private System.Windows.Forms.TextBox textBoxProducedQuantity;
         private System.Windows.Forms.Label labelRemainingLabel;
@@ -1078,7 +1076,9 @@
         private System.Windows.Forms.Button buttonHardwareEnvironmentSettings;
         private System.Windows.Forms.Button buttonSystemEnvironmentSettings;
         private System.Windows.Forms.Button buttonWorkEnvironmentSettings;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.Label labelPlannedQuantity;
+        private System.Windows.Forms.TextBox textBoxPlannedQuantity;
     }
 }
 

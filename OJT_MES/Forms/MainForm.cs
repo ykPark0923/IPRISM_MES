@@ -31,7 +31,7 @@ namespace LotteMES.Forms
 
         protected override void SetObjectFromControls()
         {
-            m_data.ManagerName = tbxManagerName.Text;
+            m_data.ManagerName = textBoxManagerName.Text;
             m_data.PlannedQuantity = int.Parse(textBoxPlannedQuantity.Text);
         }
 
@@ -50,7 +50,7 @@ namespace LotteMES.Forms
         /// </summary>
         protected override void UpdateControlsFromObject()
         {
-            tbxManagerName.Text = m_data.ManagerName;
+            textBoxManagerName.Text = m_data.ManagerName;
             textBoxPlannedQuantity.Text = m_data.PlannedQuantity.ToString();
         }
 
