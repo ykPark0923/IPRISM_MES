@@ -9,13 +9,6 @@ namespace LotteMES.Styles
 {
     public class Style
     {
-
-        // 폰트 (볼드, 사이즈, 이탤릭, 밑줄)
-        // 버튼 폰트, 타이틀 폰트 등등...
-        // 백그라운드 컬러 ( 버튼 , 레이블, 텍스트박스, 폼)
-        // 포어컬러
-
-
         #region Common
         private static Font commonFont = new Font("돋움체", 13, FontStyle.Bold);  // 기본 폰트 설정
         /// <summary>
@@ -197,7 +190,7 @@ namespace LotteMES.Styles
             set => mainFormDatetimeFontSize = value ?? new Font("돋움체", 15, FontStyle.Bold);  // null 방지 및 기본값 설정
         }
 
-        private static Font mainFormLabel2FontSize = new Font("돋움체", 30, FontStyle.Bold);  // 기본 폰트에 크기설정
+        private static Font mainFormLabel2FontSize = new Font("돋움체", 15, FontStyle.Bold);  // 기본 폰트에 크기설정
         /// <summary>
         /// 메인폼 라벨2 폰트크기 설정
         /// </summary>
