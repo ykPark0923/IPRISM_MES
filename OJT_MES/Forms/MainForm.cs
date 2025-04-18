@@ -46,7 +46,7 @@ namespace LotteMES.Forms
         protected override void SetObjectFromControls()
         {
             // 라벨 데이터 가져오기 (UI에서 Text 속성 가져오기)
-            m_data.LabelCurrentDateTime = labelCurrentDateTime.Text;
+            m_data.CurrentDateTime = labelCurrentDateTime.Text;
             m_data.Label1 = label1.Text;
             m_data.Label2 = label2.Text;
             m_data.Label3 = label3.Text;
@@ -54,23 +54,23 @@ namespace LotteMES.Forms
 
 
             // 텍스트박스에서 데이터를 가져와 객체에 설정
-            m_data.TextBoxManagerName = textBoxManagerName.Text;
-            m_data.TextBoxPlannedQuantity = TryParseInt(textBoxPlannedQuantity.Text);
-            m_data.TextBoxProducedQuantity = TryParseInt(textBoxProducedQuantity.Text);
-            m_data.TextBoxRemainingRibbon = TryParseInt(textBoxRemainingRibbon.Text);
-            m_data.TextBoxRemainingLabel = TryParseInt(textBoxRemainingLabel.Text);
-            m_data.TextBoxProductionLine = textBoxProductionLine.Text;
-            m_data.TextBoxProductionDate = TryParseDateTime(textBoxProductionDate.Text);
-            m_data.TextBoxShiftType = textBoxShiftType.Text;
-            m_data.TextBoxProductName = textBoxProductName.Text;
-            m_data.TextBoxUnit = textBoxUnit.Text;
-            m_data.TextBoxSerialNumber = textBoxSerialNumber.Text;
-            m_data.TextBoxBomVersion = textBoxBomVersion.Text;
-            m_data.TextBoxStorageLocation = textBoxStorageLocation.Text;
-            m_data.TextBoxBoxPerPallet = TryParseInt(textBoxBoxPerPallet.Text);
-            m_data.TextBoxBoxCode = textBoxBoxCode.Text;
-            m_data.TextBoxExpirationDate = TryParseDateTime(textBoxExpirationDate.Text);
-            m_data.TextBoxShelfLife = TryParseInt(textBoxShelfLife.Text);
+            m_data.ManagerName = textBoxManagerName.Text;
+            m_data.PlannedQuantity = TryParseInt(textBoxPlannedQuantity.Text);
+            m_data.ProducedQuantity = TryParseInt(textBoxProducedQuantity.Text);
+            m_data.RemainingRibbon = TryParseInt(textBoxRemainingRibbon.Text);
+            m_data.RemainingLabel = TryParseInt(textBoxRemainingLabel.Text);
+            m_data.ProductionLine = textBoxProductionLine.Text;
+            m_data.ProductionDate = TryParseDateTime(textBoxProductionDate.Text);
+            m_data.ShiftType = textBoxShiftType.Text;
+            m_data.ProductName = textBoxProductName.Text;
+            m_data.Unit = textBoxUnit.Text;
+            m_data.SerialNumber = textBoxSerialNumber.Text;
+            m_data.BomVersion = textBoxBomVersion.Text;
+            m_data.StorageLocation = textBoxStorageLocation.Text;
+            m_data.BoxPerPallet = TryParseInt(textBoxBoxPerPallet.Text);
+            m_data.BoxCode = textBoxBoxCode.Text;
+            m_data.ExpirationDate = TryParseDateTime(textBoxExpirationDate.Text);
+            m_data.ShelfLife = TryParseInt(textBoxShelfLife.Text);
 
         }
 
@@ -80,30 +80,30 @@ namespace LotteMES.Forms
         protected override void UpdateControlsFromObject()
         {
             // 라벨에 데이터 설정
-            labelCurrentDateTime.Text = m_data.LabelCurrentDateTime;
+            labelCurrentDateTime.Text = m_data.CurrentDateTime;
             label1.Text = m_data.Label1;
             label2.Text = m_data.Label2;
             label3.Text = m_data.Label3;
             label4.Text = m_data.Label4;
 
             // 텍스트박스에 데이터 설정
-            textBoxManagerName.Text = m_data.TextBoxManagerName;
-            textBoxPlannedQuantity.Text = m_data.TextBoxPlannedQuantity.ToString();
-            textBoxProducedQuantity.Text = m_data.TextBoxProducedQuantity.ToString();
-            textBoxRemainingRibbon.Text = m_data.TextBoxRemainingRibbon.ToString();
-            textBoxRemainingLabel.Text = m_data.TextBoxRemainingLabel.ToString();
-            textBoxProductionLine.Text = m_data.TextBoxProductionLine;
-            textBoxProductionDate.Text = m_data.TextBoxProductionDate.ToString("yyyy-MM-dd"); // 날짜 포맷
-            textBoxShiftType.Text = m_data.TextBoxShiftType;
-            textBoxProductName.Text = m_data.TextBoxProductName;
-            textBoxUnit.Text = m_data.TextBoxUnit;
-            textBoxSerialNumber.Text = m_data.TextBoxSerialNumber;
-            textBoxBomVersion.Text = m_data.TextBoxBomVersion;
-            textBoxStorageLocation.Text = m_data.TextBoxStorageLocation;
-            textBoxBoxPerPallet.Text = m_data.TextBoxBoxPerPallet.ToString();
-            textBoxBoxCode.Text = m_data.TextBoxBoxCode;
-            textBoxExpirationDate.Text = m_data.TextBoxExpirationDate.ToString("yyyy-MM-dd"); // 날짜 포맷
-            textBoxShelfLife.Text = m_data.TextBoxShelfLife.ToString();
+            textBoxManagerName.Text = m_data.ManagerName;
+            textBoxPlannedQuantity.Text = m_data.PlannedQuantity.ToString();
+            textBoxProducedQuantity.Text = m_data.ProducedQuantity.ToString();
+            textBoxRemainingRibbon.Text = m_data.RemainingRibbon.ToString();
+            textBoxRemainingLabel.Text = m_data.RemainingLabel.ToString();
+            textBoxProductionLine.Text = m_data.ProductionLine;
+            textBoxProductionDate.Text = m_data.ProductionDate.ToString("yyyy-MM-dd"); // 날짜 포맷
+            textBoxShiftType.Text = m_data.ShiftType;
+            textBoxProductName.Text = m_data.ProductName;
+            textBoxUnit.Text = m_data.Unit;
+            textBoxSerialNumber.Text = m_data.SerialNumber;
+            textBoxBomVersion.Text = m_data.BomVersion;
+            textBoxStorageLocation.Text = m_data.StorageLocation;
+            textBoxBoxPerPallet.Text = m_data.BoxPerPallet.ToString();
+            textBoxBoxCode.Text = m_data.BoxCode;
+            textBoxExpirationDate.Text = m_data.ExpirationDate.ToString("yyyy-MM-dd"); // 날짜 포맷
+            textBoxShelfLife.Text = m_data.ShelfLife.ToString();
 
         }
 

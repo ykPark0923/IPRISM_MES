@@ -12,8 +12,8 @@ namespace LotteMES.FormData
 
 
         #region Label
-        private string labelCurrentDateTime = string.Empty;
-        public string LabelCurrentDateTime { get => labelCurrentDateTime; set => labelCurrentDateTime = value; }
+        private string currentDateTime = string.Empty;
+        public string CurrentDateTime { get => currentDateTime; set => currentDateTime = value; }
 
         private string label1 = string.Empty;
         public string Label1 { get => label1; set => label1 = value; }
@@ -30,56 +30,56 @@ namespace LotteMES.FormData
 
 
         #region TextBox
-        private string textBoxManagerName = string.Empty;
-        public string TextBoxManagerName { get => textBoxManagerName; set => textBoxManagerName = value; }
+        private string managerName = string.Empty;
+        public string ManagerName { get => managerName; set => managerName = value; }
 
-        private int textBoxPlannedQuantity = 0;
-        public int TextBoxPlannedQuantity { get => textBoxPlannedQuantity; set => textBoxPlannedQuantity = value; }
+        private int plannedQuantity = 0;
+        public int PlannedQuantity { get => plannedQuantity; set => plannedQuantity = value; }
 
-        private int textBoxProducedQuantity = 0;
-        public int TextBoxProducedQuantity { get => textBoxProducedQuantity; set => textBoxProducedQuantity = value; }
+        private int producedQuantity = 0;
+        public int ProducedQuantity { get => producedQuantity; set => producedQuantity = value; }
 
-        private int textBoxRemainingRibbon = 0;
-        public int TextBoxRemainingRibbon { get => textBoxRemainingRibbon; set => textBoxRemainingRibbon = value; }
+        private int remainingRibbon = 0;
+        public int RemainingRibbon { get => remainingRibbon; set => remainingRibbon = value; }
 
-        private int textBoxRemainingLabel = 0;
-        public int TextBoxRemainingLabel { get => textBoxRemainingLabel; set => textBoxRemainingLabel = value; }
+        private int remainingLabel = 0;
+        public int RemainingLabel { get => remainingLabel; set => remainingLabel = value; }
 
-        private string textBoxProductionLine = string.Empty;
-        public string TextBoxProductionLine { get => textBoxProductionLine; set => textBoxProductionLine = value; }
+        private string productionLine = string.Empty;
+        public string ProductionLine { get => productionLine; set => productionLine = value; }
 
-        private DateTime textBoxProductionDate = DateTime.Now;
-        public DateTime TextBoxProductionDate { get => textBoxProductionDate; set => textBoxProductionDate = value; }
+        private DateTime productionDate = DateTime.Now;
+        public DateTime ProductionDate { get => productionDate; set => productionDate = value; }
 
-        private string textBoxShiftType = string.Empty;
-        public string TextBoxShiftType { get => textBoxShiftType; set => textBoxShiftType = value; }
+        private string shiftType = string.Empty;
+        public string ShiftType { get => shiftType; set => shiftType = value; }
 
-        private string textBoxProductName = string.Empty;
-        public string TextBoxProductName { get => textBoxProductName; set => textBoxProductName = value; }
+        private string productName = string.Empty;
+        public string ProductName { get => productName; set => productName = value; }
 
-        private string textBoxUnit = string.Empty;
-        public string TextBoxUnit { get => textBoxUnit; set => textBoxUnit = value; }
+        private string unit = string.Empty;
+        public string Unit { get => unit; set => unit = value; }
 
-        private string textBoxSerialNumber = string.Empty;
-        public string TextBoxSerialNumber { get => textBoxSerialNumber; set => textBoxSerialNumber = value; }
+        private string serialNumber = string.Empty;
+        public string SerialNumber { get => serialNumber; set => serialNumber = value; }
 
-        private string textBoxBomVersion = string.Empty;
-        public string TextBoxBomVersion { get => textBoxBomVersion; set => textBoxBomVersion = value; }
+        private string bomVersion = string.Empty;
+        public string BomVersion { get => bomVersion; set => bomVersion = value; }
 
-        private string textBoxStorageLocation = string.Empty;
-        public string TextBoxStorageLocation { get => textBoxStorageLocation; set => textBoxStorageLocation = value; }
+        private string storageLocation = string.Empty;
+        public string StorageLocation { get => storageLocation; set => storageLocation = value; }
 
-        private int textBoxBoxPerPallet = 0;
-        public int TextBoxBoxPerPallet { get => textBoxBoxPerPallet; set => textBoxBoxPerPallet = value; }
+        private int boxPerPallet = 0;
+        public int BoxPerPallet { get => boxPerPallet; set => boxPerPallet = value; }
 
-        private string textBoxBoxCode = string.Empty;
-        public string TextBoxBoxCode { get => textBoxBoxCode; set => textBoxBoxCode = value; }
+        private string boxCode = string.Empty;
+        public string BoxCode { get => boxCode; set => boxCode = value; }
 
-        private DateTime textBoxExpirationDate = DateTime.Now;
-        public DateTime TextBoxExpirationDate { get => textBoxExpirationDate; set => textBoxExpirationDate = value; }
+        private DateTime expirationDate = DateTime.Now;
+        public DateTime ExpirationDate { get => expirationDate; set => expirationDate = value; }
 
-        private int textBoxShelfLife = 0;
-        public int TextBoxShelfLife { get => textBoxShelfLife; set => textBoxShelfLife = value; }
+        private int shelfLife = 0;
+        public int ShelfLife { get => shelfLife; set => shelfLife = value; }
         #endregion
     }
 }
