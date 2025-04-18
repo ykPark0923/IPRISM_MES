@@ -50,19 +50,19 @@ namespace LotteMES.Styles
             set => commonBackgroundColor = value;
         }
 
-        private static Color commonBackgroundColorSetting = Color.White;
+        private static Color commonSettingBackgroundColor = Color.White;
         /// <summary>
-        /// 공통 배경컬러 셋팅화면
+        /// 공통 셋팅화면 배경컬러 
         /// </summary>
-        internal static Color CommonBackgroundColorSetting
+        internal static Color CommonSettingBackgroundColor
         {
-            get => commonBackgroundColorSetting;
-            set => commonBackgroundColorSetting = value;
+            get => commonSettingBackgroundColor;
+            set => commonSettingBackgroundColor = value;
         }
 
         private static Color commonLabelBackgroundColor = Color.Transparent;
         /// <summary>
-        /// 공통 배경컬러 투명
+        /// 공통 라벨 배경컬러 투명
         /// </summary>
         internal static Color CommonLabelBackgroundColor
         {
@@ -72,7 +72,7 @@ namespace LotteMES.Styles
 
         private static Color commonButtonBackgroundColor = Color.MintCream;
         /// <summary>
-        /// 버튼 배경컬러 민트
+        /// 공통 버튼 배경컬러 민트
         /// </summary>
         internal static Color CommonButtonBackgroundColor
         {
@@ -115,7 +115,7 @@ namespace LotteMES.Styles
 
         private static Color textBoxBackgroundColorEditable = Color.LightYellow;
         /// <summary>
-        /// 텍스트박스 배경컬러 연옐로우 수정가능
+        /// 텍스트박스 배경컬러 옐로우 수정가능
         /// </summary>
         internal static Color TextBoxBackgroundColorEditable
         {
@@ -147,25 +147,25 @@ namespace LotteMES.Styles
         }
 
 
-        private static Color mainFormCommunicationColorError = Color.Red;
+        private static Color mainFormCommStatusColorError = Color.Red;
         /// <summary>
         /// 메인폼 Communication필드 컬러 에러 - 레드
         /// </summary>
-        internal static Color MainFormCommunicationColorError
+        internal static Color MainFormCommStatusColorError
         {
-            get => mainFormCommunicationColorError;
-            set => mainFormCommunicationColorError = value;
+            get => mainFormCommStatusColorError;
+            set => mainFormCommStatusColorError = value;
         }
 
 
-        private static Color mainFormCommunicationColorGood = Color.DarkOliveGreen;
+        private static Color mainFormCommStatusColorGood = Color.DarkOliveGreen;
         /// <summary>
         /// 메인폼 Communication필드 컬러 정상 - 그린
         /// </summary>
-        internal static Color MainFormCommunicationColorGood
+        internal static Color MainFormCommStatusColorGood
         {
-            get => mainFormCommunicationColorGood;
-            set => mainFormCommunicationColorGood = value;
+            get => mainFormCommStatusColorGood;
+            set => mainFormCommStatusColorGood = value;
         }
 
         private static Color mainFormLabel2ForeColor = Color.Red;
@@ -210,7 +210,7 @@ namespace LotteMES.Styles
 
         private static Font mainFormLabel3FontSize = new Font("맑은고딕", 30, FontStyle.Bold);  // 기본 폰트에 크기설정
         /// <summary>
-        /// 메인폼 라벨2 폰트크기 설정
+        /// 메인폼 라벨3 폰트크기 설정
         /// </summary>
         internal static Font MainFormLabel3FontSize
         {

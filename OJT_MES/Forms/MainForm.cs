@@ -180,15 +180,15 @@ namespace LotteMES.Forms
             labelExpirationDate.BackColor = Style.CommonLabelBackgroundColor;
             labelShelfLife.BackColor = Style.CommonLabelBackgroundColor;
 
-            pictureBoxAL.BackColor = Style.MainFormCommunicationColorError;
-            pictureBoxServer.BackColor = Style.MainFormCommunicationColorGood;
-            pictureBoxDemon.BackColor = Style.MainFormCommunicationColorGood;
+            pictureBoxAL.BackColor = Style.MainFormCommStatusColorError;
+            pictureBoxServer.BackColor = Style.MainFormCommStatusColorGood;
+            pictureBoxDemon.BackColor = Style.MainFormCommStatusColorGood;
             #endregion
 
             #region ForeColor
             labelCurrentDateTime.ForeColor = Style.CommonForeColor;
 
-            labelCommStatus.ForeColor = Style.MainFormCommunicationColorGood;
+            labelCommStatus.ForeColor = Style.MainFormCommStatusColorGood;
             labelAL.ForeColor = Style.CommonForeColor;
             labelServer.ForeColor = Style.CommonForeColor;
             labelDemon.ForeColor = Style.CommonForeColor;
