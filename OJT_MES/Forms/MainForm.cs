@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using LotteMES.Bases;
 using LotteMES.FormData;
 using LotteMES.Styles;
+using LotteMES.Helpers;
 
 namespace LotteMES.Forms
 {
@@ -29,17 +30,6 @@ namespace LotteMES.Forms
             SetStyles();
         }
 
-        #region TryParseMethod
-        public static int TryParseInt(string input, int defaultValue = 0)
-        {
-            return int.TryParse(input, out int result) ? result : defaultValue;
-        }
-        public static DateTime TryParseDateTime(string input, DateTime defaultValue = default)
-        {
-            return DateTime.TryParse(input, out DateTime result) ? result : defaultValue;
-        }
-        #endregion
-
         /// <summary>
         /// 컨트롤로부터 데이터 객체의 값들을 업데이트
         /// </summary>
@@ -55,22 +45,22 @@ namespace LotteMES.Forms
 
             // 텍스트박스에서 데이터를 가져와 객체에 설정
             m_data.ManagerName = textBoxManagerName.Text;
-            m_data.PlannedQuantity = TryParseInt(textBoxPlannedQuantity.Text);
-            m_data.ProducedQuantity = TryParseInt(textBoxProducedQuantity.Text);
-            m_data.RemainingRibbon = TryParseInt(textBoxRemainingRibbon.Text);
-            m_data.RemainingLabel = TryParseInt(textBoxRemainingLabel.Text);
+            m_data.PlannedQuantity = Helper.TryParseInt(textBoxPlannedQuantity.Text);
+            m_data.ProducedQuantity = Helper.TryParseInt(textBoxProducedQuantity.Text);
+            m_data.RemainingRibbon = Helper.TryParseInt(textBoxRemainingRibbon.Text);
+            m_data.RemainingLabel = Helper.TryParseInt(textBoxRemainingLabel.Text);
             m_data.ProductionLine = textBoxProductionLine.Text;
-            m_data.ProductionDate = TryParseDateTime(textBoxProductionDate.Text);
+            m_data.ProductionDate = Helper.TryParseDateTime(textBoxProductionDate.Text);
             m_data.ShiftType = textBoxShiftType.Text;
             m_data.ProductName = textBoxProductName.Text;
             m_data.Unit = textBoxUnit.Text;
             m_data.SerialNumber = textBoxSerialNumber.Text;
             m_data.BomVersion = textBoxBomVersion.Text;
             m_data.StorageLocation = textBoxStorageLocation.Text;
-            m_data.BoxPerPallet = TryParseInt(textBoxBoxPerPallet.Text);
+            m_data.BoxPerPallet = Helper.TryParseInt(textBoxBoxPerPallet.Text);
             m_data.BoxCode = textBoxBoxCode.Text;
-            m_data.ExpirationDate = TryParseDateTime(textBoxExpirationDate.Text);
-            m_data.ShelfLife = TryParseInt(textBoxShelfLife.Text);
+            m_data.ExpirationDate = Helper.TryParseDateTime(textBoxExpirationDate.Text);
+            m_data.ShelfLife = Helper.TryParseInt(textBoxShelfLife.Text);
 
         }
 
