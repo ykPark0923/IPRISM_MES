@@ -20,166 +20,174 @@ namespace LotteMES.Styles
             set => commonFont = value ?? new Font("돋움체", 13, FontStyle.Bold);  // null 방지 및 기본값 설정
         }
 
-
-        private static Color commonForeColorWhite = Color.White;  // 기본 폰트색상 설정
+        private static Color commonForeColor = Color.White;  // 기본 폰트색상 설정
         /// <summary>
         /// 공통 폰트컬러 화이트
         /// </summary>
-        internal static Color CommonForeColorWhite
+        internal static Color CommonForeColor
         {
-            get => commonForeColorWhite;
-            set => commonForeColorWhite = value;
+            get => commonForeColor;
+            set => commonForeColor = value;
         }
 
-        private static Color commonForeColorCyan = Color.Cyan;
+        private static Color commonListBackgroundColor = Color.White;
         /// <summary>
-        /// 공통 폰트컬러 블루
+        /// 공통 리스트배경컬러 화이트
         /// </summary>
-        internal static Color CommonForeColorCyan
+        internal static Color CommonListBackgroundColor
         {
-            get => commonForeColorCyan;
-            set => commonForeColorCyan = value;
+            get => commonListBackgroundColor;
+            set => commonListBackgroundColor = value;
         }
 
-        private static Color commonForeColorRed = Color.Red;
-        /// <summary>
-        /// 공통 폰트컬러 레드
-        /// </summary>
-        internal static Color CommonForeColorRed
-        {
-            get => commonForeColorRed;
-            set => commonForeColorRed = value;
-        }
-
-
-        private static Color commonBackgroundColorBlack = Color.Black;
+        private static Color commonBackgroundColor = Color.Black;
         /// <summary>
         /// 공통 배경컬러 블랙
         /// </summary>
-        internal static Color CommonBackgroundColorBlack
+        internal static Color CommonBackgroundColor
         {
-            get => commonBackgroundColorBlack;
-            set => commonBackgroundColorBlack = value;
+            get => commonBackgroundColor;
+            set => commonBackgroundColor = value;
         }
 
-        private static Color commonBackgroundColorWhite = Color.White;
+        private static Color commonBackgroundColorSetting = Color.White;
         /// <summary>
-        /// 공통 배경컬러 화이트
+        /// 공통 배경컬러 셋팅화면
         /// </summary>
-        internal static Color CommonBackgroundColorWhite
+        internal static Color CommonBackgroundColorSetting
         {
-            get => commonBackgroundColorWhite;
-            set => commonBackgroundColorWhite = value;
+            get => commonBackgroundColorSetting;
+            set => commonBackgroundColorSetting = value;
         }
 
-        private static Color commonBackgroundColorTransparent = Color.Transparent;
+        private static Color commonLabelBackgroundColor = Color.Transparent;
         /// <summary>
         /// 공통 배경컬러 투명
         /// </summary>
-        internal static Color CommonBackgroundColorTransparent
+        internal static Color CommonLabelBackgroundColor
         {
-            get => commonBackgroundColorTransparent;
-            set => commonBackgroundColorTransparent = value;
+            get => commonLabelBackgroundColor;
+            set => commonLabelBackgroundColor = value;
         }
-        #endregion
 
-
-        #region Button
-        private static Color buttonBackgroundColorMint = Color.MintCream;
+        private static Color commonButtonBackgroundColor = Color.MintCream;
         /// <summary>
         /// 버튼 배경컬러 민트
         /// </summary>
-        internal static Color ButtonBackgroundColorMint
+        internal static Color CommonButtonBackgroundColor
         {
-            get => buttonBackgroundColorMint;
-            set => buttonBackgroundColorMint = value;
+            get => commonButtonBackgroundColor;
+            set => commonButtonBackgroundColor = value;
         }
         #endregion
 
 
         #region TextBox
-        private static Color textBoxBackgroundColorLightGray = Color.LightGray;
+        private static Color textBoxBackgroundColorLight = Color.LightGray;
         /// <summary>
         /// 텍스트박스 배경컬러 연그레이
         /// </summary>
-        internal static Color TextBoxBackgroundColorLightGray
+        internal static Color TextBoxBackgroundColorLight
         {
-            get => textBoxBackgroundColorLightGray;
-            set => textBoxBackgroundColorLightGray = value;
+            get => textBoxBackgroundColorLight;
+            set => textBoxBackgroundColorLight = value;
         }
 
-        private static Color textBoxBackgroundColorDarkGray = Color.DarkGray;
+        private static Color textBoxBackgroundColorReadOnly = Color.DarkGray;
         /// <summary>
-        /// 텍스트박스 배경컬러 다크그레이
+        /// 텍스트박스 배경컬러 다크그레이 수정불가
         /// </summary>
-        internal static Color TextBoxBackgroundColorDarkGray
+        internal static Color TextBoxBackgroundColorReadOnly
         {
-            get => textBoxBackgroundColorDarkGray;
-            set => textBoxBackgroundColorDarkGray = value;
+            get => textBoxBackgroundColorReadOnly;
+            set => textBoxBackgroundColorReadOnly = value;
         }
 
-        private static Color textBoxBackgroundColorGray = Color.Gray;
+        private static Color textBoxBackgroundColor = Color.Gray;
         /// <summary>
-        /// 텍스트박스 배경컬러 그레이
+        /// 텍스트박스 배경컬러 그레이 기본
         /// </summary>
-        internal static Color TextBoxBackgroundColorGray
+        internal static Color TextBoxBackgroundColor
         {
-            get => textBoxBackgroundColorGray;
-            set => textBoxBackgroundColorGray = value;
+            get => textBoxBackgroundColor;
+            set => textBoxBackgroundColor = value;
         }
 
-        private static Color textBoxBackgroundColorLightYellow = Color.LightYellow;
+        private static Color textBoxBackgroundColorEditable = Color.LightYellow;
         /// <summary>
-        /// 텍스트박스 배경컬러 연옐로우
+        /// 텍스트박스 배경컬러 연옐로우 수정가능
         /// </summary>
-        internal static Color TextBoxBackgroundColorLightYellow
+        internal static Color TextBoxBackgroundColorEditable
         {
-            get => textBoxBackgroundColorLightYellow;
-            set => textBoxBackgroundColorLightYellow = value;
-        }
-
-        private static Color textBoxBackgroundColorYellow = Color.Yellow;
-        /// <summary>
-        /// 텍스트박스 배경컬러 옐로우
-        /// </summary>
-        internal static Color TextBoxBackgroundColorYellow
-        {
-            get => textBoxBackgroundColorYellow;
-            set => textBoxBackgroundColorYellow = value;
+            get => textBoxBackgroundColorEditable;
+            set => textBoxBackgroundColorEditable = value;
         }
         #endregion
 
 
         #region MainForm
-        private static Color mainFormPictureBoxColorRed = Color.Red;
+        private static Color mainFormForeColorData = Color.Cyan;
         /// <summary>
-        /// 메인폼 pcitureBox 배경컬러 레드
+        /// 메인폼 폰트컬러 블루
         /// </summary>
-        internal static Color MainFormPictureBoxColorRed
+        internal static Color MainFormForeColorData
         {
-            get => mainFormPictureBoxColorRed;
-            set => mainFormPictureBoxColorRed = value;
+            get => mainFormForeColorData;
+            set => mainFormForeColorData = value;
         }
 
-        private static Color mainFormCommunicationColorGreen = Color.DarkOliveGreen;
+        private static Color mainFormButtonBackgroundColor = Color.Black;
         /// <summary>
-        /// 메인폼 pcitureBox 배경컬러 그린
+        /// 메인폼 버튼 배경컬러 블랙
         /// </summary>
-        internal static Color MainFormCommunicationColorGreen
+        internal static Color MainFormButtonBackgroundColor
         {
-            get => mainFormCommunicationColorGreen;
-            set => mainFormCommunicationColorGreen = value;
+            get => mainFormButtonBackgroundColor;
+            set => mainFormButtonBackgroundColor = value;
         }
 
-        private static Color mainFormCommunicationColorRed = Color.Red;
+
+        private static Color mainFormCommunicationColorError = Color.Red;
         /// <summary>
-        /// 메인폼 pcitureBox 배경컬러 레드
+        /// 메인폼 Communication필드 컬러 에러 - 레드
         /// </summary>
-        internal static Color MainFormCommunicationColorRed
+        internal static Color MainFormCommunicationColorError
         {
-            get => mainFormCommunicationColorRed;
-            set => mainFormCommunicationColorRed = value;
+            get => mainFormCommunicationColorError;
+            set => mainFormCommunicationColorError = value;
         }
+
+
+        private static Color mainFormCommunicationColorGood = Color.DarkOliveGreen;
+        /// <summary>
+        /// 메인폼 Communication필드 컬러 정상 - 그린
+        /// </summary>
+        internal static Color MainFormCommunicationColorGood
+        {
+            get => mainFormCommunicationColorGood;
+            set => mainFormCommunicationColorGood = value;
+        }
+
+        private static Color mainFormLabel2ForeColor = Color.Red;
+        /// <summary>
+        /// 메인폼 라벨2 글씨컬러
+        /// </summary>
+        internal static Color MainFormLabel2ForeColor
+        {
+            get => mainFormLabel2ForeColor;
+            set => mainFormLabel2ForeColor = value;
+        }
+
+        private static Color mainFormLabel3ForeColor = Color.Cyan;
+        /// <summary>
+        /// 메인폼 라벨3 글씨컬러
+        /// </summary>
+        internal static Color MainFormLabel3ForeColor
+        {
+            get => mainFormLabel3ForeColor;
+            set => mainFormLabel3ForeColor = value;
+        }
+
         private static Font mainFormDatetimeFontSize = new Font("돋움체", 15, FontStyle.Bold);  // 기본 폰트에 크기설정
         /// <summary>
         /// 메인폼 현재시각 폰트크기 설정
