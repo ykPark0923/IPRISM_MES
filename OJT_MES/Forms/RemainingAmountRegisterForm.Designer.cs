@@ -215,7 +215,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(70, 14);
             this.label8.TabIndex = 13;
-            this.label8.Text = "*잔여수량";
+            this.label8.Text = "*잔량수량";
             // 
             // RemainingAmountRegisterForm
             // 
