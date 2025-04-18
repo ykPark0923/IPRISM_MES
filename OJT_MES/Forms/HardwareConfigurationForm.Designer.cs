@@ -59,7 +59,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(191, 70);
             this.button1.TabIndex = 10;
-            this.button1.Text = "확인";
+            this.button1.Text = "HEAD체크";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -78,7 +78,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(194, 70);
             this.button2.TabIndex = 11;
-            this.button2.Text = "확인";
+            this.button2.Text = "데이터 적용";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -87,7 +87,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(184, 70);
             this.button3.TabIndex = 12;
-            this.button3.Text = "확인";
+            this.button3.Text = "닫기";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // groupBox1

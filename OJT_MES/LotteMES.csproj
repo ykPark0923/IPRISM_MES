@@ -87,6 +87,12 @@
     <Compile Include="Forms\RemainingAmountRegisterForm.Designer.cs">
       <DependentUpon>RemainingAmountRegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SystemConfigurationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SystemConfigurationForm.Designer.cs">
+      <DependentUpon>SystemConfigurationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Helpers\Helper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RemainingAmountRegisterForm.resx">
       <DependentUpon>RemainingAmountRegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SystemConfigurationForm.resx">
+      <DependentUpon>SystemConfigurationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
