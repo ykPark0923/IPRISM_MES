@@ -32,6 +32,19 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,27 +55,24 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.label14 = new System.Windows.Forms.Label();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
-            this.groupBox2.Location = new System.Drawing.Point(20, 355);
+            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Location = new System.Drawing.Point(20, 311);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(674, 210);
+            this.groupBox2.Size = new System.Drawing.Size(674, 254);
             this.groupBox2.TabIndex = 29;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "통신설정";
@@ -113,6 +123,134 @@
             this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "기본설정";
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(427, 199);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(59, 16);
+            this.radioButton5.TabIndex = 34;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "비설정";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(523, 165);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(41, 16);
+            this.radioButton3.TabIndex = 28;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "501";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(164, 167);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(80, 20);
+            this.comboBox4.TabIndex = 33;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(425, 167);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(41, 16);
+            this.radioButton4.TabIndex = 27;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "001";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("굴림", 10F);
+            this.label14.Location = new System.Drawing.Point(317, 167);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(91, 14);
+            this.label14.TabIndex = 26;
+            this.label14.Text = "시작번호기준";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("굴림", 10F);
+            this.label13.Location = new System.Drawing.Point(43, 169);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(101, 14);
+            this.label13.TabIndex = 32;
+            this.label13.Text = "라벨 발행 방향";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("굴림", 10F);
+            this.label12.Location = new System.Drawing.Point(540, 115);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(21, 14);
+            this.label12.TabIndex = 31;
+            this.label12.Text = "분";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("굴림", 10F);
+            this.label11.Location = new System.Drawing.Point(240, 106);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(21, 14);
+            this.label11.TabIndex = 30;
+            this.label11.Text = "분";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("굴림", 10F);
+            this.label10.Location = new System.Drawing.Point(528, 76);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(21, 14);
+            this.label10.TabIndex = 29;
+            this.label10.Text = "일";
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(171, 74);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(84, 16);
+            this.checkBox2.TabIndex = 28;
+            this.checkBox2.Text = "검증미확인";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("굴림", 10F);
+            this.label8.Location = new System.Drawing.Point(43, 74);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(105, 14);
+            this.label8.TabIndex = 27;
+            this.label8.Text = "검증미확인여부";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(434, 33);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(100, 16);
+            this.checkBox1.TabIndex = 26;
+            this.checkBox1.Text = "유통기한 출력";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(107, 36);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(100, 21);
+            this.maskedTextBox1.TabIndex = 25;
             // 
             // comboBox2
             // 
@@ -207,133 +345,56 @@
             this.label1.TabIndex = 24;
             this.label1.Text = "시스템 환경설정";
             // 
-            // maskedTextBox1
+            // dataGridView1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(107, 36);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 21);
-            this.maskedTextBox1.TabIndex = 25;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6});
+            this.dataGridView1.Location = new System.Drawing.Point(7, 20);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 23;
+            this.dataGridView1.Size = new System.Drawing.Size(661, 228);
+            this.dataGridView1.TabIndex = 0;
             // 
-            // checkBox1
+            // Column1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(434, 33);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(100, 16);
-            this.checkBox1.TabIndex = 26;
-            this.checkBox1.Text = "유통기한 출력";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.Column1.HeaderText = "장비명";
+            this.Column1.Name = "Column1";
             // 
-            // checkBox2
+            // Column2
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(171, 74);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(84, 16);
-            this.checkBox2.TabIndex = 28;
-            this.checkBox2.Text = "검증미확인";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.Column2.HeaderText = "포트설정";
+            this.Column2.Name = "Column2";
+            this.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
-            // label8
+            // Column3
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("굴림", 10F);
-            this.label8.Location = new System.Drawing.Point(43, 74);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(105, 14);
-            this.label8.TabIndex = 27;
-            this.label8.Text = "검증미확인여부";
+            this.Column3.HeaderText = "Baudrate";
+            this.Column3.Name = "Column3";
+            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
-            // label10
+            // Column4
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("굴림", 10F);
-            this.label10.Location = new System.Drawing.Point(528, 76);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(21, 14);
-            this.label10.TabIndex = 29;
-            this.label10.Text = "일";
+            this.Column4.HeaderText = "Parity";
+            this.Column4.Name = "Column4";
+            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
-            // label11
+            // Column5
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("굴림", 10F);
-            this.label11.Location = new System.Drawing.Point(240, 106);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(21, 14);
-            this.label11.TabIndex = 30;
-            this.label11.Text = "분";
+            this.Column5.HeaderText = "DataBit";
+            this.Column5.Name = "Column5";
+            this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
-            // label12
+            // Column6
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("굴림", 10F);
-            this.label12.Location = new System.Drawing.Point(540, 115);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(21, 14);
-            this.label12.TabIndex = 31;
-            this.label12.Text = "분";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(164, 167);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(80, 20);
-            this.comboBox4.TabIndex = 33;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("굴림", 10F);
-            this.label13.Location = new System.Drawing.Point(43, 169);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(101, 14);
-            this.label13.TabIndex = 32;
-            this.label13.Text = "라벨 발행 방향";
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(523, 165);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(41, 16);
-            this.radioButton3.TabIndex = 28;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "501";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(425, 167);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(41, 16);
-            this.radioButton4.TabIndex = 27;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "001";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("굴림", 10F);
-            this.label14.Location = new System.Drawing.Point(317, 167);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(91, 14);
-            this.label14.TabIndex = 26;
-            this.label14.Text = "시작번호기준";
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(427, 199);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(59, 16);
-            this.radioButton5.TabIndex = 34;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "비설정";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.Column6.HeaderText = "StopBit";
+            this.Column6.Name = "Column6";
+            this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // SystemConfigurationForm
             // 
@@ -348,8 +409,10 @@
             this.Controls.Add(this.label1);
             this.Name = "SystemConfigurationForm";
             this.Text = "SystemConfigurationForm";
+            this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,5 +447,12 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Column6;
     }
 }
