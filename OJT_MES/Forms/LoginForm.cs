@@ -58,6 +58,7 @@ namespace LotteMES.Forms
             #region BackColor
             this.BackColor = Style.CommonBackgroundColor;
             labelTitle.BackColor = Style.CommonLabelBackgroundColor;
+            panelSplitBar.BackColor = Style.CommonSplitBarBackgroundColor;
             panelData.BackColor = Style.CommonLabelBackgroundColor;
             labelWorkerId.BackColor = Style.CommonLabelBackgroundColor;
             labelWorkerPassword.BackColor = Style.CommonLabelBackgroundColor;

@@ -36,6 +36,7 @@
             this.labelWorkerId = new System.Windows.Forms.Label();
             this.buttonOK = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
+            this.panelSplitBar = new System.Windows.Forms.Panel();
             this.panelData.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -123,12 +124,21 @@
             this.buttonCancel.Text = "취소";
             this.buttonCancel.UseVisualStyleBackColor = false;
             // 
+            // panelSplitBar
+            // 
+            this.panelSplitBar.BackColor = System.Drawing.Color.White;
+            this.panelSplitBar.Location = new System.Drawing.Point(11, 67);
+            this.panelSplitBar.Name = "panelSplitBar";
+            this.panelSplitBar.Size = new System.Drawing.Size(360, 3);
+            this.panelSplitBar.TabIndex = 30;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(384, 261);
+            this.Controls.Add(this.panelSplitBar);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.panelData);
@@ -152,5 +162,6 @@
         private System.Windows.Forms.Label labelWorkerId;
         private System.Windows.Forms.Button buttonOK;
         private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Panel panelSplitBar;
     }
 }

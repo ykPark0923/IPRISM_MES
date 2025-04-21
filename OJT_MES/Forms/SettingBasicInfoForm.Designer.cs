@@ -28,88 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.comboBoxSearchBasicCode = new System.Windows.Forms.ComboBox();
+            this.labelSearchBasicCode = new System.Windows.Forms.Label();
+            this.buttonClose = new System.Windows.Forms.Button();
+            this.buttonDownloadLineInfo = new System.Windows.Forms.Button();
+            this.buttonDownloadProductInfo = new System.Windows.Forms.Button();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.dataGridViewSettingBasicInfo = new System.Windows.Forms.DataGridView();
             this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProcessName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LineCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LineName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panelSplitBar = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSettingBasicInfo)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // comboBoxSearchBasicCode
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(36, 146);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 20);
-            this.comboBox1.TabIndex = 23;
+            this.comboBoxSearchBasicCode.FormattingEnabled = true;
+            this.comboBoxSearchBasicCode.Location = new System.Drawing.Point(47, 127);
+            this.comboBoxSearchBasicCode.Name = "comboBoxSearchBasicCode";
+            this.comboBoxSearchBasicCode.Size = new System.Drawing.Size(201, 20);
+            this.comboBoxSearchBasicCode.TabIndex = 23;
             // 
-            // label4
+            // labelSearchBasicCode
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("굴림", 10F);
-            this.label4.Location = new System.Drawing.Point(57, 115);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 14);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "기본코드 조회";
+            this.labelSearchBasicCode.AutoSize = true;
+            this.labelSearchBasicCode.Font = new System.Drawing.Font("굴림", 10F);
+            this.labelSearchBasicCode.Location = new System.Drawing.Point(67, 96);
+            this.labelSearchBasicCode.Name = "labelSearchBasicCode";
+            this.labelSearchBasicCode.Size = new System.Drawing.Size(96, 14);
+            this.labelSearchBasicCode.TabIndex = 19;
+            this.labelSearchBasicCode.Text = "기본코드 조회";
             // 
-            // button3
+            // buttonClose
             // 
-            this.button3.Location = new System.Drawing.Point(552, 96);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 70);
-            this.button3.TabIndex = 27;
-            this.button3.Text = "닫기";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonClose.Location = new System.Drawing.Point(552, 96);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(110, 70);
+            this.buttonClose.TabIndex = 27;
+            this.buttonClose.Text = "닫기";
+            this.buttonClose.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // buttonDownloadLineInfo
             // 
-            this.button2.Location = new System.Drawing.Point(427, 96);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 70);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "라인정보\r\n다운로드";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonDownloadLineInfo.Location = new System.Drawing.Point(427, 96);
+            this.buttonDownloadLineInfo.Name = "buttonDownloadLineInfo";
+            this.buttonDownloadLineInfo.Size = new System.Drawing.Size(120, 70);
+            this.buttonDownloadLineInfo.TabIndex = 26;
+            this.buttonDownloadLineInfo.Text = "라인정보\r\n다운로드";
+            this.buttonDownloadLineInfo.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // buttonDownloadProductInfo
             // 
-            this.button1.Location = new System.Drawing.Point(304, 96);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 70);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "제품정보\r\n다운로드";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonDownloadProductInfo.Location = new System.Drawing.Point(304, 96);
+            this.buttonDownloadProductInfo.Name = "buttonDownloadProductInfo";
+            this.buttonDownloadProductInfo.Size = new System.Drawing.Size(117, 70);
+            this.buttonDownloadProductInfo.TabIndex = 25;
+            this.buttonDownloadProductInfo.Text = "제품정보\r\n다운로드";
+            this.buttonDownloadProductInfo.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // labelTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 35F);
-            this.label1.Location = new System.Drawing.Point(12, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(318, 47);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "기본정보 설정";
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("굴림", 35F);
+            this.labelTitle.Location = new System.Drawing.Point(12, 21);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(318, 47);
+            this.labelTitle.TabIndex = 24;
+            this.labelTitle.Text = "기본정보 설정";
             // 
-            // dataGridView1
+            // dataGridViewSettingBasicInfo
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewSettingBasicInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSettingBasicInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Number,
             this.ProcessName,
             this.LineCode,
             this.LineName});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 203);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(642, 407);
-            this.dataGridView1.TabIndex = 28;
+            this.dataGridViewSettingBasicInfo.Location = new System.Drawing.Point(20, 172);
+            this.dataGridViewSettingBasicInfo.Name = "dataGridViewSettingBasicInfo";
+            this.dataGridViewSettingBasicInfo.RowTemplate.Height = 23;
+            this.dataGridViewSettingBasicInfo.Size = new System.Drawing.Size(642, 438);
+            this.dataGridViewSettingBasicInfo.TabIndex = 28;
             // 
             // Number
             // 
@@ -132,21 +133,31 @@
             this.LineName.HeaderText = "라인명";
             this.LineName.Name = "LineName";
             // 
-            // CreateBasicInfoForm
+            // panelSplitBar
+            // 
+            this.panelSplitBar.BackColor = System.Drawing.Color.White;
+            this.panelSplitBar.Location = new System.Drawing.Point(20, 76);
+            this.panelSplitBar.Name = "panelSplitBar";
+            this.panelSplitBar.Size = new System.Drawing.Size(640, 3);
+            this.panelSplitBar.TabIndex = 29;
+            // 
+            // SettingBasicInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(675, 622);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
-            this.Name = "CreateBasicInfoForm";
+            this.Controls.Add(this.panelSplitBar);
+            this.Controls.Add(this.dataGridViewSettingBasicInfo);
+            this.Controls.Add(this.comboBoxSearchBasicCode);
+            this.Controls.Add(this.labelTitle);
+            this.Controls.Add(this.buttonClose);
+            this.Controls.Add(this.buttonDownloadLineInfo);
+            this.Controls.Add(this.labelSearchBasicCode);
+            this.Controls.Add(this.buttonDownloadProductInfo);
+            this.Name = "SettingBasicInfoForm";
             this.Text = "CreateBasicInfoForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSettingBasicInfo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,16 +165,17 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox comboBoxSearchBasicCode;
+        private System.Windows.Forms.Label labelSearchBasicCode;
+        private System.Windows.Forms.Button buttonClose;
+        private System.Windows.Forms.Button buttonDownloadLineInfo;
+        private System.Windows.Forms.Button buttonDownloadProductInfo;
+        private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.DataGridView dataGridViewSettingBasicInfo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Number;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProcessName;
         private System.Windows.Forms.DataGridViewTextBoxColumn LineCode;
         private System.Windows.Forms.DataGridViewTextBoxColumn LineName;
+        private System.Windows.Forms.Panel panelSplitBar;
     }
 }

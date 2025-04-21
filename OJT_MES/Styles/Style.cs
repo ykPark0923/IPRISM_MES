@@ -40,6 +40,46 @@ namespace LotteMES.Styles
             set => commonForeColor = value;
         }
 
+        private static Color commonComboBoxForeColor = Color.Black;
+        /// <summary>
+        /// 공통 콤보박스 폰트컬러 블랙
+        /// </summary>
+        internal static Color CommonComboBoxForeColor
+        {
+            get => commonComboBoxForeColor;
+            set => commonComboBoxForeColor = value;
+        }
+
+        private static Color commonListForeColor = Color.Black;
+        /// <summary>
+        /// 공통 리스트 폰트컬러 블랙
+        /// </summary>
+        internal static Color CommonListForeColor
+        {
+            get => commonListForeColor;
+            set => commonListForeColor = value;
+        }
+
+        private static Color commonComboBoxBackgroundColor = Color.LightGray;
+        /// <summary>
+        /// 공통 콤보박스 배경컬러 그레이
+        /// </summary>
+        internal static Color CommonComboBoxBackgroundColor
+        {
+            get => commonComboBoxBackgroundColor;
+            set => commonComboBoxBackgroundColor = value;
+        }
+
+        private static Color commonSplitBarBackgroundColor = Color.White;
+        /// <summary>
+        /// 공통 스플릿바 컬러 White
+        /// </summary>
+        internal static Color CommonSplitBarBackgroundColor
+        {
+            get => commonSplitBarBackgroundColor;
+            set => commonSplitBarBackgroundColor = value;
+        }
+
         private static Color commonListBackgroundColor = Color.White;
         /// <summary>
         /// 공통 리스트배경컬러 화이트
@@ -48,6 +88,16 @@ namespace LotteMES.Styles
         {
             get => commonListBackgroundColor;
             set => commonListBackgroundColor = value;
+        }
+
+        private static Color commonListSelectedBackgroundColor = Color.Cyan;
+        /// <summary>
+        /// 공통 선택된 리스트 배경컬러 Cyan
+        /// </summary>
+        internal static Color CommonListSelectedBackgroundColor
+        {
+            get => commonListSelectedBackgroundColor;
+            set => commonListSelectedBackgroundColor = value;
         }
 
         private static Color commonBackgroundColor = Color.Black;
