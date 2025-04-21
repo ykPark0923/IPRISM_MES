@@ -28,134 +28,134 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.groupBoxDataInput = new System.Windows.Forms.GroupBox();
+            this.comboBoxShiftType = new System.Windows.Forms.ComboBox();
+            this.comboBoxDateTo = new System.Windows.Forms.ComboBox();
+            this.textBoxPlanNo = new System.Windows.Forms.TextBox();
+            this.labelPlan = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.comboBoxDateFrom = new System.Windows.Forms.ComboBox();
+            this.labelShiftType = new System.Windows.Forms.Label();
+            this.labelDateInput = new System.Windows.Forms.Label();
+            this.dataGridViewTransmissionLog = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.buttonClose = new System.Windows.Forms.Button();
+            this.buttonSearch = new System.Windows.Forms.Button();
+            this.dataGridViewTransmissionSummary = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelSplitBar = new System.Windows.Forms.Panel();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.groupBoxDataInput.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransmissionLog)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransmissionSummary)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // groupBoxDataInput
             // 
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Location = new System.Drawing.Point(380, 356);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(449, 99);
-            this.groupBox1.TabIndex = 58;
-            this.groupBox1.TabStop = false;
+            this.groupBoxDataInput.Controls.Add(this.comboBoxShiftType);
+            this.groupBoxDataInput.Controls.Add(this.comboBoxDateTo);
+            this.groupBoxDataInput.Controls.Add(this.textBoxPlanNo);
+            this.groupBoxDataInput.Controls.Add(this.labelPlan);
+            this.groupBoxDataInput.Controls.Add(this.label8);
+            this.groupBoxDataInput.Controls.Add(this.comboBoxDateFrom);
+            this.groupBoxDataInput.Controls.Add(this.labelShiftType);
+            this.groupBoxDataInput.Controls.Add(this.labelDateInput);
+            this.groupBoxDataInput.Location = new System.Drawing.Point(380, 356);
+            this.groupBoxDataInput.Name = "groupBoxDataInput";
+            this.groupBoxDataInput.Size = new System.Drawing.Size(449, 99);
+            this.groupBoxDataInput.TabIndex = 58;
+            this.groupBoxDataInput.TabStop = false;
             // 
-            // comboBox2
+            // comboBoxShiftType
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(341, 60);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(79, 20);
-            this.comboBox2.TabIndex = 30;
+            this.comboBoxShiftType.FormattingEnabled = true;
+            this.comboBoxShiftType.Location = new System.Drawing.Point(364, 61);
+            this.comboBoxShiftType.Name = "comboBoxShiftType";
+            this.comboBoxShiftType.Size = new System.Drawing.Size(79, 20);
+            this.comboBoxShiftType.TabIndex = 30;
             // 
-            // comboBox1
+            // comboBoxDateTo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(238, 21);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(124, 20);
-            this.comboBox1.TabIndex = 29;
+            this.comboBoxDateTo.FormattingEnabled = true;
+            this.comboBoxDateTo.Location = new System.Drawing.Point(286, 25);
+            this.comboBoxDateTo.Name = "comboBoxDateTo";
+            this.comboBoxDateTo.Size = new System.Drawing.Size(124, 20);
+            this.comboBoxDateTo.TabIndex = 29;
             // 
-            // textBox5
+            // textBoxPlanNo
             // 
-            this.textBox5.Location = new System.Drawing.Point(87, 56);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(179, 21);
-            this.textBox5.TabIndex = 28;
+            this.textBoxPlanNo.Location = new System.Drawing.Point(103, 61);
+            this.textBoxPlanNo.Name = "textBoxPlanNo";
+            this.textBoxPlanNo.Size = new System.Drawing.Size(163, 21);
+            this.textBoxPlanNo.TabIndex = 28;
             // 
-            // label10
+            // labelPlan
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("굴림", 10F);
-            this.label10.Location = new System.Drawing.Point(18, 60);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(63, 14);
-            this.label10.TabIndex = 27;
-            this.label10.Text = "생산계획";
+            this.labelPlan.AutoSize = true;
+            this.labelPlan.Font = new System.Drawing.Font("굴림", 15F);
+            this.labelPlan.Location = new System.Drawing.Point(8, 57);
+            this.labelPlan.Name = "labelPlan";
+            this.labelPlan.Size = new System.Drawing.Size(89, 20);
+            this.labelPlan.TabIndex = 27;
+            this.labelPlan.Text = "생산계획";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("굴림", 10F);
-            this.label8.Location = new System.Drawing.Point(216, 22);
+            this.label8.Location = new System.Drawing.Point(248, 31);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(18, 14);
             this.label8.TabIndex = 25;
             this.label8.Text = "~";
             // 
-            // comboBox3
+            // comboBoxDateFrom
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(86, 20);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(124, 20);
-            this.comboBox3.TabIndex = 23;
+            this.comboBoxDateFrom.FormattingEnabled = true;
+            this.comboBoxDateFrom.Location = new System.Drawing.Point(103, 25);
+            this.comboBoxDateFrom.Name = "comboBoxDateFrom";
+            this.comboBoxDateFrom.Size = new System.Drawing.Size(124, 20);
+            this.comboBoxDateFrom.TabIndex = 23;
             // 
-            // label5
+            // labelShiftType
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("굴림", 10F);
-            this.label5.Location = new System.Drawing.Point(272, 62);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 14);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "주야구분";
+            this.labelShiftType.AutoSize = true;
+            this.labelShiftType.Font = new System.Drawing.Font("굴림", 15F);
+            this.labelShiftType.Location = new System.Drawing.Point(272, 62);
+            this.labelShiftType.Name = "labelShiftType";
+            this.labelShiftType.Size = new System.Drawing.Size(89, 20);
+            this.labelShiftType.TabIndex = 21;
+            this.labelShiftType.Text = "주야구분";
             // 
-            // label6
+            // labelDateInput
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("굴림", 10F);
-            this.label6.Location = new System.Drawing.Point(17, 26);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 14);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "날짜입력";
+            this.labelDateInput.AutoSize = true;
+            this.labelDateInput.Font = new System.Drawing.Font("굴림", 15F);
+            this.labelDateInput.Location = new System.Drawing.Point(8, 25);
+            this.labelDateInput.Name = "labelDateInput";
+            this.labelDateInput.Size = new System.Drawing.Size(89, 20);
+            this.labelDateInput.TabIndex = 19;
+            this.labelDateInput.Text = "날짜입력";
             // 
-            // dataGridView1
+            // dataGridViewTransmissionLog
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTransmissionLog.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTransmissionLog.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 73);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(817, 268);
-            this.dataGridView1.TabIndex = 51;
+            this.dataGridViewTransmissionLog.Location = new System.Drawing.Point(12, 73);
+            this.dataGridViewTransmissionLog.Name = "dataGridViewTransmissionLog";
+            this.dataGridViewTransmissionLog.RowTemplate.Height = 23;
+            this.dataGridViewTransmissionLog.Size = new System.Drawing.Size(817, 268);
+            this.dataGridViewTransmissionLog.TabIndex = 51;
             // 
             // Column1
             // 
@@ -182,45 +182,45 @@
             this.Column5.HeaderText = "실적조회";
             this.Column5.Name = "Column5";
             // 
-            // label1
+            // labelTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 35F);
-            this.label1.Location = new System.Drawing.Point(3, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(412, 47);
-            this.label1.TabIndex = 47;
-            this.label1.Text = "실적전송 이력조회";
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("굴림", 35F);
+            this.labelTitle.Location = new System.Drawing.Point(3, 9);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(412, 47);
+            this.labelTitle.TabIndex = 47;
+            this.labelTitle.Text = "실적전송 이력조회";
             // 
-            // button3
+            // buttonClose
             // 
-            this.button3.Location = new System.Drawing.Point(640, 479);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(189, 70);
-            this.button3.TabIndex = 50;
-            this.button3.Text = "닫기";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonClose.Location = new System.Drawing.Point(640, 479);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(189, 70);
+            this.buttonClose.TabIndex = 50;
+            this.buttonClose.Text = "닫기";
+            this.buttonClose.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // buttonSearch
             // 
-            this.button1.Location = new System.Drawing.Point(380, 479);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 70);
-            this.button1.TabIndex = 48;
-            this.button1.Text = "조회";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonSearch.Location = new System.Drawing.Point(380, 479);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(196, 70);
+            this.buttonSearch.TabIndex = 48;
+            this.buttonSearch.Text = "조회";
+            this.buttonSearch.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
+            // dataGridViewTransmissionSummary
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTransmissionSummary.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTransmissionSummary.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
-            this.dataGridView2.Location = new System.Drawing.Point(11, 356);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 23;
-            this.dataGridView2.Size = new System.Drawing.Size(346, 215);
-            this.dataGridView2.TabIndex = 59;
+            this.dataGridViewTransmissionSummary.Location = new System.Drawing.Point(11, 356);
+            this.dataGridViewTransmissionSummary.Name = "dataGridViewTransmissionSummary";
+            this.dataGridViewTransmissionSummary.RowTemplate.Height = 23;
+            this.dataGridViewTransmissionSummary.Size = new System.Drawing.Size(346, 215);
+            this.dataGridViewTransmissionSummary.TabIndex = 59;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -246,18 +246,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(841, 583);
             this.Controls.Add(this.panelSplitBar);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridViewTransmissionSummary);
+            this.Controls.Add(this.groupBoxDataInput);
+            this.Controls.Add(this.dataGridViewTransmissionLog);
+            this.Controls.Add(this.labelTitle);
+            this.Controls.Add(this.buttonClose);
+            this.Controls.Add(this.buttonSearch);
             this.Name = "PerformanceSendLogForm";
             this.Text = "PerformanceSendLogForm";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.groupBoxDataInput.ResumeLayout(false);
+            this.groupBoxDataInput.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransmissionLog)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransmissionSummary)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,25 +265,25 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.GroupBox groupBoxDataInput;
+        private System.Windows.Forms.TextBox textBoxPlanNo;
+        private System.Windows.Forms.Label labelPlan;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxDateFrom;
+        private System.Windows.Forms.Label labelShiftType;
+        private System.Windows.Forms.Label labelDateInput;
+        private System.Windows.Forms.DataGridView dataGridViewTransmissionLog;
+        private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Button buttonClose;
+        private System.Windows.Forms.Button buttonSearch;
+        private System.Windows.Forms.ComboBox comboBoxShiftType;
+        private System.Windows.Forms.ComboBox comboBoxDateTo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridViewTransmissionSummary;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.Panel panelSplitBar;
