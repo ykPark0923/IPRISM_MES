@@ -100,6 +100,7 @@ namespace LotteMES.Forms
         protected override void SetStyles()
         {
             #region BackColor
+            this.BackColor = Style.CommonBackgroundColor;
             panelHeader.BackColor = Style.CommonLabelBackgroundColor;
             panelCommStatus.BackColor = Style.CommonLabelBackgroundColor;
             panelData.BackColor = Style.CommonLabelBackgroundColor;

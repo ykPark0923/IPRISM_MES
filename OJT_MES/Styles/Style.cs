@@ -10,14 +10,24 @@ namespace LotteMES.Styles
     public class Style
     {
         #region Common
-        private static Font commonFont = new Font("돋움체", 13, FontStyle.Bold);  // 기본 폰트 설정
+        private static Font commonFont = new Font("돋움체", 13 );  // 기본 폰트 설정
         /// <summary>
         /// 공통 폰트
         /// </summary>
         internal static Font CommonFont
         {
             get => commonFont;
-            set => commonFont = value ?? new Font("돋움체", 13, FontStyle.Bold);  // null 방지 및 기본값 설정
+            set => commonFont = value ?? new Font("돋움체", 13);  // null 방지 및 기본값 설정
+        }
+
+        private static Font commonTitleFont = new Font("돋움체", 35, FontStyle.Bold);  // 기본 폰트 설정
+        /// <summary>
+        /// 공통 title 폰트
+        /// </summary>
+        internal static Font CommonTitleFont
+        {
+            get => commonTitleFont;
+            set => commonTitleFont = value ?? new Font("돋움체", 35, FontStyle.Bold);  // null 방지 및 기본값 설정
         }
 
         private static Color commonForeColor = Color.White;  // 기본 폰트색상 설정
@@ -70,7 +80,7 @@ namespace LotteMES.Styles
             set => commonLabelBackgroundColor = value;
         }
 
-        private static Color commonButtonBackgroundColor = Color.MintCream;
+        private static Color commonButtonBackgroundColor = Color.Turquoise;
         /// <summary>
         /// 공통 버튼 배경컬러 민트
         /// </summary>
@@ -113,7 +123,7 @@ namespace LotteMES.Styles
             set => textBoxBackgroundColor = value;
         }
 
-        private static Color textBoxBackgroundColorEditable = Color.LightYellow;
+        private static Color textBoxBackgroundColorEditable = Color.Khaki;
         /// <summary>
         /// 텍스트박스 배경컬러 옐로우 수정가능
         /// </summary>
@@ -198,7 +208,7 @@ namespace LotteMES.Styles
             set => mainFormDatetimeFontSize = value ?? new Font("돋움체", 15, FontStyle.Bold);  // null 방지 및 기본값 설정
         }
 
-        private static Font mainFormLabel2FontSize = new Font("돋움체", 15, FontStyle.Bold);  // 기본 폰트에 크기설정
+        private static Font mainFormLabel2FontSize = new Font("돋움체", 30, FontStyle.Bold);  // 기본 폰트에 크기설정
         /// <summary>
         /// 메인폼 라벨2 폰트크기 설정
         /// </summary>

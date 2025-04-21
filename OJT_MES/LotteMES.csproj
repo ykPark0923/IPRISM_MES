@@ -62,6 +62,7 @@
     <Compile Include="Bases\MESFormBase.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormData\LoginFormData.cs" />
     <Compile Include="FormData\MainFormData.cs" />
     <Compile Include="Forms\AllHistoryViewForm.cs">
       <SubType>Form</SubType>
