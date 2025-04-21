@@ -100,6 +100,7 @@
             this.buttonReissue = new System.Windows.Forms.Button();
             this.buttonReset = new System.Windows.Forms.Button();
             this.buttonStop = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxServer)).BeginInit();
@@ -109,6 +110,7 @@
             this.panel.SuspendLayout();
             this.panelData.SuspendLayout();
             this.panelButton.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelCurrentDateTime
@@ -155,9 +157,9 @@
             this.pictureBoxLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.BackgroundImage")));
             this.pictureBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxLogo.InitialImage = null;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(11, 3);
+            this.pictureBoxLogo.Location = new System.Drawing.Point(8, 6);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(138, 43);
+            this.pictureBoxLogo.Size = new System.Drawing.Size(151, 43);
             this.pictureBoxLogo.TabIndex = 4;
             this.pictureBoxLogo.TabStop = false;
             // 
@@ -290,6 +292,7 @@
             // 
             // panelHeader
             // 
+            this.panelHeader.Controls.Add(this.pictureBox1);
             this.panelHeader.Controls.Add(this.pictureBoxLogo);
             this.panelHeader.Controls.Add(this.labelCurrentDateTime);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
@@ -991,6 +994,18 @@
             this.buttonStop.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonStop.UseVisualStyleBackColor = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(850, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(151, 43);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -1017,6 +1032,7 @@
             this.panelData.ResumeLayout(false);
             this.panelData.PerformLayout();
             this.panelButton.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1094,6 +1110,7 @@
         private System.Windows.Forms.Label labelPlannedQuantity;
         private System.Windows.Forms.TextBox textBoxPlannedQuantity;
         private System.Windows.Forms.Button buttonRemainingAmountRegister;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
