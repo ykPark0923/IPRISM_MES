@@ -81,7 +81,7 @@ namespace LotteMES.Forms
 
             labelSearchBasicCode.Font = Style.CommonFont;
             comboBoxSearchBasicCode.Font = Style.CommonFont;
-            dataGridViewSettingBasicInfo.Font = Style.CommonFont;
+            dataGridViewSettingBasicInfo.Font = Style.CommonListFont;
             buttonDownloadProductInfo.Font = Style.CommonFont;
             buttonDownloadLineInfo.Font = Style.CommonFont;
             buttonClose.Font = Style.CommonFont;

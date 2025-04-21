@@ -10,7 +10,7 @@ namespace LotteMES.Styles
     public class Style
     {
         #region Common
-        private static Font commonFont = new Font("돋움체", 13 );  // 기본 폰트 설정
+        private static Font commonFont = new Font("돋움체", 13);  // 기본 폰트 설정
         /// <summary>
         /// 공통 폰트
         /// </summary>
@@ -30,6 +30,16 @@ namespace LotteMES.Styles
             set => commonTitleFont = value ?? new Font("돋움체", 35, FontStyle.Bold);  // null 방지 및 기본값 설정
         }
 
+        private static Font commonListFont = new Font("돋움체", 10);  // 기본 폰트에 크기설정
+        /// <summary>
+        /// 공통 데이터그리드뷰 폰트
+        /// </summary>
+        internal static Font CommonListFont
+        {
+            get => commonListFont;
+            set => commonListFont = value ?? new Font("돋움체", 10);  // null 방지 및 기본값 설정
+        }
+
         private static Color commonForeColor = Color.White;  // 기본 폰트색상 설정
         /// <summary>
         /// 공통 폰트컬러 화이트
@@ -38,6 +48,16 @@ namespace LotteMES.Styles
         {
             get => commonForeColor;
             set => commonForeColor = value;
+        }
+
+        private static Color commonSettingForeColor = Color.Black;
+        /// <summary>
+        /// 공통 폰트컬러 블랙
+        /// </summary>
+        internal static Color CommonSettingForeColor
+        {
+            get => commonSettingForeColor;
+            set => commonSettingForeColor = value;
         }
 
         private static Color commonComboBoxForeColor = Color.Black;
@@ -112,7 +132,7 @@ namespace LotteMES.Styles
 
         private static Color commonSettingBackgroundColor = Color.White;
         /// <summary>
-        /// 공통 셋팅화면 배경컬러 
+        /// 공통 셋팅화면 배경컬러 White
         /// </summary>
         internal static Color CommonSettingBackgroundColor
         {
@@ -279,5 +299,18 @@ namespace LotteMES.Styles
         }
         #endregion
 
+
+        #region ProductionPlanForm
+        private static Font productionPlanFormComboBoxFont = new Font("맑은고딕", 20, FontStyle.Bold);  // 기본 폰트에 크기설정
+        /// <summary>
+        /// 생산계획폼 제품명, 주야구분 콤보박스 폰트 설정
+        /// </summary>
+        internal static Font PoductionPlanFormComboBoxFont
+        {
+            get => productionPlanFormComboBoxFont;
+            set => productionPlanFormComboBoxFont = value ?? new Font("맑은고딕", 20, FontStyle.Bold);  // null 방지 및 기본값 설정
+
+            #endregion
+        }
     }
 }

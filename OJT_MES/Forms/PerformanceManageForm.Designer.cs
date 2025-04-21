@@ -28,25 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.groupBoxBoxInfo = new System.Windows.Forms.GroupBox();
+            this.buttonUploadBoxHistory = new System.Windows.Forms.Button();
+            this.buttonEditBoxNo = new System.Windows.Forms.Button();
+            this.textBoxEndBoxNo = new System.Windows.Forms.TextBox();
+            this.textBoxStartBoxNo = new System.Windows.Forms.TextBox();
+            this.radioButtonEndBoxNo = new System.Windows.Forms.RadioButton();
+            this.radioButtonStartBoxNo = new System.Windows.Forms.RadioButton();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.buttonSearch = new System.Windows.Forms.Button();
+            this.labelTotalPeriod = new System.Windows.Forms.Label();
+            this.labelTestPeriod = new System.Windows.Forms.Label();
+            this.comboBoxTransmissionMedia = new System.Windows.Forms.ComboBox();
+            this.labelTransmissionMedia = new System.Windows.Forms.Label();
+            this.buttonUploadPerformance = new System.Windows.Forms.Button();
+            this.buttonPerformanceView = new System.Windows.Forms.Button();
+            this.buttonClose = new System.Windows.Forms.Button();
+            this.dataGridViewPerformance = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,181 +52,175 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.panelSplitBar = new System.Windows.Forms.Panel();
+            this.comboBoxTestPeriod = new System.Windows.Forms.ComboBox();
+            this.comboBoxTotalPeriod = new System.Windows.Forms.ComboBox();
+            this.groupBoxBoxInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPerformance)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // groupBoxBoxInfo
             // 
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.radioButton5);
-            this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Location = new System.Drawing.Point(12, 580);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(424, 119);
-            this.groupBox1.TabIndex = 34;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "BOX번호 정보";
+            this.groupBoxBoxInfo.Controls.Add(this.buttonUploadBoxHistory);
+            this.groupBoxBoxInfo.Controls.Add(this.buttonEditBoxNo);
+            this.groupBoxBoxInfo.Controls.Add(this.textBoxEndBoxNo);
+            this.groupBoxBoxInfo.Controls.Add(this.textBoxStartBoxNo);
+            this.groupBoxBoxInfo.Controls.Add(this.radioButtonEndBoxNo);
+            this.groupBoxBoxInfo.Controls.Add(this.radioButtonStartBoxNo);
+            this.groupBoxBoxInfo.Font = new System.Drawing.Font("굴림", 13F);
+            this.groupBoxBoxInfo.Location = new System.Drawing.Point(12, 580);
+            this.groupBoxBoxInfo.Name = "groupBoxBoxInfo";
+            this.groupBoxBoxInfo.Size = new System.Drawing.Size(441, 119);
+            this.groupBoxBoxInfo.TabIndex = 34;
+            this.groupBoxBoxInfo.TabStop = false;
+            this.groupBoxBoxInfo.Text = "BOX번호 정보";
             // 
-            // radioButton5
+            // buttonUploadBoxHistory
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(8, 68);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(59, 16);
-            this.radioButton5.TabIndex = 34;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "끝번호";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.buttonUploadBoxHistory.Font = new System.Drawing.Font("굴림", 9F);
+            this.buttonUploadBoxHistory.Location = new System.Drawing.Point(315, 16);
+            this.buttonUploadBoxHistory.Name = "buttonUploadBoxHistory";
+            this.buttonUploadBoxHistory.Size = new System.Drawing.Size(119, 96);
+            this.buttonUploadBoxHistory.TabIndex = 52;
+            this.buttonUploadBoxHistory.Text = "BOX수정내역\r\n업로드";
+            this.buttonUploadBoxHistory.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // buttonEditBoxNo
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(6, 36);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(71, 16);
-            this.radioButton4.TabIndex = 27;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "시작번호";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.buttonEditBoxNo.Font = new System.Drawing.Font("굴림", 9F);
+            this.buttonEditBoxNo.Location = new System.Drawing.Point(194, 15);
+            this.buttonEditBoxNo.Name = "buttonEditBoxNo";
+            this.buttonEditBoxNo.Size = new System.Drawing.Size(119, 96);
+            this.buttonEditBoxNo.TabIndex = 51;
+            this.buttonEditBoxNo.Text = "BOX번호수정";
+            this.buttonEditBoxNo.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // textBoxEndBoxNo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 35F);
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 47);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "실적관리";
+            this.textBoxEndBoxNo.Location = new System.Drawing.Point(102, 69);
+            this.textBoxEndBoxNo.Name = "textBoxEndBoxNo";
+            this.textBoxEndBoxNo.Size = new System.Drawing.Size(86, 27);
+            this.textBoxEndBoxNo.TabIndex = 36;
             // 
-            // button5
+            // textBoxStartBoxNo
             // 
-            this.button5.Location = new System.Drawing.Point(683, 18);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(116, 70);
-            this.button5.TabIndex = 50;
-            this.button5.Text = "조회";
-            this.button5.UseVisualStyleBackColor = true;
+            this.textBoxStartBoxNo.Location = new System.Drawing.Point(103, 33);
+            this.textBoxStartBoxNo.Name = "textBoxStartBoxNo";
+            this.textBoxStartBoxNo.Size = new System.Drawing.Size(86, 27);
+            this.textBoxStartBoxNo.TabIndex = 35;
             // 
-            // label6
+            // radioButtonEndBoxNo
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("굴림", 10F);
-            this.label6.Location = new System.Drawing.Point(492, 65);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 14);
-            this.label6.TabIndex = 49;
-            this.label6.Text = "총기간";
+            this.radioButtonEndBoxNo.AutoSize = true;
+            this.radioButtonEndBoxNo.Font = new System.Drawing.Font("굴림", 13F);
+            this.radioButtonEndBoxNo.Location = new System.Drawing.Point(8, 68);
+            this.radioButtonEndBoxNo.Name = "radioButtonEndBoxNo";
+            this.radioButtonEndBoxNo.Size = new System.Drawing.Size(80, 22);
+            this.radioButtonEndBoxNo.TabIndex = 34;
+            this.radioButtonEndBoxNo.TabStop = true;
+            this.radioButtonEndBoxNo.Text = "끝번호";
+            this.radioButtonEndBoxNo.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // radioButtonStartBoxNo
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("굴림", 10F);
-            this.label7.Location = new System.Drawing.Point(478, 38);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 14);
-            this.label7.TabIndex = 48;
-            this.label7.Text = "시험기간";
+            this.radioButtonStartBoxNo.AutoSize = true;
+            this.radioButtonStartBoxNo.Font = new System.Drawing.Font("굴림", 13F);
+            this.radioButtonStartBoxNo.Location = new System.Drawing.Point(6, 36);
+            this.radioButtonStartBoxNo.Name = "radioButtonStartBoxNo";
+            this.radioButtonStartBoxNo.Size = new System.Drawing.Size(98, 22);
+            this.radioButtonStartBoxNo.TabIndex = 27;
+            this.radioButtonStartBoxNo.TabStop = true;
+            this.radioButtonStartBoxNo.Text = "시작번호";
+            this.radioButtonStartBoxNo.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // labelTitle
             // 
-            this.textBox1.Location = new System.Drawing.Point(547, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(130, 21);
-            this.textBox1.TabIndex = 47;
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("굴림", 35F);
+            this.labelTitle.Location = new System.Drawing.Point(13, 29);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(208, 47);
+            this.labelTitle.TabIndex = 30;
+            this.labelTitle.Text = "실적관리";
             // 
-            // textBox3
+            // buttonSearch
             // 
-            this.textBox3.Location = new System.Drawing.Point(547, 31);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(130, 21);
-            this.textBox3.TabIndex = 46;
+            this.buttonSearch.Location = new System.Drawing.Point(683, 18);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(116, 70);
+            this.buttonSearch.TabIndex = 50;
+            this.buttonSearch.Text = "조회";
+            this.buttonSearch.UseVisualStyleBackColor = true;
             // 
-            // comboBox3
+            // labelTotalPeriod
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(349, 55);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(108, 20);
-            this.comboBox3.TabIndex = 45;
+            this.labelTotalPeriod.AutoSize = true;
+            this.labelTotalPeriod.Font = new System.Drawing.Font("굴림", 13F);
+            this.labelTotalPeriod.Location = new System.Drawing.Point(484, 64);
+            this.labelTotalPeriod.Name = "labelTotalPeriod";
+            this.labelTotalPeriod.Size = new System.Drawing.Size(62, 18);
+            this.labelTotalPeriod.TabIndex = 49;
+            this.labelTotalPeriod.Text = "총기간";
             // 
-            // label15
+            // labelTestPeriod
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("굴림", 10F);
-            this.label15.Location = new System.Drawing.Point(373, 38);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(63, 14);
-            this.label15.TabIndex = 44;
-            this.label15.Text = "전송매체";
+            this.labelTestPeriod.AutoSize = true;
+            this.labelTestPeriod.Font = new System.Drawing.Font("굴림", 13F);
+            this.labelTestPeriod.Location = new System.Drawing.Point(465, 34);
+            this.labelTestPeriod.Name = "labelTestPeriod";
+            this.labelTestPeriod.Size = new System.Drawing.Size(80, 18);
+            this.labelTestPeriod.TabIndex = 48;
+            this.labelTestPeriod.Text = "시험기간";
             // 
-            // textBox4
+            // comboBoxTransmissionMedia
             // 
-            this.textBox4.Location = new System.Drawing.Point(81, 33);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(86, 21);
-            this.textBox4.TabIndex = 35;
+            this.comboBoxTransmissionMedia.FormattingEnabled = true;
+            this.comboBoxTransmissionMedia.Location = new System.Drawing.Point(347, 62);
+            this.comboBoxTransmissionMedia.Name = "comboBoxTransmissionMedia";
+            this.comboBoxTransmissionMedia.Size = new System.Drawing.Size(108, 20);
+            this.comboBoxTransmissionMedia.TabIndex = 45;
             // 
-            // textBox5
+            // labelTransmissionMedia
             // 
-            this.textBox5.Location = new System.Drawing.Point(81, 69);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(86, 21);
-            this.textBox5.TabIndex = 36;
+            this.labelTransmissionMedia.AutoSize = true;
+            this.labelTransmissionMedia.Font = new System.Drawing.Font("굴림", 13F);
+            this.labelTransmissionMedia.Location = new System.Drawing.Point(371, 36);
+            this.labelTransmissionMedia.Name = "labelTransmissionMedia";
+            this.labelTransmissionMedia.Size = new System.Drawing.Size(80, 18);
+            this.labelTransmissionMedia.TabIndex = 44;
+            this.labelTransmissionMedia.Text = "전송매체";
             // 
-            // button4
+            // buttonUploadPerformance
             // 
-            this.button4.Location = new System.Drawing.Point(175, 15);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(119, 96);
-            this.button4.TabIndex = 51;
-            this.button4.Text = "BOX번호수정";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonUploadPerformance.Location = new System.Drawing.Point(576, 593);
+            this.buttonUploadPerformance.Name = "buttonUploadPerformance";
+            this.buttonUploadPerformance.Size = new System.Drawing.Size(119, 96);
+            this.buttonUploadPerformance.TabIndex = 54;
+            this.buttonUploadPerformance.Text = "생산실적\r\n업로드";
+            this.buttonUploadPerformance.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // buttonPerformanceView
             // 
-            this.button6.Location = new System.Drawing.Point(299, 16);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(119, 96);
-            this.button6.TabIndex = 52;
-            this.button6.Text = "BOX수정내역\r\n업로드";
-            this.button6.UseVisualStyleBackColor = true;
+            this.buttonPerformanceView.Location = new System.Drawing.Point(456, 593);
+            this.buttonPerformanceView.Name = "buttonPerformanceView";
+            this.buttonPerformanceView.Size = new System.Drawing.Size(119, 96);
+            this.buttonPerformanceView.TabIndex = 53;
+            this.buttonPerformanceView.Text = "생산실적";
+            this.buttonPerformanceView.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // buttonClose
             // 
-            this.button1.Location = new System.Drawing.Point(574, 593);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 96);
-            this.button1.TabIndex = 54;
-            this.button1.Text = "생산실적\r\n업로드";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonClose.Location = new System.Drawing.Point(695, 592);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(119, 96);
+            this.buttonClose.TabIndex = 55;
+            this.buttonClose.Text = "닫기";
+            this.buttonClose.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // dataGridViewPerformance
             // 
-            this.button2.Location = new System.Drawing.Point(448, 593);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 96);
-            this.button2.TabIndex = 53;
-            this.button2.Text = "생산실적";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(701, 592);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(119, 96);
-            this.button3.TabIndex = 55;
-            this.button3.Text = "닫기";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewPerformance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPerformance.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
@@ -236,11 +228,11 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
-            this.dataGridView2.Location = new System.Drawing.Point(18, 110);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 23;
-            this.dataGridView2.Size = new System.Drawing.Size(781, 455);
-            this.dataGridView2.TabIndex = 1;
+            this.dataGridViewPerformance.Location = new System.Drawing.Point(18, 110);
+            this.dataGridViewPerformance.Name = "dataGridViewPerformance";
+            this.dataGridViewPerformance.RowTemplate.Height = 23;
+            this.dataGridViewPerformance.Size = new System.Drawing.Size(781, 455);
+            this.dataGridViewPerformance.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -277,54 +269,77 @@
             this.dataGridViewTextBoxColumn7.HeaderText = "전송";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
+            // panelSplitBar
+            // 
+            this.panelSplitBar.BackColor = System.Drawing.Color.White;
+            this.panelSplitBar.Location = new System.Drawing.Point(12, 98);
+            this.panelSplitBar.Name = "panelSplitBar";
+            this.panelSplitBar.Size = new System.Drawing.Size(787, 3);
+            this.panelSplitBar.TabIndex = 56;
+            // 
+            // comboBoxTestPeriod
+            // 
+            this.comboBoxTestPeriod.FormattingEnabled = true;
+            this.comboBoxTestPeriod.Location = new System.Drawing.Point(552, 29);
+            this.comboBoxTestPeriod.Name = "comboBoxTestPeriod";
+            this.comboBoxTestPeriod.Size = new System.Drawing.Size(108, 20);
+            this.comboBoxTestPeriod.TabIndex = 57;
+            // 
+            // comboBoxTotalPeriod
+            // 
+            this.comboBoxTotalPeriod.FormattingEnabled = true;
+            this.comboBoxTotalPeriod.Location = new System.Drawing.Point(552, 66);
+            this.comboBoxTotalPeriod.Name = "comboBoxTotalPeriod";
+            this.comboBoxTotalPeriod.Size = new System.Drawing.Size(108, 20);
+            this.comboBoxTotalPeriod.TabIndex = 58;
+            // 
             // PerformanceManageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(816, 699);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBoxTotalPeriod);
+            this.Controls.Add(this.comboBoxTestPeriod);
+            this.Controls.Add(this.panelSplitBar);
+            this.Controls.Add(this.dataGridViewPerformance);
+            this.Controls.Add(this.buttonClose);
+            this.Controls.Add(this.buttonUploadPerformance);
+            this.Controls.Add(this.buttonPerformanceView);
+            this.Controls.Add(this.buttonSearch);
+            this.Controls.Add(this.labelTotalPeriod);
+            this.Controls.Add(this.labelTestPeriod);
+            this.Controls.Add(this.comboBoxTransmissionMedia);
+            this.Controls.Add(this.labelTransmissionMedia);
+            this.Controls.Add(this.groupBoxBoxInfo);
+            this.Controls.Add(this.labelTitle);
             this.Name = "PerformanceManageForm";
             this.Text = "PerformanceManageForm";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.groupBoxBoxInfo.ResumeLayout(false);
+            this.groupBoxBoxInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPerformance)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.GroupBox groupBoxBoxInfo;
+        private System.Windows.Forms.RadioButton radioButtonEndBoxNo;
+        private System.Windows.Forms.RadioButton radioButtonStartBoxNo;
+        private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Button buttonSearch;
+        private System.Windows.Forms.Label labelTotalPeriod;
+        private System.Windows.Forms.Label labelTestPeriod;
+        private System.Windows.Forms.ComboBox comboBoxTransmissionMedia;
+        private System.Windows.Forms.Label labelTransmissionMedia;
+        private System.Windows.Forms.Button buttonUploadBoxHistory;
+        private System.Windows.Forms.Button buttonEditBoxNo;
+        private System.Windows.Forms.TextBox textBoxEndBoxNo;
+        private System.Windows.Forms.TextBox textBoxStartBoxNo;
+        private System.Windows.Forms.Button buttonUploadPerformance;
+        private System.Windows.Forms.Button buttonPerformanceView;
+        private System.Windows.Forms.Button buttonClose;
+        private System.Windows.Forms.DataGridView dataGridViewPerformance;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -332,5 +347,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.Panel panelSplitBar;
+        private System.Windows.Forms.ComboBox comboBoxTestPeriod;
+        private System.Windows.Forms.ComboBox comboBoxTotalPeriod;
     }
 }

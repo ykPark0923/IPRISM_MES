@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewPlanList = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -36,39 +36,40 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.comboBoxMismatchProduct = new System.Windows.Forms.ComboBox();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.buttonClose = new System.Windows.Forms.Button();
+            this.buttonSelectPlan = new System.Windows.Forms.Button();
+            this.labelMismatchInfo = new System.Windows.Forms.Label();
+            this.buttonDownloadPlan = new System.Windows.Forms.Button();
+            this.buttonInputPlan = new System.Windows.Forms.Button();
+            this.labelTestPeriod = new System.Windows.Forms.Label();
+            this.labelTotalPeriod = new System.Windows.Forms.Label();
+            this.buttonSearch = new System.Windows.Forms.Button();
+            this.groupBoxProductionPlan = new System.Windows.Forms.GroupBox();
+            this.textBoxPlanQuantity = new System.Windows.Forms.TextBox();
+            this.labelPlanQuantity = new System.Windows.Forms.Label();
+            this.comboBoxShiftType = new System.Windows.Forms.ComboBox();
+            this.labelShiftType = new System.Windows.Forms.Label();
+            this.comboBoxProductName = new System.Windows.Forms.ComboBox();
+            this.comboBoxProductionDate = new System.Windows.Forms.ComboBox();
+            this.textBoxPlanNo = new System.Windows.Forms.TextBox();
+            this.labelPlanNo = new System.Windows.Forms.Label();
+            this.labelProductionDate = new System.Windows.Forms.Label();
+            this.textBoxBarcodeNo = new System.Windows.Forms.TextBox();
+            this.labelBarcodeNo = new System.Windows.Forms.Label();
+            this.labelProductName = new System.Windows.Forms.Label();
+            this.panelSplitBar = new System.Windows.Forms.Panel();
+            this.comboBoxTestPeriod = new System.Windows.Forms.ComboBox();
+            this.comboBoxTotalPeriod = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlanList)).BeginInit();
+            this.groupBoxProductionPlan.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridViewPlanList
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewPlanList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPlanList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
@@ -76,11 +77,11 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 111);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(907, 245);
-            this.dataGridView1.TabIndex = 35;
+            this.dataGridViewPlanList.Location = new System.Drawing.Point(12, 85);
+            this.dataGridViewPlanList.Name = "dataGridViewPlanList";
+            this.dataGridViewPlanList.RowTemplate.Height = 23;
+            this.dataGridViewPlanList.Size = new System.Drawing.Size(907, 277);
+            this.dataGridViewPlanList.TabIndex = 35;
             // 
             // Column1
             // 
@@ -117,262 +118,273 @@
             this.Column6.HeaderText = "설치수량";
             this.Column6.Name = "Column6";
             // 
-            // comboBox1
+            // comboBoxMismatchProduct
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(392, 69);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(181, 20);
-            this.comboBox1.TabIndex = 30;
+            this.comboBoxMismatchProduct.FormattingEnabled = true;
+            this.comboBoxMismatchProduct.Location = new System.Drawing.Point(387, 45);
+            this.comboBoxMismatchProduct.Name = "comboBoxMismatchProduct";
+            this.comboBoxMismatchProduct.Size = new System.Drawing.Size(181, 20);
+            this.comboBoxMismatchProduct.TabIndex = 30;
             // 
-            // label1
+            // labelTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 35F);
-            this.label1.Location = new System.Drawing.Point(12, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 47);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "생산계획";
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("굴림", 35F);
+            this.labelTitle.Location = new System.Drawing.Point(12, 18);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(208, 47);
+            this.labelTitle.TabIndex = 31;
+            this.labelTitle.Text = "생산계획";
             // 
-            // button3
+            // buttonClose
             // 
-            this.button3.Location = new System.Drawing.Point(711, 498);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(208, 70);
-            this.button3.TabIndex = 34;
-            this.button3.Text = "닫기";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonClose.Location = new System.Drawing.Point(711, 498);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(208, 70);
+            this.buttonClose.TabIndex = 34;
+            this.buttonClose.Text = "닫기";
+            this.buttonClose.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // buttonSelectPlan
             // 
-            this.button2.Location = new System.Drawing.Point(239, 498);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(218, 70);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "생산계획선택";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonSelectPlan.Location = new System.Drawing.Point(239, 498);
+            this.buttonSelectPlan.Name = "buttonSelectPlan";
+            this.buttonSelectPlan.Size = new System.Drawing.Size(218, 70);
+            this.buttonSelectPlan.TabIndex = 33;
+            this.buttonSelectPlan.Text = "생산계획선택";
+            this.buttonSelectPlan.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // labelMismatchInfo
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("굴림", 10F);
-            this.label4.Location = new System.Drawing.Point(413, 48);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(149, 14);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "제품/단위 불일치 건수";
+            this.labelMismatchInfo.AutoSize = true;
+            this.labelMismatchInfo.Font = new System.Drawing.Font("굴림", 13F);
+            this.labelMismatchInfo.Location = new System.Drawing.Point(378, 22);
+            this.labelMismatchInfo.Name = "labelMismatchInfo";
+            this.labelMismatchInfo.Size = new System.Drawing.Size(190, 18);
+            this.labelMismatchInfo.TabIndex = 29;
+            this.labelMismatchInfo.Text = "제품/단위 불일치 건수";
             // 
-            // button1
+            // buttonDownloadPlan
             // 
-            this.button1.Location = new System.Drawing.Point(8, 498);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(215, 70);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "생산계획 Down";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonDownloadPlan.Location = new System.Drawing.Point(8, 498);
+            this.buttonDownloadPlan.Name = "buttonDownloadPlan";
+            this.buttonDownloadPlan.Size = new System.Drawing.Size(215, 70);
+            this.buttonDownloadPlan.TabIndex = 32;
+            this.buttonDownloadPlan.Text = "생산계획 Down";
+            this.buttonDownloadPlan.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // buttonInputPlan
             // 
-            this.button4.Location = new System.Drawing.Point(475, 498);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(218, 70);
-            this.button4.TabIndex = 36;
-            this.button4.Text = "생산계획입력";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonInputPlan.Location = new System.Drawing.Point(475, 498);
+            this.buttonInputPlan.Name = "buttonInputPlan";
+            this.buttonInputPlan.Size = new System.Drawing.Size(218, 70);
+            this.buttonInputPlan.TabIndex = 36;
+            this.buttonInputPlan.Text = "생산계획입력";
+            this.buttonInputPlan.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // labelTestPeriod
             // 
-            this.textBox2.Location = new System.Drawing.Point(672, 73);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(130, 21);
-            this.textBox2.TabIndex = 40;
+            this.labelTestPeriod.AutoSize = true;
+            this.labelTestPeriod.Font = new System.Drawing.Font("굴림", 13F);
+            this.labelTestPeriod.Location = new System.Drawing.Point(585, 22);
+            this.labelTestPeriod.Name = "labelTestPeriod";
+            this.labelTestPeriod.Size = new System.Drawing.Size(80, 18);
+            this.labelTestPeriod.TabIndex = 41;
+            this.labelTestPeriod.Text = "시험기간";
             // 
-            // textBox1
+            // labelTotalPeriod
             // 
-            this.textBox1.Location = new System.Drawing.Point(672, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(130, 21);
-            this.textBox1.TabIndex = 39;
+            this.labelTotalPeriod.AutoSize = true;
+            this.labelTotalPeriod.Font = new System.Drawing.Font("굴림", 13F);
+            this.labelTotalPeriod.Location = new System.Drawing.Point(599, 49);
+            this.labelTotalPeriod.Name = "labelTotalPeriod";
+            this.labelTotalPeriod.Size = new System.Drawing.Size(62, 18);
+            this.labelTotalPeriod.TabIndex = 42;
+            this.labelTotalPeriod.Text = "총기간";
             // 
-            // label2
+            // buttonSearch
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("굴림", 10F);
-            this.label2.Location = new System.Drawing.Point(603, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 14);
-            this.label2.TabIndex = 41;
-            this.label2.Text = "시험기간";
+            this.buttonSearch.Location = new System.Drawing.Point(803, 12);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(116, 58);
+            this.buttonSearch.TabIndex = 43;
+            this.buttonSearch.Text = "조회";
+            this.buttonSearch.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // groupBoxProductionPlan
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("굴림", 10F);
-            this.label3.Location = new System.Drawing.Point(617, 75);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 14);
-            this.label3.TabIndex = 42;
-            this.label3.Text = "총기간";
+            this.groupBoxProductionPlan.Controls.Add(this.textBoxPlanQuantity);
+            this.groupBoxProductionPlan.Controls.Add(this.labelPlanQuantity);
+            this.groupBoxProductionPlan.Controls.Add(this.comboBoxShiftType);
+            this.groupBoxProductionPlan.Controls.Add(this.labelShiftType);
+            this.groupBoxProductionPlan.Controls.Add(this.comboBoxProductName);
+            this.groupBoxProductionPlan.Controls.Add(this.comboBoxProductionDate);
+            this.groupBoxProductionPlan.Controls.Add(this.textBoxPlanNo);
+            this.groupBoxProductionPlan.Controls.Add(this.labelPlanNo);
+            this.groupBoxProductionPlan.Controls.Add(this.labelProductionDate);
+            this.groupBoxProductionPlan.Controls.Add(this.textBoxBarcodeNo);
+            this.groupBoxProductionPlan.Controls.Add(this.labelBarcodeNo);
+            this.groupBoxProductionPlan.Controls.Add(this.labelProductName);
+            this.groupBoxProductionPlan.Location = new System.Drawing.Point(12, 368);
+            this.groupBoxProductionPlan.Name = "groupBoxProductionPlan";
+            this.groupBoxProductionPlan.Size = new System.Drawing.Size(907, 124);
+            this.groupBoxProductionPlan.TabIndex = 44;
+            this.groupBoxProductionPlan.TabStop = false;
             // 
-            // button5
+            // textBoxPlanQuantity
             // 
-            this.button5.Location = new System.Drawing.Point(808, 28);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(116, 70);
-            this.button5.TabIndex = 43;
-            this.button5.Text = "조회";
-            this.button5.UseVisualStyleBackColor = true;
+            this.textBoxPlanQuantity.Location = new System.Drawing.Point(500, 73);
+            this.textBoxPlanQuantity.Name = "textBoxPlanQuantity";
+            this.textBoxPlanQuantity.Size = new System.Drawing.Size(109, 21);
+            this.textBoxPlanQuantity.TabIndex = 28;
             // 
-            // groupBox1
+            // labelPlanQuantity
             // 
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.comboBox4);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Location = new System.Drawing.Point(12, 368);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(907, 124);
-            this.groupBox1.TabIndex = 44;
-            this.groupBox1.TabStop = false;
+            this.labelPlanQuantity.AutoSize = true;
+            this.labelPlanQuantity.Font = new System.Drawing.Font("굴림", 13F);
+            this.labelPlanQuantity.Location = new System.Drawing.Point(414, 78);
+            this.labelPlanQuantity.Name = "labelPlanQuantity";
+            this.labelPlanQuantity.Size = new System.Drawing.Size(80, 18);
+            this.labelPlanQuantity.TabIndex = 27;
+            this.labelPlanQuantity.Text = "계획수량";
             // 
-            // textBox5
+            // comboBoxShiftType
             // 
-            this.textBox5.Location = new System.Drawing.Point(500, 73);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(109, 21);
-            this.textBox5.TabIndex = 28;
+            this.comboBoxShiftType.FormattingEnabled = true;
+            this.comboBoxShiftType.Location = new System.Drawing.Point(324, 75);
+            this.comboBoxShiftType.Name = "comboBoxShiftType";
+            this.comboBoxShiftType.Size = new System.Drawing.Size(80, 20);
+            this.comboBoxShiftType.TabIndex = 26;
             // 
-            // label10
+            // labelShiftType
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("굴림", 10F);
-            this.label10.Location = new System.Drawing.Point(426, 80);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(63, 14);
-            this.label10.TabIndex = 27;
-            this.label10.Text = "계획수량";
+            this.labelShiftType.AutoSize = true;
+            this.labelShiftType.Font = new System.Drawing.Font("굴림", 13F);
+            this.labelShiftType.Location = new System.Drawing.Point(243, 75);
+            this.labelShiftType.Name = "labelShiftType";
+            this.labelShiftType.Size = new System.Drawing.Size(80, 18);
+            this.labelShiftType.TabIndex = 25;
+            this.labelShiftType.Text = "주야구분";
             // 
-            // comboBox4
+            // comboBoxProductName
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(324, 75);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(80, 20);
-            this.comboBox4.TabIndex = 26;
+            this.comboBoxProductName.FormattingEnabled = true;
+            this.comboBoxProductName.Location = new System.Drawing.Point(90, 28);
+            this.comboBoxProductName.Name = "comboBoxProductName";
+            this.comboBoxProductName.Size = new System.Drawing.Size(547, 20);
+            this.comboBoxProductName.TabIndex = 24;
             // 
-            // label8
+            // comboBoxProductionDate
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("굴림", 10F);
-            this.label8.Location = new System.Drawing.Point(255, 81);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 14);
-            this.label8.TabIndex = 25;
-            this.label8.Text = "주야구분";
+            this.comboBoxProductionDate.FormattingEnabled = true;
+            this.comboBoxProductionDate.Location = new System.Drawing.Point(85, 75);
+            this.comboBoxProductionDate.Name = "comboBoxProductionDate";
+            this.comboBoxProductionDate.Size = new System.Drawing.Size(152, 20);
+            this.comboBoxProductionDate.TabIndex = 23;
             // 
-            // comboBox2
+            // textBoxPlanNo
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(90, 28);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(547, 20);
-            this.comboBox2.TabIndex = 24;
+            this.textBoxPlanNo.Location = new System.Drawing.Point(737, 75);
+            this.textBoxPlanNo.Name = "textBoxPlanNo";
+            this.textBoxPlanNo.Size = new System.Drawing.Size(164, 21);
+            this.textBoxPlanNo.TabIndex = 22;
             // 
-            // comboBox3
+            // labelPlanNo
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(85, 75);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(152, 20);
-            this.comboBox3.TabIndex = 23;
+            this.labelPlanNo.AutoSize = true;
+            this.labelPlanNo.Font = new System.Drawing.Font("굴림", 13F);
+            this.labelPlanNo.Location = new System.Drawing.Point(615, 77);
+            this.labelPlanNo.Name = "labelPlanNo";
+            this.labelPlanNo.Size = new System.Drawing.Size(116, 18);
+            this.labelPlanNo.TabIndex = 21;
+            this.labelPlanNo.Text = "생산계획번호";
             // 
-            // textBox3
+            // labelProductionDate
             // 
-            this.textBox3.Location = new System.Drawing.Point(724, 73);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(164, 21);
-            this.textBox3.TabIndex = 22;
+            this.labelProductionDate.AutoSize = true;
+            this.labelProductionDate.Font = new System.Drawing.Font("굴림", 13F);
+            this.labelProductionDate.Location = new System.Drawing.Point(6, 78);
+            this.labelProductionDate.Name = "labelProductionDate";
+            this.labelProductionDate.Size = new System.Drawing.Size(80, 18);
+            this.labelProductionDate.TabIndex = 19;
+            this.labelProductionDate.Text = "생산일자";
             // 
-            // label5
+            // textBoxBarcodeNo
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("굴림", 10F);
-            this.label5.Location = new System.Drawing.Point(627, 77);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 14);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "생산계획번포";
+            this.textBoxBarcodeNo.Location = new System.Drawing.Point(779, 29);
+            this.textBoxBarcodeNo.Name = "textBoxBarcodeNo";
+            this.textBoxBarcodeNo.Size = new System.Drawing.Size(109, 21);
+            this.textBoxBarcodeNo.TabIndex = 18;
             // 
-            // label6
+            // labelBarcodeNo
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("굴림", 10F);
-            this.label6.Location = new System.Drawing.Point(16, 81);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 14);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "생산일자";
+            this.labelBarcodeNo.AutoSize = true;
+            this.labelBarcodeNo.Font = new System.Drawing.Font("굴림", 13F);
+            this.labelBarcodeNo.Location = new System.Drawing.Point(676, 32);
+            this.labelBarcodeNo.Name = "labelBarcodeNo";
+            this.labelBarcodeNo.Size = new System.Drawing.Size(97, 18);
+            this.labelBarcodeNo.TabIndex = 17;
+            this.labelBarcodeNo.Text = "바코드 No.";
             // 
-            // textBox4
+            // labelProductName
             // 
-            this.textBox4.Location = new System.Drawing.Point(779, 29);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(109, 21);
-            this.textBox4.TabIndex = 18;
+            this.labelProductName.AutoSize = true;
+            this.labelProductName.Font = new System.Drawing.Font("굴림", 13F);
+            this.labelProductName.Location = new System.Drawing.Point(12, 32);
+            this.labelProductName.Name = "labelProductName";
+            this.labelProductName.Size = new System.Drawing.Size(74, 18);
+            this.labelProductName.TabIndex = 15;
+            this.labelProductName.Text = "제 품 명";
             // 
-            // label7
+            // panelSplitBar
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("굴림", 10F);
-            this.label7.Location = new System.Drawing.Point(682, 34);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 14);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "바코드 No.";
+            this.panelSplitBar.BackColor = System.Drawing.Color.White;
+            this.panelSplitBar.Location = new System.Drawing.Point(8, 76);
+            this.panelSplitBar.Name = "panelSplitBar";
+            this.panelSplitBar.Size = new System.Drawing.Size(911, 3);
+            this.panelSplitBar.TabIndex = 45;
             // 
-            // label9
+            // comboBoxTestPeriod
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("굴림", 10F);
-            this.label9.Location = new System.Drawing.Point(20, 31);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(59, 14);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "제 품 명";
+            this.comboBoxTestPeriod.FormattingEnabled = true;
+            this.comboBoxTestPeriod.Location = new System.Drawing.Point(667, 24);
+            this.comboBoxTestPeriod.Name = "comboBoxTestPeriod";
+            this.comboBoxTestPeriod.Size = new System.Drawing.Size(130, 20);
+            this.comboBoxTestPeriod.TabIndex = 29;
+            // 
+            // comboBoxTotalPeriod
+            // 
+            this.comboBoxTotalPeriod.FormattingEnabled = true;
+            this.comboBoxTotalPeriod.Location = new System.Drawing.Point(667, 51);
+            this.comboBoxTotalPeriod.Name = "comboBoxTotalPeriod";
+            this.comboBoxTotalPeriod.Size = new System.Drawing.Size(130, 20);
+            this.comboBoxTotalPeriod.TabIndex = 46;
             // 
             // ProductionPlanForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 570);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.comboBoxTotalPeriod);
+            this.Controls.Add(this.comboBoxTestPeriod);
+            this.Controls.Add(this.panelSplitBar);
+            this.Controls.Add(this.groupBoxProductionPlan);
+            this.Controls.Add(this.buttonSearch);
+            this.Controls.Add(this.labelTotalPeriod);
+            this.Controls.Add(this.labelTestPeriod);
+            this.Controls.Add(this.buttonInputPlan);
+            this.Controls.Add(this.dataGridViewPlanList);
+            this.Controls.Add(this.comboBoxMismatchProduct);
+            this.Controls.Add(this.labelTitle);
+            this.Controls.Add(this.buttonClose);
+            this.Controls.Add(this.buttonSelectPlan);
+            this.Controls.Add(this.labelMismatchInfo);
+            this.Controls.Add(this.buttonDownloadPlan);
             this.Name = "ProductionPlanForm";
             this.Text = "ProductionPlanForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlanList)).EndInit();
+            this.groupBoxProductionPlan.ResumeLayout(false);
+            this.groupBoxProductionPlan.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -380,14 +392,14 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridView dataGridViewPlanList;
+        private System.Windows.Forms.ComboBox comboBoxMismatchProduct;
+        private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Button buttonClose;
+        private System.Windows.Forms.Button buttonSelectPlan;
+        private System.Windows.Forms.Label labelMismatchInfo;
+        private System.Windows.Forms.Button buttonDownloadPlan;
+        private System.Windows.Forms.Button buttonInputPlan;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -395,23 +407,24 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label labelTestPeriod;
+        private System.Windows.Forms.Label labelTotalPeriod;
+        private System.Windows.Forms.Button buttonSearch;
+        private System.Windows.Forms.GroupBox groupBoxProductionPlan;
+        private System.Windows.Forms.TextBox textBoxPlanQuantity;
+        private System.Windows.Forms.Label labelPlanQuantity;
+        private System.Windows.Forms.ComboBox comboBoxShiftType;
+        private System.Windows.Forms.Label labelShiftType;
+        private System.Windows.Forms.ComboBox comboBoxProductName;
+        private System.Windows.Forms.ComboBox comboBoxProductionDate;
+        private System.Windows.Forms.TextBox textBoxPlanNo;
+        private System.Windows.Forms.Label labelPlanNo;
+        private System.Windows.Forms.Label labelProductionDate;
+        private System.Windows.Forms.TextBox textBoxBarcodeNo;
+        private System.Windows.Forms.Label labelBarcodeNo;
+        private System.Windows.Forms.Label labelProductName;
+        private System.Windows.Forms.Panel panelSplitBar;
+        private System.Windows.Forms.ComboBox comboBoxTestPeriod;
+        private System.Windows.Forms.ComboBox comboBoxTotalPeriod;
     }
 }
