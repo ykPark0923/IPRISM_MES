@@ -79,7 +79,10 @@
             this.textBoxProductionLine = new System.Windows.Forms.TextBox();
             this.labelRemainingRibbon = new System.Windows.Forms.Label();
             this.textBoxRemainingRibbon = new System.Windows.Forms.TextBox();
+            this.labelPlannedQuantity = new System.Windows.Forms.Label();
+            this.textBoxPlannedQuantity = new System.Windows.Forms.TextBox();
             this.panelButton = new System.Windows.Forms.Panel();
+            this.buttonRemainingAmountRegister = new System.Windows.Forms.Button();
             this.buttonResultTransferHistory = new System.Windows.Forms.Button();
             this.buttonVariousHistoryInquiry = new System.Windows.Forms.Button();
             this.buttonProductionResult = new System.Windows.Forms.Button();
@@ -97,9 +100,6 @@
             this.buttonReissue = new System.Windows.Forms.Button();
             this.buttonReset = new System.Windows.Forms.Button();
             this.buttonStop = new System.Windows.Forms.Button();
-            this.textBoxPlannedQuantity = new System.Windows.Forms.TextBox();
-            this.labelPlannedQuantity = new System.Windows.Forms.Label();
-            this.buttonRemainingAmountRegister = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxServer)).BeginInit();
@@ -720,6 +720,29 @@
             this.textBoxRemainingRibbon.TabIndex = 19;
             this.textBoxRemainingRibbon.Text = "4214";
             // 
+            // labelPlannedQuantity
+            // 
+            this.labelPlannedQuantity.AutoSize = true;
+            this.labelPlannedQuantity.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelPlannedQuantity.ForeColor = System.Drawing.Color.Cyan;
+            this.labelPlannedQuantity.Location = new System.Drawing.Point(46, 82);
+            this.labelPlannedQuantity.Name = "labelPlannedQuantity";
+            this.labelPlannedQuantity.Size = new System.Drawing.Size(84, 17);
+            this.labelPlannedQuantity.TabIndex = 18;
+            this.labelPlannedQuantity.Text = "계획수량";
+            this.labelPlannedQuantity.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // textBoxPlannedQuantity
+            // 
+            this.textBoxPlannedQuantity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBoxPlannedQuantity.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBoxPlannedQuantity.ForeColor = System.Drawing.Color.White;
+            this.textBoxPlannedQuantity.Location = new System.Drawing.Point(137, 79);
+            this.textBoxPlannedQuantity.Name = "textBoxPlannedQuantity";
+            this.textBoxPlannedQuantity.Size = new System.Drawing.Size(183, 27);
+            this.textBoxPlannedQuantity.TabIndex = 17;
+            this.textBoxPlannedQuantity.Text = "20,000";
+            // 
             // panelButton
             // 
             this.panelButton.Controls.Add(this.buttonRemainingAmountRegister);
@@ -745,6 +768,18 @@
             this.panelButton.Name = "panelButton";
             this.panelButton.Size = new System.Drawing.Size(351, 518);
             this.panelButton.TabIndex = 27;
+            // 
+            // buttonRemainingAmountRegister
+            // 
+            this.buttonRemainingAmountRegister.BackColor = System.Drawing.Color.Black;
+            this.buttonRemainingAmountRegister.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.buttonRemainingAmountRegister.ForeColor = System.Drawing.Color.Cyan;
+            this.buttonRemainingAmountRegister.Location = new System.Drawing.Point(121, 362);
+            this.buttonRemainingAmountRegister.Name = "buttonRemainingAmountRegister";
+            this.buttonRemainingAmountRegister.Size = new System.Drawing.Size(106, 63);
+            this.buttonRemainingAmountRegister.TabIndex = 21;
+            this.buttonRemainingAmountRegister.Text = "잔량등록";
+            this.buttonRemainingAmountRegister.UseVisualStyleBackColor = false;
             // 
             // buttonResultTransferHistory
             // 
@@ -955,41 +990,6 @@
             this.buttonStop.Text = "중지";
             this.buttonStop.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonStop.UseVisualStyleBackColor = false;
-            // 
-            // textBoxPlannedQuantity
-            // 
-            this.textBoxPlannedQuantity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBoxPlannedQuantity.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBoxPlannedQuantity.ForeColor = System.Drawing.Color.White;
-            this.textBoxPlannedQuantity.Location = new System.Drawing.Point(137, 79);
-            this.textBoxPlannedQuantity.Name = "textBoxPlannedQuantity";
-            this.textBoxPlannedQuantity.Size = new System.Drawing.Size(183, 27);
-            this.textBoxPlannedQuantity.TabIndex = 17;
-            this.textBoxPlannedQuantity.Text = "20,000";
-            // 
-            // labelPlannedQuantity
-            // 
-            this.labelPlannedQuantity.AutoSize = true;
-            this.labelPlannedQuantity.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.labelPlannedQuantity.ForeColor = System.Drawing.Color.Cyan;
-            this.labelPlannedQuantity.Location = new System.Drawing.Point(46, 82);
-            this.labelPlannedQuantity.Name = "labelPlannedQuantity";
-            this.labelPlannedQuantity.Size = new System.Drawing.Size(84, 17);
-            this.labelPlannedQuantity.TabIndex = 18;
-            this.labelPlannedQuantity.Text = "계획수량";
-            this.labelPlannedQuantity.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // buttonRemainingAmountRegister
-            // 
-            this.buttonRemainingAmountRegister.BackColor = System.Drawing.Color.Black;
-            this.buttonRemainingAmountRegister.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.buttonRemainingAmountRegister.ForeColor = System.Drawing.Color.Cyan;
-            this.buttonRemainingAmountRegister.Location = new System.Drawing.Point(121, 362);
-            this.buttonRemainingAmountRegister.Name = "buttonRemainingAmountRegister";
-            this.buttonRemainingAmountRegister.Size = new System.Drawing.Size(106, 63);
-            this.buttonRemainingAmountRegister.TabIndex = 21;
-            this.buttonRemainingAmountRegister.Text = "잔량등록";
-            this.buttonRemainingAmountRegister.UseVisualStyleBackColor = false;
             // 
             // MainForm
             // 
