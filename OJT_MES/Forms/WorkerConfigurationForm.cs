@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LotteMES.Forms
 {
-    public partial class WorkEnvironmentSettingForm : Form
+    public partial class WorkerConfigurationForm : Form
     {
-        public WorkEnvironmentSettingForm()
+        public WorkerConfigurationForm()
         {
             InitializeComponent();
         }

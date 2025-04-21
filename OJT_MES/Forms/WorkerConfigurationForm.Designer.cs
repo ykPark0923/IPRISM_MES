@@ -1,6 +1,6 @@
 ﻿namespace LotteMES.Forms
 {
-    partial class WorkEnvironmentSettingForm
+    partial class WorkerConfigurationForm
     {
         /// <summary>
         /// Required designer variable.
