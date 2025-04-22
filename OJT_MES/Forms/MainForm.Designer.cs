@@ -45,6 +45,7 @@
             this.pictureBoxDemon = new System.Windows.Forms.PictureBox();
             this.labelDemon = new System.Windows.Forms.Label();
             this.panelHeader = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelCommStatus = new System.Windows.Forms.Panel();
             this.panel = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -100,17 +101,16 @@
             this.buttonReissue = new System.Windows.Forms.Button();
             this.buttonReset = new System.Windows.Forms.Button();
             this.buttonStop = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxServer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDemon)).BeginInit();
             this.panelHeader.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelCommStatus.SuspendLayout();
             this.panel.SuspendLayout();
             this.panelData.SuspendLayout();
             this.panelButton.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelCurrentDateTime
@@ -300,6 +300,18 @@
             this.panelHeader.Name = "panelHeader";
             this.panelHeader.Size = new System.Drawing.Size(1008, 51);
             this.panelHeader.TabIndex = 23;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(850, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(151, 43);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // panelCommStatus
             // 
@@ -745,6 +757,7 @@
             this.textBoxPlannedQuantity.Size = new System.Drawing.Size(183, 27);
             this.textBoxPlannedQuantity.TabIndex = 17;
             this.textBoxPlannedQuantity.Text = "20,000";
+            this.textBoxPlannedQuantity.TextChanged += new System.EventHandler(this.textBoxPlannedQuantity_TextChanged);
             // 
             // panelButton
             // 
@@ -783,6 +796,7 @@
             this.buttonRemainingAmountRegister.TabIndex = 21;
             this.buttonRemainingAmountRegister.Text = "잔량등록";
             this.buttonRemainingAmountRegister.UseVisualStyleBackColor = false;
+            this.buttonRemainingAmountRegister.Click += new System.EventHandler(this.buttonRemainingAmountRegister_Click);
             // 
             // buttonResultTransferHistory
             // 
@@ -795,6 +809,7 @@
             this.buttonResultTransferHistory.TabIndex = 20;
             this.buttonResultTransferHistory.Text = "실적전송\r\n이력조회";
             this.buttonResultTransferHistory.UseVisualStyleBackColor = false;
+            this.buttonResultTransferHistory.Click += new System.EventHandler(this.buttonResultTransferHistory_Click);
             // 
             // buttonVariousHistoryInquiry
             // 
@@ -807,6 +822,7 @@
             this.buttonVariousHistoryInquiry.TabIndex = 19;
             this.buttonVariousHistoryInquiry.Text = "각종이력\r\n조회";
             this.buttonVariousHistoryInquiry.UseVisualStyleBackColor = false;
+            this.buttonVariousHistoryInquiry.Click += new System.EventHandler(this.buttonVariousHistoryInquiry_Click);
             // 
             // buttonProductionResult
             // 
@@ -819,6 +835,7 @@
             this.buttonProductionResult.TabIndex = 18;
             this.buttonProductionResult.Text = "실적관리";
             this.buttonProductionResult.UseVisualStyleBackColor = false;
+            this.buttonProductionResult.Click += new System.EventHandler(this.buttonProductionResult_Click);
             // 
             // buttonPopDeviceHistory
             // 
@@ -855,6 +872,7 @@
             this.buttonProductionPlan.TabIndex = 15;
             this.buttonProductionPlan.Text = "생산계획";
             this.buttonProductionPlan.UseVisualStyleBackColor = false;
+            this.buttonProductionPlan.Click += new System.EventHandler(this.buttonProductionPlan_Click);
             // 
             // buttonCreateWorker
             // 
@@ -891,6 +909,7 @@
             this.buttonHardwareEnvironmentSettings.TabIndex = 12;
             this.buttonHardwareEnvironmentSettings.Text = "H/W\r\n환경설정";
             this.buttonHardwareEnvironmentSettings.UseVisualStyleBackColor = false;
+            this.buttonHardwareEnvironmentSettings.Click += new System.EventHandler(this.buttonHardwareEnvironmentSettings_Click);
             // 
             // buttonSystemEnvironmentSettings
             // 
@@ -903,6 +922,7 @@
             this.buttonSystemEnvironmentSettings.TabIndex = 11;
             this.buttonSystemEnvironmentSettings.Text = "시스템\r\n환경설정";
             this.buttonSystemEnvironmentSettings.UseVisualStyleBackColor = false;
+            this.buttonSystemEnvironmentSettings.Click += new System.EventHandler(this.buttonSystemEnvironmentSettings_Click);
             // 
             // buttonWorkEnvironmentSettings
             // 
@@ -915,6 +935,7 @@
             this.buttonWorkEnvironmentSettings.TabIndex = 10;
             this.buttonWorkEnvironmentSettings.Text = "작업\r\n환경설정";
             this.buttonWorkEnvironmentSettings.UseVisualStyleBackColor = false;
+            this.buttonWorkEnvironmentSettings.Click += new System.EventHandler(this.buttonWorkEnvironmentSettings_Click);
             // 
             // buttonExit
             // 
@@ -994,18 +1015,6 @@
             this.buttonStop.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonStop.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(850, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(151, 43);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -1020,11 +1029,13 @@
             this.Controls.Add(this.panelHeader);
             this.Name = "MainForm";
             this.Text = "MainForm";
+            this.Resize += new System.EventHandler(this.MainForm_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxServer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDemon)).EndInit();
             this.panelHeader.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelCommStatus.ResumeLayout(false);
             this.panelCommStatus.PerformLayout();
             this.panel.ResumeLayout(false);
@@ -1032,7 +1043,6 @@
             this.panelData.ResumeLayout(false);
             this.panelData.PerformLayout();
             this.panelButton.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

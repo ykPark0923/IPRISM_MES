@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace LotteMES.Helpers
 {
@@ -10,8 +11,22 @@ namespace LotteMES.Helpers
     {
         public static int TryParseInt(string input, int defaultValue = 0)
         {
-            return int.TryParse(input, out int result) ? result : defaultValue;
+            //return int.TryParse(input, out int result) ? result : defaultValue;
+
+            //
+            bool result = int.TryParse(input, out int value);
+
+            if(result == true)
+            {
+                return value;
+            }
+            else
+            {
+                MessageBox.Show("정수로 치환할수 없는 문자열 값입니다.");
+                return -1;
+            }
         }
+
         public static DateTime TryParseDateTime(string input, DateTime defaultValue = default)
         {
             return DateTime.TryParse(input, out DateTime result) ? result : defaultValue;

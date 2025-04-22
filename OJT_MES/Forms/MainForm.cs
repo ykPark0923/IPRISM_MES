@@ -313,5 +313,69 @@ namespace LotteMES.Forms
             buttonExit.Font = Style.CommonFont;
             #endregion            
         }
+
+        private void buttonProductionPlan_Click(object sender, EventArgs e)
+        {
+            ProductionPlanForm productionPlanForm = new ProductionPlanForm();
+            productionPlanForm.ShowDialog();
+        }
+
+        private void buttonProductionResult_Click(object sender, EventArgs e)
+        {
+            PerformanceManageForm performanceManageForm = new PerformanceManageForm();
+            performanceManageForm.ShowDialog();
+        }
+
+        private void buttonVariousHistoryInquiry_Click(object sender, EventArgs e)
+        {
+            AllHistoryViewForm allHistoryViewForm = new AllHistoryViewForm();
+            allHistoryViewForm.ShowDialog();
+        }
+
+        private void buttonResultTransferHistory_Click(object sender, EventArgs e)
+        {
+            PerformanceSendLogForm performanceSendLogForm = new PerformanceSendLogForm();
+            performanceSendLogForm.ShowDialog();
+        }
+
+        private void buttonRemainingAmountRegister_Click(object sender, EventArgs e)
+        {
+            RemainingAmountRegisterForm remainingAmountRegisterForm = new RemainingAmountRegisterForm();
+            remainingAmountRegisterForm.ShowDialog();
+        }
+
+        private void buttonWorkEnvironmentSettings_Click(object sender, EventArgs e)
+        {
+            WorkerConfigurationForm workerConfigurationForm = new WorkerConfigurationForm();
+            workerConfigurationForm.ShowDialog();
+        }
+
+        private void buttonSystemEnvironmentSettings_Click(object sender, EventArgs e)
+        {
+            SystemConfigurationForm systemConfigurationForm = new SystemConfigurationForm();
+            systemConfigurationForm.ShowDialog();
+        }
+
+        private void buttonHardwareEnvironmentSettings_Click(object sender, EventArgs e)
+        {
+            HardwareConfigurationForm hardwareConfigurationForm = new HardwareConfigurationForm();
+            hardwareConfigurationForm.ShowDialog();
+        }
+
+        private void buttonCreateBasicInfo_Click(object sender, EventArgs e)
+        {
+            SettingBasicInfoForm settingBasicInfoForm = new SettingBasicInfoForm();
+            settingBasicInfoForm.ShowDialog();
+        }
+
+        private void MainForm_Resize(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxPlannedQuantity_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
