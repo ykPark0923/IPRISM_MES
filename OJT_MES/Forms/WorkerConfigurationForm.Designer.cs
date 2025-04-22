@@ -28,327 +28,327 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.groupBoxWorkDataChange = new System.Windows.Forms.GroupBox();
+            this.textBoxBokEndNo = new System.Windows.Forms.TextBox();
+            this.labelBokEndNo = new System.Windows.Forms.Label();
+            this.textBoxSerialNo = new System.Windows.Forms.TextBox();
+            this.labelSerialNo = new System.Windows.Forms.Label();
+            this.textBoxProductName = new System.Windows.Forms.TextBox();
+            this.comboBoxShiftType = new System.Windows.Forms.ComboBox();
+            this.textBoxProductionDate = new System.Windows.Forms.TextBox();
+            this.labelProductionDate = new System.Windows.Forms.Label();
+            this.labelProductName = new System.Windows.Forms.Label();
+            this.textBoxLineNameSetting = new System.Windows.Forms.TextBox();
+            this.labelLineNameSetting = new System.Windows.Forms.Label();
+            this.labelShiftType = new System.Windows.Forms.Label();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.buttonClose = new System.Windows.Forms.Button();
+            this.buttonApplyData = new System.Windows.Forms.Button();
+            this.groupBoxFactoryLineSetting = new System.Windows.Forms.GroupBox();
+            this.comboBoxLineName = new System.Windows.Forms.ComboBox();
+            this.labelLineName = new System.Windows.Forms.Label();
+            this.comboBoxFactoryName = new System.Windows.Forms.ComboBox();
+            this.labelFactoryName = new System.Windows.Forms.Label();
+            this.groupBoxPrinterConsumableSetting = new System.Windows.Forms.GroupBox();
+            this.textBoxLabelRemainChange = new System.Windows.Forms.TextBox();
+            this.labelLabelRemainChange = new System.Windows.Forms.Label();
+            this.textBoxRibbonRemainChange = new System.Windows.Forms.TextBox();
+            this.labelRibbonRemainChange = new System.Windows.Forms.Label();
+            this.textBoxRibbonTotal = new System.Windows.Forms.TextBox();
+            this.labelRibbonTotal = new System.Windows.Forms.Label();
+            this.textBoxLabelTotal = new System.Windows.Forms.TextBox();
+            this.labelLabelTotal = new System.Windows.Forms.Label();
             this.panelSplitBar = new System.Windows.Forms.Panel();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.groupBoxWorkDataChange.SuspendLayout();
+            this.groupBoxFactoryLineSetting.SuspendLayout();
+            this.groupBoxPrinterConsumableSetting.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // groupBoxWorkDataChange
             // 
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Location = new System.Drawing.Point(20, 70);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(725, 180);
-            this.groupBox1.TabIndex = 28;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "작업데이터 변경";
+            this.groupBoxWorkDataChange.Controls.Add(this.textBoxBokEndNo);
+            this.groupBoxWorkDataChange.Controls.Add(this.labelBokEndNo);
+            this.groupBoxWorkDataChange.Controls.Add(this.textBoxSerialNo);
+            this.groupBoxWorkDataChange.Controls.Add(this.labelSerialNo);
+            this.groupBoxWorkDataChange.Controls.Add(this.textBoxProductName);
+            this.groupBoxWorkDataChange.Controls.Add(this.comboBoxShiftType);
+            this.groupBoxWorkDataChange.Controls.Add(this.textBoxProductionDate);
+            this.groupBoxWorkDataChange.Controls.Add(this.labelProductionDate);
+            this.groupBoxWorkDataChange.Controls.Add(this.labelProductName);
+            this.groupBoxWorkDataChange.Controls.Add(this.textBoxLineNameSetting);
+            this.groupBoxWorkDataChange.Controls.Add(this.labelLineNameSetting);
+            this.groupBoxWorkDataChange.Controls.Add(this.labelShiftType);
+            this.groupBoxWorkDataChange.Location = new System.Drawing.Point(20, 80);
+            this.groupBoxWorkDataChange.Name = "groupBoxWorkDataChange";
+            this.groupBoxWorkDataChange.Size = new System.Drawing.Size(725, 180);
+            this.groupBoxWorkDataChange.TabIndex = 28;
+            this.groupBoxWorkDataChange.TabStop = false;
+            this.groupBoxWorkDataChange.Text = "작업데이터 변경";
             // 
-            // textBox5
+            // textBoxBokEndNo
             // 
-            this.textBox5.Location = new System.Drawing.Point(513, 119);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(109, 21);
-            this.textBox5.TabIndex = 29;
+            this.textBoxBokEndNo.Location = new System.Drawing.Point(513, 119);
+            this.textBoxBokEndNo.Name = "textBoxBokEndNo";
+            this.textBoxBokEndNo.Size = new System.Drawing.Size(109, 21);
+            this.textBoxBokEndNo.TabIndex = 29;
             // 
-            // label6
+            // labelBokEndNo
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("굴림", 10F);
-            this.label6.Location = new System.Drawing.Point(417, 126);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 14);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "BOK끝번호";
+            this.labelBokEndNo.AutoSize = true;
+            this.labelBokEndNo.Font = new System.Drawing.Font("굴림", 10F);
+            this.labelBokEndNo.Location = new System.Drawing.Point(417, 126);
+            this.labelBokEndNo.Name = "labelBokEndNo";
+            this.labelBokEndNo.Size = new System.Drawing.Size(79, 14);
+            this.labelBokEndNo.TabIndex = 28;
+            this.labelBokEndNo.Text = "BOK끝번호";
             // 
-            // textBox3
+            // textBoxSerialNo
             // 
-            this.textBox3.Location = new System.Drawing.Point(134, 119);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(109, 21);
-            this.textBox3.TabIndex = 27;
+            this.textBoxSerialNo.Location = new System.Drawing.Point(134, 119);
+            this.textBoxSerialNo.Name = "textBoxSerialNo";
+            this.textBoxSerialNo.Size = new System.Drawing.Size(109, 21);
+            this.textBoxSerialNo.TabIndex = 27;
             // 
-            // label3
+            // labelSerialNo
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("굴림", 10F);
-            this.label3.Location = new System.Drawing.Point(38, 126);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 14);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "일련번호";
+            this.labelSerialNo.AutoSize = true;
+            this.labelSerialNo.Font = new System.Drawing.Font("굴림", 10F);
+            this.labelSerialNo.Location = new System.Drawing.Point(38, 126);
+            this.labelSerialNo.Name = "labelSerialNo";
+            this.labelSerialNo.Size = new System.Drawing.Size(63, 14);
+            this.labelSerialNo.TabIndex = 26;
+            this.labelSerialNo.Text = "일련번호";
             // 
-            // textBox2
+            // textBoxProductName
             // 
-            this.textBox2.Location = new System.Drawing.Point(134, 92);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(534, 21);
-            this.textBox2.TabIndex = 25;
+            this.textBoxProductName.Location = new System.Drawing.Point(134, 92);
+            this.textBoxProductName.Name = "textBoxProductName";
+            this.textBoxProductName.Size = new System.Drawing.Size(534, 21);
+            this.textBoxProductName.TabIndex = 25;
             // 
-            // comboBox2
+            // comboBoxShiftType
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(501, 61);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 20);
-            this.comboBox2.TabIndex = 24;
+            this.comboBoxShiftType.FormattingEnabled = true;
+            this.comboBoxShiftType.Location = new System.Drawing.Point(501, 61);
+            this.comboBoxShiftType.Name = "comboBoxShiftType";
+            this.comboBoxShiftType.Size = new System.Drawing.Size(121, 20);
+            this.comboBoxShiftType.TabIndex = 24;
             // 
-            // textBox1
+            // textBoxProductionDate
             // 
-            this.textBox1.Location = new System.Drawing.Point(134, 60);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(109, 21);
-            this.textBox1.TabIndex = 22;
+            this.textBoxProductionDate.Location = new System.Drawing.Point(134, 60);
+            this.textBoxProductionDate.Name = "textBoxProductionDate";
+            this.textBoxProductionDate.Size = new System.Drawing.Size(109, 21);
+            this.textBoxProductionDate.TabIndex = 22;
             // 
-            // label2
+            // labelProductionDate
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("굴림", 10F);
-            this.label2.Location = new System.Drawing.Point(38, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 14);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "생산일자";
+            this.labelProductionDate.AutoSize = true;
+            this.labelProductionDate.Font = new System.Drawing.Font("굴림", 10F);
+            this.labelProductionDate.Location = new System.Drawing.Point(38, 67);
+            this.labelProductionDate.Name = "labelProductionDate";
+            this.labelProductionDate.Size = new System.Drawing.Size(63, 14);
+            this.labelProductionDate.TabIndex = 21;
+            this.labelProductionDate.Text = "생산일자";
             // 
-            // label4
+            // labelProductName
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("굴림", 10F);
-            this.label4.Location = new System.Drawing.Point(37, 92);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 14);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "제품명";
+            this.labelProductName.AutoSize = true;
+            this.labelProductName.Font = new System.Drawing.Font("굴림", 10F);
+            this.labelProductName.Location = new System.Drawing.Point(37, 92);
+            this.labelProductName.Name = "labelProductName";
+            this.labelProductName.Size = new System.Drawing.Size(49, 14);
+            this.labelProductName.TabIndex = 19;
+            this.labelProductName.Text = "제품명";
             // 
-            // textBox4
+            // textBoxLineNameSetting
             // 
-            this.textBox4.Location = new System.Drawing.Point(100, 31);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(568, 21);
-            this.textBox4.TabIndex = 18;
+            this.textBoxLineNameSetting.Location = new System.Drawing.Point(100, 31);
+            this.textBoxLineNameSetting.Name = "textBoxLineNameSetting";
+            this.textBoxLineNameSetting.Size = new System.Drawing.Size(568, 21);
+            this.textBoxLineNameSetting.TabIndex = 18;
             // 
-            // label5
+            // labelLineNameSetting
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("굴림", 10F);
-            this.label5.Location = new System.Drawing.Point(37, 36);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 14);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "생산라인";
+            this.labelLineNameSetting.AutoSize = true;
+            this.labelLineNameSetting.Font = new System.Drawing.Font("굴림", 10F);
+            this.labelLineNameSetting.Location = new System.Drawing.Point(37, 36);
+            this.labelLineNameSetting.Name = "labelLineNameSetting";
+            this.labelLineNameSetting.Size = new System.Drawing.Size(63, 14);
+            this.labelLineNameSetting.TabIndex = 17;
+            this.labelLineNameSetting.Text = "생산라인";
             // 
-            // label9
+            // labelShiftType
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("굴림", 10F);
-            this.label9.Location = new System.Drawing.Point(394, 61);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 14);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "주야구분";
+            this.labelShiftType.AutoSize = true;
+            this.labelShiftType.Font = new System.Drawing.Font("굴림", 10F);
+            this.labelShiftType.Location = new System.Drawing.Point(417, 63);
+            this.labelShiftType.Name = "labelShiftType";
+            this.labelShiftType.Size = new System.Drawing.Size(63, 14);
+            this.labelShiftType.TabIndex = 15;
+            this.labelShiftType.Text = "주야구분";
             // 
-            // label1
+            // labelTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 35F);
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(365, 47);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "작업자 환경설정";
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("굴림", 35F);
+            this.labelTitle.Location = new System.Drawing.Point(12, 9);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(365, 47);
+            this.labelTitle.TabIndex = 24;
+            this.labelTitle.Text = "작업자 환경설정";
             // 
-            // button3
+            // buttonClose
             // 
-            this.button3.Location = new System.Drawing.Point(384, 582);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(247, 70);
-            this.button3.TabIndex = 27;
-            this.button3.Text = "닫기";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonClose.Location = new System.Drawing.Point(384, 582);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(247, 70);
+            this.buttonClose.TabIndex = 27;
+            this.buttonClose.Text = "닫기";
+            this.buttonClose.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // buttonApplyData
             // 
-            this.button2.Location = new System.Drawing.Point(91, 582);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(260, 70);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "데이터 적용";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonApplyData.Location = new System.Drawing.Point(91, 582);
+            this.buttonApplyData.Name = "buttonApplyData";
+            this.buttonApplyData.Size = new System.Drawing.Size(260, 70);
+            this.buttonApplyData.TabIndex = 26;
+            this.buttonApplyData.Text = "데이터 적용";
+            this.buttonApplyData.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
+            // groupBoxFactoryLineSetting
             // 
-            this.groupBox2.Controls.Add(this.comboBox4);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Location = new System.Drawing.Point(20, 256);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(725, 124);
-            this.groupBox2.TabIndex = 30;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "공장 및 라인셋팅";
+            this.groupBoxFactoryLineSetting.Controls.Add(this.comboBoxLineName);
+            this.groupBoxFactoryLineSetting.Controls.Add(this.labelLineName);
+            this.groupBoxFactoryLineSetting.Controls.Add(this.comboBoxFactoryName);
+            this.groupBoxFactoryLineSetting.Controls.Add(this.labelFactoryName);
+            this.groupBoxFactoryLineSetting.Location = new System.Drawing.Point(20, 279);
+            this.groupBoxFactoryLineSetting.Name = "groupBoxFactoryLineSetting";
+            this.groupBoxFactoryLineSetting.Size = new System.Drawing.Size(725, 124);
+            this.groupBoxFactoryLineSetting.TabIndex = 30;
+            this.groupBoxFactoryLineSetting.TabStop = false;
+            this.groupBoxFactoryLineSetting.Text = "공장 및 라인셋팅";
             // 
-            // comboBox4
+            // comboBoxLineName
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(134, 81);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(519, 20);
-            this.comboBox4.TabIndex = 26;
+            this.comboBoxLineName.FormattingEnabled = true;
+            this.comboBoxLineName.Location = new System.Drawing.Point(134, 81);
+            this.comboBoxLineName.Name = "comboBoxLineName";
+            this.comboBoxLineName.Size = new System.Drawing.Size(519, 20);
+            this.comboBoxLineName.TabIndex = 26;
             // 
-            // label7
+            // labelLineName
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("굴림", 10F);
-            this.label7.Location = new System.Drawing.Point(27, 81);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 14);
-            this.label7.TabIndex = 25;
-            this.label7.Text = "생산라인명";
+            this.labelLineName.AutoSize = true;
+            this.labelLineName.Font = new System.Drawing.Font("굴림", 10F);
+            this.labelLineName.Location = new System.Drawing.Point(27, 81);
+            this.labelLineName.Name = "labelLineName";
+            this.labelLineName.Size = new System.Drawing.Size(77, 14);
+            this.labelLineName.TabIndex = 25;
+            this.labelLineName.Text = "생산라인명";
             // 
-            // comboBox1
+            // comboBoxFactoryName
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(134, 44);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 20);
-            this.comboBox1.TabIndex = 24;
+            this.comboBoxFactoryName.FormattingEnabled = true;
+            this.comboBoxFactoryName.Location = new System.Drawing.Point(134, 44);
+            this.comboBoxFactoryName.Name = "comboBoxFactoryName";
+            this.comboBoxFactoryName.Size = new System.Drawing.Size(121, 20);
+            this.comboBoxFactoryName.TabIndex = 24;
             // 
-            // label13
+            // labelFactoryName
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("굴림", 10F);
-            this.label13.Location = new System.Drawing.Point(27, 44);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(77, 14);
-            this.label13.TabIndex = 15;
-            this.label13.Text = "생산공장명";
+            this.labelFactoryName.AutoSize = true;
+            this.labelFactoryName.Font = new System.Drawing.Font("굴림", 10F);
+            this.labelFactoryName.Location = new System.Drawing.Point(27, 44);
+            this.labelFactoryName.Name = "labelFactoryName";
+            this.labelFactoryName.Size = new System.Drawing.Size(77, 14);
+            this.labelFactoryName.TabIndex = 15;
+            this.labelFactoryName.Text = "생산공장명";
             // 
-            // groupBox3
+            // groupBoxPrinterConsumableSetting
             // 
-            this.groupBox3.Controls.Add(this.textBox6);
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.textBox11);
-            this.groupBox3.Controls.Add(this.label14);
-            this.groupBox3.Controls.Add(this.textBox12);
-            this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.textBox14);
-            this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Location = new System.Drawing.Point(20, 411);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(725, 144);
-            this.groupBox3.TabIndex = 31;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "프린터 소모품 셋팅";
+            this.groupBoxPrinterConsumableSetting.Controls.Add(this.textBoxLabelRemainChange);
+            this.groupBoxPrinterConsumableSetting.Controls.Add(this.labelLabelRemainChange);
+            this.groupBoxPrinterConsumableSetting.Controls.Add(this.textBoxRibbonRemainChange);
+            this.groupBoxPrinterConsumableSetting.Controls.Add(this.labelRibbonRemainChange);
+            this.groupBoxPrinterConsumableSetting.Controls.Add(this.textBoxRibbonTotal);
+            this.groupBoxPrinterConsumableSetting.Controls.Add(this.labelRibbonTotal);
+            this.groupBoxPrinterConsumableSetting.Controls.Add(this.textBoxLabelTotal);
+            this.groupBoxPrinterConsumableSetting.Controls.Add(this.labelLabelTotal);
+            this.groupBoxPrinterConsumableSetting.Location = new System.Drawing.Point(20, 423);
+            this.groupBoxPrinterConsumableSetting.Name = "groupBoxPrinterConsumableSetting";
+            this.groupBoxPrinterConsumableSetting.Size = new System.Drawing.Size(725, 144);
+            this.groupBoxPrinterConsumableSetting.TabIndex = 31;
+            this.groupBoxPrinterConsumableSetting.TabStop = false;
+            this.groupBoxPrinterConsumableSetting.Text = "프린터 소모품 셋팅";
             // 
-            // textBox6
+            // textBoxLabelRemainChange
             // 
-            this.textBox6.Location = new System.Drawing.Point(525, 41);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(109, 21);
-            this.textBox6.TabIndex = 31;
+            this.textBoxLabelRemainChange.Location = new System.Drawing.Point(525, 41);
+            this.textBoxLabelRemainChange.Name = "textBoxLabelRemainChange";
+            this.textBoxLabelRemainChange.Size = new System.Drawing.Size(109, 21);
+            this.textBoxLabelRemainChange.TabIndex = 31;
             // 
-            // label8
+            // labelLabelRemainChange
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("굴림", 10F);
-            this.label8.Location = new System.Drawing.Point(429, 43);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(96, 14);
-            this.label8.TabIndex = 30;
-            this.label8.Text = "라벨잔량 변경";
+            this.labelLabelRemainChange.AutoSize = true;
+            this.labelLabelRemainChange.Font = new System.Drawing.Font("굴림", 10F);
+            this.labelLabelRemainChange.Location = new System.Drawing.Point(429, 43);
+            this.labelLabelRemainChange.Name = "labelLabelRemainChange";
+            this.labelLabelRemainChange.Size = new System.Drawing.Size(96, 14);
+            this.labelLabelRemainChange.TabIndex = 30;
+            this.labelLabelRemainChange.Text = "라벨잔량 변경";
             // 
-            // textBox11
+            // textBoxRibbonRemainChange
             // 
-            this.textBox11.Location = new System.Drawing.Point(525, 100);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(109, 21);
-            this.textBox11.TabIndex = 29;
+            this.textBoxRibbonRemainChange.Location = new System.Drawing.Point(525, 100);
+            this.textBoxRibbonRemainChange.Name = "textBoxRibbonRemainChange";
+            this.textBoxRibbonRemainChange.Size = new System.Drawing.Size(109, 21);
+            this.textBoxRibbonRemainChange.TabIndex = 29;
             // 
-            // label14
+            // labelRibbonRemainChange
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("굴림", 10F);
-            this.label14.Location = new System.Drawing.Point(429, 107);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(96, 14);
-            this.label14.TabIndex = 28;
-            this.label14.Text = "리본잔량 변경";
+            this.labelRibbonRemainChange.AutoSize = true;
+            this.labelRibbonRemainChange.Font = new System.Drawing.Font("굴림", 10F);
+            this.labelRibbonRemainChange.Location = new System.Drawing.Point(429, 107);
+            this.labelRibbonRemainChange.Name = "labelRibbonRemainChange";
+            this.labelRibbonRemainChange.Size = new System.Drawing.Size(96, 14);
+            this.labelRibbonRemainChange.TabIndex = 28;
+            this.labelRibbonRemainChange.Text = "리본잔량 변경";
             // 
-            // textBox12
+            // textBoxRibbonTotal
             // 
-            this.textBox12.Location = new System.Drawing.Point(146, 100);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(109, 21);
-            this.textBox12.TabIndex = 27;
+            this.textBoxRibbonTotal.Location = new System.Drawing.Point(146, 100);
+            this.textBoxRibbonTotal.Name = "textBoxRibbonTotal";
+            this.textBoxRibbonTotal.Size = new System.Drawing.Size(109, 21);
+            this.textBoxRibbonTotal.TabIndex = 27;
             // 
-            // label15
+            // labelRibbonTotal
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("굴림", 10F);
-            this.label15.Location = new System.Drawing.Point(50, 107);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(82, 14);
-            this.label15.TabIndex = 26;
-            this.label15.Text = "리본 총매수";
+            this.labelRibbonTotal.AutoSize = true;
+            this.labelRibbonTotal.Font = new System.Drawing.Font("굴림", 10F);
+            this.labelRibbonTotal.Location = new System.Drawing.Point(50, 107);
+            this.labelRibbonTotal.Name = "labelRibbonTotal";
+            this.labelRibbonTotal.Size = new System.Drawing.Size(82, 14);
+            this.labelRibbonTotal.TabIndex = 26;
+            this.labelRibbonTotal.Text = "리본 총매수";
             // 
-            // textBox14
+            // textBoxLabelTotal
             // 
-            this.textBox14.Location = new System.Drawing.Point(146, 41);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(109, 21);
-            this.textBox14.TabIndex = 22;
+            this.textBoxLabelTotal.Location = new System.Drawing.Point(146, 41);
+            this.textBoxLabelTotal.Name = "textBoxLabelTotal";
+            this.textBoxLabelTotal.Size = new System.Drawing.Size(109, 21);
+            this.textBoxLabelTotal.TabIndex = 22;
             // 
-            // label16
+            // labelLabelTotal
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("굴림", 10F);
-            this.label16.Location = new System.Drawing.Point(50, 48);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(82, 14);
-            this.label16.TabIndex = 21;
-            this.label16.Text = "라벨 총매수";
+            this.labelLabelTotal.AutoSize = true;
+            this.labelLabelTotal.Font = new System.Drawing.Font("굴림", 10F);
+            this.labelLabelTotal.Location = new System.Drawing.Point(50, 48);
+            this.labelLabelTotal.Name = "labelLabelTotal";
+            this.labelLabelTotal.Size = new System.Drawing.Size(82, 14);
+            this.labelLabelTotal.TabIndex = 21;
+            this.labelLabelTotal.Text = "라벨 총매수";
             // 
             // panelSplitBar
             // 
@@ -364,20 +364,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 664);
             this.Controls.Add(this.panelSplitBar);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBoxPrinterConsumableSetting);
+            this.Controls.Add(this.groupBoxFactoryLineSetting);
+            this.Controls.Add(this.groupBoxWorkDataChange);
+            this.Controls.Add(this.buttonClose);
+            this.Controls.Add(this.buttonApplyData);
+            this.Controls.Add(this.labelTitle);
             this.Name = "WorkerConfigurationForm";
-            this.Text = "WorkEnvironmentSettingForm";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.Text = "WorkerConfigurationForm";
+            this.groupBoxWorkDataChange.ResumeLayout(false);
+            this.groupBoxWorkDataChange.PerformLayout();
+            this.groupBoxFactoryLineSetting.ResumeLayout(false);
+            this.groupBoxFactoryLineSetting.PerformLayout();
+            this.groupBoxPrinterConsumableSetting.ResumeLayout(false);
+            this.groupBoxPrinterConsumableSetting.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -385,36 +385,36 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.GroupBox groupBoxWorkDataChange;
+        private System.Windows.Forms.TextBox textBoxBokEndNo;
+        private System.Windows.Forms.Label labelBokEndNo;
+        private System.Windows.Forms.TextBox textBoxSerialNo;
+        private System.Windows.Forms.Label labelSerialNo;
+        private System.Windows.Forms.TextBox textBoxProductName;
+        private System.Windows.Forms.ComboBox comboBoxShiftType;
+        private System.Windows.Forms.TextBox textBoxProductionDate;
+        private System.Windows.Forms.Label labelProductionDate;
+        private System.Windows.Forms.Label labelProductName;
+        private System.Windows.Forms.TextBox textBoxLineNameSetting;
+        private System.Windows.Forms.Label labelLineNameSetting;
+        private System.Windows.Forms.Label labelShiftType;
+        private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Button buttonClose;
+        private System.Windows.Forms.Button buttonApplyData;
+        private System.Windows.Forms.GroupBox groupBoxFactoryLineSetting;
+        private System.Windows.Forms.ComboBox comboBoxLineName;
+        private System.Windows.Forms.Label labelLineName;
+        private System.Windows.Forms.ComboBox comboBoxFactoryName;
+        private System.Windows.Forms.Label labelFactoryName;
+        private System.Windows.Forms.GroupBox groupBoxPrinterConsumableSetting;
+        private System.Windows.Forms.TextBox textBoxLabelRemainChange;
+        private System.Windows.Forms.Label labelLabelRemainChange;
+        private System.Windows.Forms.TextBox textBoxRibbonRemainChange;
+        private System.Windows.Forms.Label labelRibbonRemainChange;
+        private System.Windows.Forms.TextBox textBoxRibbonTotal;
+        private System.Windows.Forms.Label labelRibbonTotal;
+        private System.Windows.Forms.TextBox textBoxLabelTotal;
+        private System.Windows.Forms.Label labelLabelTotal;
         private System.Windows.Forms.Panel panelSplitBar;
     }
 }

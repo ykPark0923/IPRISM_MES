@@ -52,7 +52,7 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(18, 278);
+            this.buttonCancel.Location = new System.Drawing.Point(18, 305);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(252, 71);
             this.buttonCancel.TabIndex = 7;
@@ -61,7 +61,7 @@
             // 
             // buttonOK
             // 
-            this.buttonOK.Location = new System.Drawing.Point(297, 279);
+            this.buttonOK.Location = new System.Drawing.Point(297, 306);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(265, 70);
             this.buttonOK.TabIndex = 6;
@@ -84,23 +84,24 @@
             this.panelData.Controls.Add(this.labelPlanNo);
             this.panelData.Controls.Add(this.textBoxProductionDateTop);
             this.panelData.Controls.Add(this.labelProductionDate);
-            this.panelData.Location = new System.Drawing.Point(18, 61);
+            this.panelData.Location = new System.Drawing.Point(18, 77);
             this.panelData.Name = "panelData";
             this.panelData.Size = new System.Drawing.Size(544, 212);
             this.panelData.TabIndex = 5;
             // 
             // textBoxRemainQuantity
             // 
-            this.textBoxRemainQuantity.Location = new System.Drawing.Point(402, 101);
+            this.textBoxRemainQuantity.Font = new System.Drawing.Font("굴림", 40F);
+            this.textBoxRemainQuantity.Location = new System.Drawing.Point(413, 106);
             this.textBoxRemainQuantity.Name = "textBoxRemainQuantity";
-            this.textBoxRemainQuantity.Size = new System.Drawing.Size(109, 21);
+            this.textBoxRemainQuantity.Size = new System.Drawing.Size(109, 69);
             this.textBoxRemainQuantity.TabIndex = 14;
             // 
             // labelRemainQuantity
             // 
             this.labelRemainQuantity.AutoSize = true;
             this.labelRemainQuantity.Font = new System.Drawing.Font("굴림", 10F);
-            this.labelRemainQuantity.Location = new System.Drawing.Point(322, 108);
+            this.labelRemainQuantity.Location = new System.Drawing.Point(324, 116);
             this.labelRemainQuantity.Name = "labelRemainQuantity";
             this.labelRemainQuantity.Size = new System.Drawing.Size(70, 14);
             this.labelRemainQuantity.TabIndex = 13;
@@ -108,7 +109,7 @@
             // 
             // textBoxActualQuantity
             // 
-            this.textBoxActualQuantity.Location = new System.Drawing.Point(74, 169);
+            this.textBoxActualQuantity.Location = new System.Drawing.Point(80, 172);
             this.textBoxActualQuantity.Name = "textBoxActualQuantity";
             this.textBoxActualQuantity.Size = new System.Drawing.Size(109, 21);
             this.textBoxActualQuantity.TabIndex = 12;
@@ -125,7 +126,7 @@
             // 
             // textBoxPlanQuantity
             // 
-            this.textBoxPlanQuantity.Location = new System.Drawing.Point(74, 113);
+            this.textBoxPlanQuantity.Location = new System.Drawing.Point(80, 116);
             this.textBoxPlanQuantity.Name = "textBoxPlanQuantity";
             this.textBoxPlanQuantity.Size = new System.Drawing.Size(109, 21);
             this.textBoxPlanQuantity.TabIndex = 10;
@@ -142,9 +143,9 @@
             // 
             // textBoxProductName
             // 
-            this.textBoxProductName.Location = new System.Drawing.Point(74, 62);
+            this.textBoxProductName.Location = new System.Drawing.Point(80, 60);
             this.textBoxProductName.Name = "textBoxProductName";
-            this.textBoxProductName.Size = new System.Drawing.Size(464, 21);
+            this.textBoxProductName.Size = new System.Drawing.Size(452, 21);
             this.textBoxProductName.TabIndex = 8;
             // 
             // labelProductName
@@ -176,7 +177,7 @@
             // 
             // textBoxPlanNo
             // 
-            this.textBoxPlanNo.Location = new System.Drawing.Point(277, 17);
+            this.textBoxPlanNo.Location = new System.Drawing.Point(279, 18);
             this.textBoxPlanNo.Name = "textBoxPlanNo";
             this.textBoxPlanNo.Size = new System.Drawing.Size(115, 21);
             this.textBoxPlanNo.TabIndex = 4;
@@ -193,7 +194,7 @@
             // 
             // textBoxProductionDateTop
             // 
-            this.textBoxProductionDateTop.Location = new System.Drawing.Point(74, 17);
+            this.textBoxProductionDateTop.Location = new System.Drawing.Point(71, 18);
             this.textBoxProductionDateTop.Name = "textBoxProductionDateTop";
             this.textBoxProductionDateTop.Size = new System.Drawing.Size(109, 21);
             this.textBoxProductionDateTop.TabIndex = 2;
@@ -202,7 +203,7 @@
             // 
             this.labelProductionDate.AutoSize = true;
             this.labelProductionDate.Font = new System.Drawing.Font("굴림", 10F);
-            this.labelProductionDate.Location = new System.Drawing.Point(11, 22);
+            this.labelProductionDate.Location = new System.Drawing.Point(11, 20);
             this.labelProductionDate.Name = "labelProductionDate";
             this.labelProductionDate.Size = new System.Drawing.Size(63, 14);
             this.labelProductionDate.TabIndex = 0;
@@ -221,7 +222,7 @@
             // panelSplitBar
             // 
             this.panelSplitBar.BackColor = System.Drawing.Color.White;
-            this.panelSplitBar.Location = new System.Drawing.Point(12, 55);
+            this.panelSplitBar.Location = new System.Drawing.Point(15, 65);
             this.panelSplitBar.Name = "panelSplitBar";
             this.panelSplitBar.Size = new System.Drawing.Size(550, 3);
             this.panelSplitBar.TabIndex = 57;
@@ -230,7 +231,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 361);
+            this.ClientSize = new System.Drawing.Size(584, 406);
             this.Controls.Add(this.panelSplitBar);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonOK);

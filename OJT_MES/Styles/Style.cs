@@ -10,14 +10,14 @@ namespace LotteMES.Styles
     public class Style
     {
         #region Common
-        private static Font commonFont = new Font("돋움체", 13);  // 기본 폰트 설정
+        private static Font commonFont = new Font("돋움체", 10);  // 기본 폰트 설정
         /// <summary>
         /// 공통 폰트
         /// </summary>
         internal static Font CommonFont
         {
             get => commonFont;
-            set => commonFont = value ?? new Font("돋움체", 13);  // null 방지 및 기본값 설정
+            set => commonFont = value ?? new Font("돋움체", 10);  // null 방지 및 기본값 설정
         }
 
         private static Font commonTitleFont = new Font("돋움체", 35, FontStyle.Bold);  // 기본 폰트 설정
@@ -310,7 +310,32 @@ namespace LotteMES.Styles
             get => productionPlanFormComboBoxFont;
             set => productionPlanFormComboBoxFont = value ?? new Font("맑은고딕", 20, FontStyle.Bold);  // null 방지 및 기본값 설정
 
-            #endregion
         }
+        #endregion
+
+
+        #region RemainingAmountRegisterForm
+        private static Color remainingAmountRegisterFormLabelForeColorRequired = Color.Red;
+        /// <summary>
+        /// 잔량등록폼 잔량수량 라벨 필수입력 글씨컬러
+        /// </summary>
+        internal static Color RemainingAmountRegisterFormLabelForeColorRequired
+        {
+            get => remainingAmountRegisterFormLabelForeColorRequired;
+            set => remainingAmountRegisterFormLabelForeColorRequired = value;
+        }
+
+
+        private static Font remainingAmountRegisterFormTextBoxFontRequired = new Font("맑은고딕", 40, FontStyle.Bold);  // 기본 폰트에 크기설정
+        /// <summary>
+        /// 잔량등록폼 잔량수량입력 텍스트박스 폰트 설정
+        /// </summary>
+        internal static Font RemainingAmountRegisterFormTextBoxFontRequired
+        {
+            get => remainingAmountRegisterFormTextBoxFontRequired;
+            set => remainingAmountRegisterFormTextBoxFontRequired = value ?? new Font("맑은고딕", 40, FontStyle.Bold);  // null 방지 및 기본값 설정
+
+        }
+        #endregion
     }
 }
