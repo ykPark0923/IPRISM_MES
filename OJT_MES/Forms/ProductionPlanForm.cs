@@ -11,6 +11,8 @@ using System.Windows.Forms;
 using LotteMES.FormData;
 using LotteMES.Styles;
 using LotteMES.Helpers;
+using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace LotteMES.Forms
 {
@@ -23,6 +25,7 @@ namespace LotteMES.Forms
             this.FormBorderStyle = FormBorderStyle.None;
 
             SetStyles();
+            Maria_Data();
         }
 
         protected override void SetStyles()
@@ -127,6 +130,38 @@ namespace LotteMES.Forms
             labelPlanQuantity.Font = Style.CommonFont;
             labelPlanNo.Font = Style.CommonFont;
             #endregion            
+        }
+
+        private void Maria_Data()
+        {
+            string strCon = "Server=127.0.0.1; Port=3406; Database=lottemes; uid=root; pwd=root;";
+            string strSql = " SELECT PLANDATE, AUFNR, PLANQTY FROM tpprodplan_sap ";
+            
+            try
+            {
+                MySqlConnection cnn = new MySqlConnection(strCon);
+                MySqlCommand cmd = new MySqlCommand();
+
+                MySqlDataAdapter da = new MySqlDataAdapter();
+                DataTable dt = new DataTable();
+
+                cmd.Connection = cnn;
+                cmd.CommandText = strSql;
+                cmd.CommandType = CommandType.Text;
+
+                da.SelectCommand = cmd;
+                da.Fill(dt);
+
+                dataGridViewPlanList.Columns.Clear();
+                dataGridViewPlanList.DataSource = dt;
+
+                cnn.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

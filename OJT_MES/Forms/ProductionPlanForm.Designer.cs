@@ -29,13 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridViewPlanList = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.제품명 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comboBoxMismatchProduct = new System.Windows.Forms.ComboBox();
             this.labelTitle = new System.Windows.Forms.Label();
             this.buttonClose = new System.Windows.Forms.Button();
@@ -62,6 +55,13 @@
             this.panelSplitBar = new System.Windows.Forms.Panel();
             this.comboBoxTestPeriod = new System.Windows.Forms.ComboBox();
             this.comboBoxTotalPeriod = new System.Windows.Forms.ComboBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlanList)).BeginInit();
             this.groupBoxProductionPlan.SuspendLayout();
             this.SuspendLayout();
@@ -73,50 +73,15 @@
             this.Column1,
             this.Column2,
             this.Column3,
-            this.제품명,
             this.Column4,
             this.Column5,
-            this.Column6});
+            this.Column6,
+            this.Column7});
             this.dataGridViewPlanList.Location = new System.Drawing.Point(12, 85);
             this.dataGridViewPlanList.Name = "dataGridViewPlanList";
             this.dataGridViewPlanList.RowTemplate.Height = 23;
             this.dataGridViewPlanList.Size = new System.Drawing.Size(907, 277);
             this.dataGridViewPlanList.TabIndex = 35;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "No";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "생산일자";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "주/야";
-            this.Column3.Name = "Column3";
-            // 
-            // 제품명
-            // 
-            this.제품명.HeaderText = "Column4";
-            this.제품명.Name = "제품명";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "계획수량";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "생산계획번호";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "설치수량";
-            this.Column6.Name = "Column6";
             // 
             // comboBoxMismatchProduct
             // 
@@ -360,6 +325,41 @@
             this.comboBoxTotalPeriod.Size = new System.Drawing.Size(130, 20);
             this.comboBoxTotalPeriod.TabIndex = 46;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "No";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "생산일자";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "주/야";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "제품명";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "계획수량";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "생산계획번호";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "설치수량";
+            this.Column7.Name = "Column7";
+            // 
             // ProductionPlanForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -400,13 +400,6 @@
         private System.Windows.Forms.Label labelMismatchInfo;
         private System.Windows.Forms.Button buttonDownloadPlan;
         private System.Windows.Forms.Button buttonInputPlan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 제품명;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Label labelTestPeriod;
         private System.Windows.Forms.Label labelTotalPeriod;
         private System.Windows.Forms.Button buttonSearch;
@@ -426,5 +419,12 @@
         private System.Windows.Forms.Panel panelSplitBar;
         private System.Windows.Forms.ComboBox comboBoxTestPeriod;
         private System.Windows.Forms.ComboBox comboBoxTotalPeriod;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
     }
 }
