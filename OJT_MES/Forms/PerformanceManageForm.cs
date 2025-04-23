@@ -111,5 +111,10 @@ namespace LotteMES.Forms
             labelTotalPeriod.Font = Style.CommonFont;
             #endregion            
         }
+
+        private void buttonUploadPerformance_Click(object sender, EventArgs e)
+        {
+            //생산한 데이터의 실적 관리를 위한 화면, POP서버로 전송
+        }
     }
 }

@@ -883,7 +883,7 @@
             this.buttonCreateWorker.Name = "buttonCreateWorker";
             this.buttonCreateWorker.Size = new System.Drawing.Size(106, 63);
             this.buttonCreateWorker.TabIndex = 14;
-            this.buttonCreateWorker.Text = "작업자\r\n생성";
+            this.buttonCreateWorker.Text = "작업자\r\n설정";
             this.buttonCreateWorker.UseVisualStyleBackColor = false;
             // 
             // buttonCreateBasicInfo

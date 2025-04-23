@@ -88,6 +88,7 @@
             this.buttonDownloadProductInfo.TabIndex = 25;
             this.buttonDownloadProductInfo.Text = "제품정보\r\n다운로드";
             this.buttonDownloadProductInfo.UseVisualStyleBackColor = true;
+            this.buttonDownloadProductInfo.Click += new System.EventHandler(this.buttonDownloadProductInfo_Click);
             // 
             // labelTitle
             // 

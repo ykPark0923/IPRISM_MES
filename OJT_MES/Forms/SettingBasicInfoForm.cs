@@ -91,11 +91,22 @@ namespace LotteMES.Forms
 
         private void buttonDownloadLineInfo_Click(object sender, EventArgs e)
         {
+            //생산계획에 업로드 될 데이터 라인 정보 다운로드 SAP->POP->localDB
+
             string strSql = " SELECT PRODLINECD, PRODLINENM FROM TPLINEINFO_SAP ";
             dataGridViewSettingBasicInfo.Columns.Clear();
             dataGridViewSettingBasicInfo.DataSource = DBAccessor.Maria_Data(strSql);
             dataGridViewSettingBasicInfo.Columns["PRODLINECD"].HeaderText = "작업장";
             dataGridViewSettingBasicInfo.Columns["PRODLINENM"].HeaderText = "생산라인명";
+        }
+
+        private void buttonDownloadProductInfo_Click(object sender, EventArgs e)
+        {
+            //생산계획에 업로드 될 데이터 제품 정보 다운로드 SAP->POP->localDB
+
+            string strSql = " SELECT * FROM TPITEMINFO_SAP ";
+            dataGridViewSettingBasicInfo.Columns.Clear();
+            dataGridViewSettingBasicInfo.DataSource = DBAccessor.Maria_Data(strSql);
         }
     }
 }

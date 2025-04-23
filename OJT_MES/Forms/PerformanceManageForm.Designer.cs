@@ -196,8 +196,9 @@
             this.buttonUploadPerformance.Name = "buttonUploadPerformance";
             this.buttonUploadPerformance.Size = new System.Drawing.Size(119, 96);
             this.buttonUploadPerformance.TabIndex = 54;
-            this.buttonUploadPerformance.Text = "생산실적\r\n업로드";
+            this.buttonUploadPerformance.Text = "실적내역\r\n업로드";
             this.buttonUploadPerformance.UseVisualStyleBackColor = true;
+            this.buttonUploadPerformance.Click += new System.EventHandler(this.buttonUploadPerformance_Click);
             // 
             // buttonPerformanceView
             // 
@@ -205,7 +206,7 @@
             this.buttonPerformanceView.Name = "buttonPerformanceView";
             this.buttonPerformanceView.Size = new System.Drawing.Size(119, 96);
             this.buttonPerformanceView.TabIndex = 53;
-            this.buttonPerformanceView.Text = "생산실적";
+            this.buttonPerformanceView.Text = "생산실적내역";
             this.buttonPerformanceView.UseVisualStyleBackColor = true;
             // 
             // buttonClose
