@@ -18,9 +18,11 @@ namespace LotteMES.Forms
     {
         MainFormData m_data = new MainFormData();
 
+
         public MainForm()
         {
             InitializeComponent();
+            this.Size = new Size(1024, 768);
 
             // 테두리 제거
             this.FormBorderStyle = FormBorderStyle.None;
@@ -368,10 +370,6 @@ namespace LotteMES.Forms
             settingBasicInfoForm.ShowDialog();
         }
 
-        private void MainForm_Resize(object sender, EventArgs e)
-        {
-
-        }
 
         private void textBoxPlannedQuantity_TextChanged(object sender, EventArgs e)
         {

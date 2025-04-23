@@ -298,7 +298,7 @@
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(1008, 51);
+            this.panelHeader.Size = new System.Drawing.Size(1008, 768);
             this.panelHeader.TabIndex = 23;
             // 
             // pictureBox1
@@ -1029,7 +1029,6 @@
             this.Controls.Add(this.panelHeader);
             this.Name = "MainForm";
             this.Text = "MainForm";
-            this.Resize += new System.EventHandler(this.MainForm_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxServer)).EndInit();

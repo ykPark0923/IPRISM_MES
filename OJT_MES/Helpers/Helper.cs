@@ -22,14 +22,26 @@ namespace LotteMES.Helpers
             }
             else
             {
-                MessageBox.Show("정수로 치환할수 없는 문자열 값입니다.");
+                MessageBox.Show("정수로 치환할수 없는 값입니다.");
                 return -1;
             }
         }
 
         public static DateTime TryParseDateTime(string input, DateTime defaultValue = default)
         {
-            return DateTime.TryParse(input, out DateTime result) ? result : defaultValue;
+            //return DateTime.TryParse(input, out DateTime result) ? result : defaultValue;
+
+            bool result = DateTime.TryParse(input, out DateTime value);
+
+            if (result == true)
+            {
+                return value;
+            }
+            else
+            {
+                MessageBox.Show("날짜로 치환할수 없는 값입니다.");
+                return default;
+            }
         }
     }
 }
