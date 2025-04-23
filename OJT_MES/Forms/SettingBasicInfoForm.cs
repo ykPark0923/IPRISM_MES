@@ -15,6 +15,7 @@ using DevExpress.Utils.Drawing;
 using DevExpress.XtraEditors;
 using DevExpress.XtraPrinting.Native;
 using System.Reflection.Emit;
+using LotteMES.DBAccess;
 
 namespace LotteMES.Forms
 {
@@ -88,5 +89,13 @@ namespace LotteMES.Forms
             #endregion            
         }
 
+        private void buttonDownloadLineInfo_Click(object sender, EventArgs e)
+        {
+            string strSql = " SELECT PRODLINECD, PRODLINENM FROM TPLINEINFO_SAP ";
+            dataGridViewSettingBasicInfo.Columns.Clear();
+            dataGridViewSettingBasicInfo.DataSource = DBAccessor.Maria_Data(strSql);
+            dataGridViewSettingBasicInfo.Columns["PRODLINECD"].HeaderText = "작업장";
+            dataGridViewSettingBasicInfo.Columns["PRODLINENM"].HeaderText = "생산라인명";
+        }
     }
 }

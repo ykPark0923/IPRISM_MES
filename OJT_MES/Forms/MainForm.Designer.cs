@@ -897,6 +897,7 @@
             this.buttonCreateBasicInfo.TabIndex = 13;
             this.buttonCreateBasicInfo.Text = "기본정보\r\n생성";
             this.buttonCreateBasicInfo.UseVisualStyleBackColor = false;
+            this.buttonCreateBasicInfo.Click += new System.EventHandler(this.buttonCreateBasicInfo_Click);
             // 
             // buttonHardwareEnvironmentSettings
             // 

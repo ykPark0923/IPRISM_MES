@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace LotteMES.DBAccess
 {
-    static internal class DBAccessor
+    static public class DBAccessor
     {
         static string strCon = "Server=127.0.0.1; Port=3406; Database=lottemes; uid=root; pwd=root;";
 
@@ -25,7 +25,7 @@ namespace LotteMES.DBAccess
             m_cnn.Close();
         }
 
-        internal static DataTable Maria_Data(string strSql)
+        public static DataTable Maria_Data(string strSql)
         {
             try
             {
@@ -52,6 +52,5 @@ namespace LotteMES.DBAccess
                 return null;
             }
         }
-
     }
 }

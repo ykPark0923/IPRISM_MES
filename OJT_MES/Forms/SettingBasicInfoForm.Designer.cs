@@ -78,6 +78,7 @@
             this.buttonDownloadLineInfo.TabIndex = 26;
             this.buttonDownloadLineInfo.Text = "라인정보\r\n다운로드";
             this.buttonDownloadLineInfo.UseVisualStyleBackColor = true;
+            this.buttonDownloadLineInfo.Click += new System.EventHandler(this.buttonDownloadLineInfo_Click);
             // 
             // buttonDownloadProductInfo
             // 
