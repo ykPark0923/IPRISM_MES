@@ -8,9 +8,6 @@ namespace LotteMES.FormData
 {
     public class MainFormData
     {
-        
-
-
         #region Label
         private string currentDateTime = string.Empty;
         public string CurrentDateTime { get => currentDateTime; set => currentDateTime = value; }

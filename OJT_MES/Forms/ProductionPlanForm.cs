@@ -138,36 +138,5 @@ namespace LotteMES.Forms
 
             dataGridViewPlanList.DataSource = DBAccessor.Maria_Data(strSql);
         }
-
-        //private void Maria_Data()
-        //{
-        //    string strCon = "Server=127.0.0.1; Port=3406; Database=lottemes; uid=root; pwd=root;";
-        //    string strSql = " SELECT PLANDATE, AUFNR, PLANQTY FROM tpprodplan_sap ";
-
-        //    try
-        //    {
-        //        MySqlConnection cnn = new MySqlConnection(strCon);
-        //        MySqlCommand cmd = new MySqlCommand();
-
-        //        MySqlDataAdapter da = new MySqlDataAdapter();
-        //        DataTable dt = new DataTable();
-
-        //        cmd.Connection = cnn;
-        //        cmd.CommandText = strSql;
-        //        cmd.CommandType = CommandType.Text;
-
-        //        da.SelectCommand = cmd;
-        //        da.Fill(dt);
-
-        //        dataGridViewPlanList.DataSource = dt;
-
-        //        cnn.Close();
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
     }
 }
