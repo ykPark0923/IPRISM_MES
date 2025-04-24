@@ -137,7 +137,7 @@ namespace LotteMES.Forms
         {
             string strSql = " SELECT PLANDATE, AUFNR, PLANQTY FROM tpprodplan_sap ";
             dataGridViewPlanList.Columns.Clear();
-            dataGridViewPlanList.DataSource = DBAccessor.Maria_Data(strSql);
+            dataGridViewPlanList.DataSource = ServerDBAccessor.Maria_Data(strSql);
             dataGridViewPlanList.Columns["PLANDATE"].HeaderText = "생산일자";
             dataGridViewPlanList.Columns["AUFNR"].HeaderText = "오더번호";
             dataGridViewPlanList.Columns["PLANQTY"].HeaderText = "계획수량";

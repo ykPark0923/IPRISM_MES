@@ -69,7 +69,8 @@
     <Compile Include="Bases\MESFormBase.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DBAccess\DBAccessor.cs" />
+    <Compile Include="DBAccess\LocalDBAccessor.cs" />
+    <Compile Include="DBAccess\ServerDBAccessor.cs" />
     <Compile Include="DBData\ProductPlanAdvanced.cs" />
     <Compile Include="DBData\ProductPlanBasic.cs" />
     <Compile Include="FormData\LoginFormData.cs" />

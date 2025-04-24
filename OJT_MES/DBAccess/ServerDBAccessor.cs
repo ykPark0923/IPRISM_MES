@@ -9,13 +9,13 @@ using System.Windows.Forms;
 
 namespace LotteMES.DBAccess
 {
-    static public class DBAccessor
+    static public class ServerDBAccessor
     {
-        static string strCon = "Server=127.0.0.1; Port=3406; Database=lottemes; uid=root; pwd=root;";
+        static string strCon = "Server=127.0.0.1; Port=3406; Database=lottemes_sap; uid=root; pwd=root;";
 
         static MySqlConnection m_cnn = null;
 
-        static DBAccessor()
+        static ServerDBAccessor()
         {
             m_cnn = new MySqlConnection(strCon);
         }
@@ -42,8 +42,6 @@ namespace LotteMES.DBAccess
                 da.Fill(dt);
 
                 return dt;
-
-
             }
             catch (Exception ex)
             {

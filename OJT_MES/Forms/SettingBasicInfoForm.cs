@@ -11,9 +11,6 @@ using System.Windows.Forms;
 using LotteMES.FormData;
 using LotteMES.Styles;
 using LotteMES.Helpers;
-using DevExpress.Utils.Drawing;
-using DevExpress.XtraEditors;
-using DevExpress.XtraPrinting.Native;
 using System.Reflection.Emit;
 using LotteMES.DBAccess;
 
@@ -21,8 +18,6 @@ namespace LotteMES.Forms
 {
     public partial class SettingBasicInfoForm : MESFormBase
     {
-        //MainFormData m_data = new MainFormData();
-
         public SettingBasicInfoForm()
         {
             InitializeComponent();
@@ -31,22 +26,6 @@ namespace LotteMES.Forms
             this.FormBorderStyle = FormBorderStyle.None;
 
             SetStyles();
-        }
-        
-        /// <summary>
-        /// 컨트롤로부터 데이터 객체의 값들을 업데이트
-        /// </summary>
-        protected override void SetObjectFromControls()
-        {
-            
-        }
-
-        /// <summary>
-        /// 데이터 객체의 값들로부터 컨트롤을 업데이트
-        /// </summary>
-        protected override void UpdateControlsFromObject()
-        {
-            
         }
 
         protected override void SetStyles()
@@ -91,22 +70,95 @@ namespace LotteMES.Forms
 
         private void buttonDownloadLineInfo_Click(object sender, EventArgs e)
         {
-            //생산계획에 업로드 될 데이터 라인 정보 다운로드 SAP->POP->localDB
+            // 서버 DB에서 데이터 조회
+            string strSelect = "SELECT * FROM TPLINEINFO_SAP";
+            DataTable dt = ServerDBAccessor.Maria_Data(strSelect);
 
-            string strSql = " SELECT PRODLINECD, PRODLINENM FROM TPLINEINFO_SAP ";
+            if (dt == null || dt.Rows.Count == 0)
+            {
+                MessageBox.Show("서버로부터 라인정보를 불러오지 못했습니다.");
+                return;
+            }
+
+            // 로컬 테이블 초기화
+            string strTruncate = "TRUNCATE TABLE TPLINEINFO_LOCAL";
+            LocalDBAccessor.Maria_Data(strTruncate);
+
+            // 로컬 DB로 Insert
+            foreach (DataRow row in dt.Rows)
+            {
+                string sql = $@"
+                    INSERT INTO TPLINEINFO_LOCAL 
+                    (WERKS, PRODLINECD, LINESEQ, WERKSNM, PRODLINENM, BARLINECD, VJCODE, I_DATE, U_DATE) 
+                    VALUES (
+                        '{row["WERKS"]}', 
+                        '{row["PRODLINECD"]}', 
+                        '{row["LINESEQ"]}', 
+                        '{row["WERKSNM"].ToString().Replace("'", "''")}', 
+                        '{row["PRODLINENM"].ToString().Replace("'", "''")}', 
+                        '{row["BARLINECD"]}', 
+                        '{row["VJCODE"]}', 
+                        '{row["I_DATE"]}', 
+                        '{row["U_DATE"]}'
+                    )";
+
+                LocalDBAccessor.Maria_Data(sql);
+            }
+
+            // 최종 데이터 확인용 출력
+            string strView = "SELECT PRODLINECD, PRODLINENM FROM TPLINEINFO_LOCAL";
             dataGridViewSettingBasicInfo.Columns.Clear();
-            dataGridViewSettingBasicInfo.DataSource = DBAccessor.Maria_Data(strSql);
+            dataGridViewSettingBasicInfo.DataSource = LocalDBAccessor.Maria_Data(strView);
             dataGridViewSettingBasicInfo.Columns["PRODLINECD"].HeaderText = "작업장";
             dataGridViewSettingBasicInfo.Columns["PRODLINENM"].HeaderText = "생산라인명";
         }
 
         private void buttonDownloadProductInfo_Click(object sender, EventArgs e)
         {
-            //생산계획에 업로드 될 데이터 제품 정보 다운로드 SAP->POP->localDB
+            // 서버 DB에서 데이터 조회
+            string strSelect = "SELECT * FROM TPITEMINFO_SAP";
+            DataTable dt = ServerDBAccessor.Maria_Data(strSelect);
 
-            string strSql = " SELECT * FROM TPITEMINFO_SAP ";
+            if (dt == null || dt.Rows.Count == 0)
+            {
+                MessageBox.Show("서버로부터 제품정보를 불러오지 못했습니다.");
+                return;
+            }
+
+            // 로컬 테이블 초기화
+            string strTruncate = "TRUNCATE TABLE TPITEMINFO_LOCAL";
+            LocalDBAccessor.Maria_Data(strTruncate);
+
+            // 로컬 DB로 Insert
+            foreach (DataRow row in dt.Rows)
+            {
+                string sql = $@"
+                    INSERT INTO TPITEMINFO_LOCAL 
+                    (WERKS, PRODLINECD, ITEMCD, ITEMNM, UNITCD, UNITNM, CIRCULDAY, CIRCULTYPE, PIECQTY, CSRQTY, PLBOXQTY, BARCODE, I_DATE, U_DATE) 
+                    VALUES (
+                        '{row["WERKS"]}', 
+                        '{row["PRODLINECD"]}', 
+                        '{row["ITEMCD"]}', 
+                        '{row["ITEMNM"]}', 
+                        '{row["UNITCD"]}', 
+                        '{row["UNITNM"]}', 
+                        '{row["CIRCULDAY"]}', 
+                        '{row["CIRCULTYPE"]}', 
+                        '{row["PIECQTY"]}', 
+                        '{row["CSRQTY"]}', 
+                        '{row["PLBOXQTY"]}', 
+                        '{row["BARCODE"]}', 
+                        '{row["I_DATE"]}', 
+                        '{row["U_DATE"]}'
+                    )";
+
+                LocalDBAccessor.Maria_Data(sql);
+            }
+
+            // 최종 데이터 확인용 출력
+            string strView = "SELECT * FROM TPITEMINFO_LOCAL";
             dataGridViewSettingBasicInfo.Columns.Clear();
-            dataGridViewSettingBasicInfo.DataSource = DBAccessor.Maria_Data(strSql);
+            dataGridViewSettingBasicInfo.DataSource = LocalDBAccessor.Maria_Data(strView);
         }
     }
 }
