@@ -160,5 +160,10 @@ namespace LotteMES.Forms
             dataGridViewSettingBasicInfo.Columns.Clear();
             dataGridViewSettingBasicInfo.DataSource = LocalDBAccessor.Maria_Data(strView);
         }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -58,6 +58,7 @@
             this.buttonCancel.TabIndex = 7;
             this.buttonCancel.Text = "취소";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonOK
             // 

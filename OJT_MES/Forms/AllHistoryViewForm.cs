@@ -73,5 +73,10 @@ namespace LotteMES.Forms
             labelSearchType.Font = Style.CommonFont;
             #endregion            
         }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

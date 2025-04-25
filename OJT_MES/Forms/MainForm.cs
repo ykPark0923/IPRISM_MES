@@ -26,8 +26,9 @@ namespace LotteMES.Forms
 
             // 테두리 제거
             this.FormBorderStyle = FormBorderStyle.None;
+
             // 작업 표시줄을 포함한 화면 전체로 설정
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
 
             SetStyles();
         }

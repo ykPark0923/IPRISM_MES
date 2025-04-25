@@ -218,6 +218,7 @@
             this.buttonClose.TabIndex = 55;
             this.buttonClose.Text = "닫기";
             this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // dataGridViewPerformance
             // 

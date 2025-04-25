@@ -193,5 +193,10 @@ namespace LotteMES.Forms
         {
             //위에서 선택된 생산계획선택해서 수정한 내역 LocalDB로 Update
         }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

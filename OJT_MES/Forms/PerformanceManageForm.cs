@@ -184,5 +184,10 @@ namespace LotteMES.Forms
                 ServerDBAccessor.Maria_Data(sql);
             }
         }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -123,6 +123,7 @@
             this.buttonCancel.TabIndex = 3;
             this.buttonCancel.Text = "취소";
             this.buttonCancel.UseVisualStyleBackColor = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // panelSplitBar
             // 

@@ -96,5 +96,10 @@ namespace LotteMES.Forms
             textBoxWorkerPassword.Font = Style.CommonFont;
             #endregion            
         }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
