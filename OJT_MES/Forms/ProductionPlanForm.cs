@@ -133,30 +133,65 @@ namespace LotteMES.Forms
             #endregion            
         }
 
-        protected override void UpdateControlsFromObject()
-        {
-            string strSql = " SELECT PLANDATE, AUFNR, PLANQTY FROM tpprodplan_sap ";
-            dataGridViewPlanList.Columns.Clear();
-            dataGridViewPlanList.DataSource = ServerDBAccessor.Maria_Data(strSql);
-            dataGridViewPlanList.Columns["PLANDATE"].HeaderText = "생산일자";
-            dataGridViewPlanList.Columns["AUFNR"].HeaderText = "오더번호";
-            dataGridViewPlanList.Columns["PLANQTY"].HeaderText = "계획수량";
-        }
-
         private void buttonDownloadPlan_Click(object sender, EventArgs e)
         {
             //생산계획 Download 서버 -> local
+            // 서버 DB에서 데이터 조회
+            string strSelect = "SELECT * FROM TPPRODPLAN_SAP";
+            DataTable dt = ServerDBAccessor.Maria_Data(strSelect);
+
+            if (dt == null || dt.Rows.Count == 0)
+            {
+                MessageBox.Show("서버로부터 생산정보를 불러오지 못했습니다.");
+                return;
+            }
+
+            // 로컬 테이블 초기화
+            string strTruncate = "TRUNCATE TABLE TPPRODPLAN_LOCAL";
+            LocalDBAccessor.Maria_Data(strTruncate);
+
+            // 로컬 DB로 Insert
+            foreach (DataRow row in dt.Rows)
+            {
+                string sql = $@"
+                    INSERT INTO TPPRODPLAN_LOCAL 
+                    (WERKS, PRODLINECD, PLANDATE, ITEMCD, DNTYPE, AUFNR, UNITCD, PRODVER, PLANQTY, READDATA, I_DATE, U_DATE) 
+                    VALUES (
+                        '{row["WERKS"]}', 
+                        '{row["PRODLINECD"]}', 
+                        '{row["PLANDATE"]}', 
+                        '{row["ITEMCD"]}', 
+                        '{row["DNTYPE"]}', 
+                        '{row["AUFNR"]}', 
+                        '{row["UNITCD"]}', 
+                        '{row["PRODVER"]}', 
+                        '{row["PLANQTY"]}', 
+                        '{row["READDATA"]}', 
+                        '{row["I_DATE"]}', 
+                        '{row["U_DATE"]}'
+                    )";
+
+                LocalDBAccessor.Maria_Data(sql);
+            }
+
+            // 최종 데이터 확인용 출력
+            string strView = "SELECT PLANDATE, AUFNR, PLANQTY FROM TPPRODPLAN_LOCAL";
+            dataGridViewPlanList.Columns.Clear();
+            dataGridViewPlanList.DataSource = LocalDBAccessor.Maria_Data(strView);
+            dataGridViewPlanList.Columns["PLANDATE"].HeaderText = "생산일자";
+            dataGridViewPlanList.Columns["AUFNR"].HeaderText = "오더번호";
+            dataGridViewPlanList.Columns["PLANQTY"].HeaderText = "계획수량";
 
         }
         private void buttonSelectPlan_Click(object sender, EventArgs e)
         {
-            //생산계획 선택 : 로컬 DB에서 해당 투플 Select 셋팅
+            //생산계획 선택 : 로컬 DB에서 해당 투플 Select해 하단의 제품명, 생산일자 등 뿌려주기
             
         }
 
         private void buttonInputPlan_Click(object sender, EventArgs e)
         {
-            //생산계획 Download 서버 -> local
+            //위에서 선택된 생산계획선택해서 수정한 내역 LocalDB로 Update
         }
     }
 }

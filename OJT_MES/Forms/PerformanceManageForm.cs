@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using LotteMES.FormData;
 using LotteMES.Styles;
 using LotteMES.Helpers;
+using LotteMES.DBAccess;
 
 namespace LotteMES.Forms
 {
@@ -23,7 +24,24 @@ namespace LotteMES.Forms
             this.FormBorderStyle = FormBorderStyle.None;
 
             SetStyles();
+            SetGridListViewDataFromLocalDB();
         }
+        private void SetGridListViewDataFromLocalDB()
+        {
+
+            string strSelect = "SELECT * FROM TPPRODRESULT_LOCAL";
+            DataTable dt = LocalDBAccessor.Maria_Data(strSelect);
+
+            if (dt == null || dt.Rows.Count == 0)
+            {
+                MessageBox.Show("서버로부터 라인정보를 불러오지 못했습니다.");
+                return;
+            }
+
+            dataGridViewPerformance.Columns.Clear();
+            dataGridViewPerformance.DataSource = dt;
+        }
+
 
         protected override void SetStyles()
         {
@@ -35,7 +53,7 @@ namespace LotteMES.Forms
             buttonSearch.BackColor = Style.CommonButtonBackgroundColor;
             buttonEditBoxNo.BackColor = Style.CommonButtonBackgroundColor;
             buttonUploadBoxHistory.BackColor = Style.CommonButtonBackgroundColor;
-            buttonPerformanceView.BackColor = Style.CommonButtonBackgroundColor;
+            buttonPerformanceDelete.BackColor = Style.CommonButtonBackgroundColor;
             buttonUploadPerformance.BackColor = Style.CommonButtonBackgroundColor;
             buttonClose.BackColor = Style.CommonButtonBackgroundColor;
 
@@ -63,7 +81,7 @@ namespace LotteMES.Forms
             buttonSearch.ForeColor = Style.CommonForeColor;
             buttonEditBoxNo.ForeColor = Style.CommonForeColor;
             buttonUploadBoxHistory.ForeColor = Style.CommonForeColor;
-            buttonPerformanceView.ForeColor = Style.CommonForeColor;
+            buttonPerformanceDelete.ForeColor = Style.CommonForeColor;
             buttonUploadPerformance.ForeColor = Style.CommonForeColor;
             buttonClose.ForeColor = Style.CommonForeColor;
 
@@ -90,7 +108,7 @@ namespace LotteMES.Forms
             buttonSearch.Font = Style.CommonFont;
             buttonEditBoxNo.Font = Style.CommonFont;
             buttonUploadBoxHistory.Font = Style.CommonFont;
-            buttonPerformanceView.Font = Style.CommonFont;
+            buttonPerformanceDelete.Font = Style.CommonFont;
             buttonUploadPerformance.Font = Style.CommonFont;
             buttonClose.Font = Style.CommonFont;
 
@@ -112,9 +130,59 @@ namespace LotteMES.Forms
             #endregion            
         }
 
+        private void buttonPerformanceDelete_Click(object sender, EventArgs e)
+        {
+            //생산한 데이터 실적 삭제, PK값 기준으로 LocalDB에서 삭제
+        }
         private void buttonUploadPerformance_Click(object sender, EventArgs e)
         {
             //생산한 데이터의 실적 관리를 위한 화면, POP서버로 전송
+
+            string strSelect = "SELECT * FROM TPPRODRESULT_LOCAL";
+            DataTable dt = LocalDBAccessor.Maria_Data(strSelect);
+
+            if (dt == null || dt.Rows.Count == 0)
+            {
+                MessageBox.Show("서버로부터 생산정보를 불러오지 못했습니다.");
+                return;
+            }
+
+            // 로컬 테이블 초기화
+            string strTruncate = "TRUNCATE TABLE TPPRODRESULT_SAP";
+            ServerDBAccessor.Maria_Data(strTruncate);
+
+            // 로컬 DB로 Insert
+            foreach (DataRow row in dt.Rows)
+            {
+                string sql = $@"
+                    INSERT INTO TPPRODRESULT_SAP 
+                    (WERKS, PRODLINECD, AUFNR, ITEMCD, DNTYPE, PLNO, PLSERL, RESULTGUBUN, RESULTYN, PRODDATE, PRODTIME, BOXQTY, STARTBOXNO, STARTBOXTIME, ENDBOXNO, ENDBOXTIME, READDATA,I_DATE, U_DATE, RESULT, RESULT_MSG) 
+                    VALUES (
+                        '{row["WERKS"]}', 
+                        '{row["PRODLINECD"]}', 
+                        '{row["AUFNR"]}', 
+                        '{row["ITEMCD"]}', 
+                        '{row["DNTYPE"]}', 
+                        '{row["PLNO"]}', 
+                        '{row["PLSERL"]}', 
+                        '{row["RESULTGUBUN"]}', 
+                        '{row["RESULTYN"]}', 
+                        '{row["PRODDATE"]}', 
+                        '{row["PRODTIME"]}', 
+                        '{row["BOXQTY"]}', 
+                        '{row["STARTBOXNO"]}', 
+                        '{row["STARTBOXTIME"]}', 
+                        '{row["ENDBOXNO"]}',  
+                        '{row["ENDBOXTIME"]}', 
+                        '{row["READDATA"]}', 
+                        '{row["I_DATE"]}', 
+                        '{row["U_DATE"]}',
+                        '{row["RESULT"]}', 
+                        '{row["RESULT_MSG"]}'
+                    )";
+
+                ServerDBAccessor.Maria_Data(sql);
+            }
         }
     }
 }

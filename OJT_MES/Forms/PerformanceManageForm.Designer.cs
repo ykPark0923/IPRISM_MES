@@ -42,7 +42,7 @@
             this.comboBoxTransmissionMedia = new System.Windows.Forms.ComboBox();
             this.labelTransmissionMedia = new System.Windows.Forms.Label();
             this.buttonUploadPerformance = new System.Windows.Forms.Button();
-            this.buttonPerformanceView = new System.Windows.Forms.Button();
+            this.buttonPerformanceDelete = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
             this.dataGridViewPerformance = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -200,14 +200,15 @@
             this.buttonUploadPerformance.UseVisualStyleBackColor = true;
             this.buttonUploadPerformance.Click += new System.EventHandler(this.buttonUploadPerformance_Click);
             // 
-            // buttonPerformanceView
+            // buttonPerformanceDelete
             // 
-            this.buttonPerformanceView.Location = new System.Drawing.Point(456, 593);
-            this.buttonPerformanceView.Name = "buttonPerformanceView";
-            this.buttonPerformanceView.Size = new System.Drawing.Size(119, 96);
-            this.buttonPerformanceView.TabIndex = 53;
-            this.buttonPerformanceView.Text = "생산실적내역";
-            this.buttonPerformanceView.UseVisualStyleBackColor = true;
+            this.buttonPerformanceDelete.Location = new System.Drawing.Point(456, 593);
+            this.buttonPerformanceDelete.Name = "buttonPerformanceDelete";
+            this.buttonPerformanceDelete.Size = new System.Drawing.Size(119, 96);
+            this.buttonPerformanceDelete.TabIndex = 53;
+            this.buttonPerformanceDelete.Text = "생산실적삭제";
+            this.buttonPerformanceDelete.UseVisualStyleBackColor = true;
+            this.buttonPerformanceDelete.Click += new System.EventHandler(this.buttonPerformanceDelete_Click);
             // 
             // buttonClose
             // 
@@ -305,7 +306,7 @@
             this.Controls.Add(this.dataGridViewPerformance);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonUploadPerformance);
-            this.Controls.Add(this.buttonPerformanceView);
+            this.Controls.Add(this.buttonPerformanceDelete);
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.labelTotalPeriod);
             this.Controls.Add(this.labelTestPeriod);
@@ -338,7 +339,7 @@
         private System.Windows.Forms.TextBox textBoxEndBoxNo;
         private System.Windows.Forms.TextBox textBoxStartBoxNo;
         private System.Windows.Forms.Button buttonUploadPerformance;
-        private System.Windows.Forms.Button buttonPerformanceView;
+        private System.Windows.Forms.Button buttonPerformanceDelete;
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.DataGridView dataGridViewPerformance;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
