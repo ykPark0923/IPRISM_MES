@@ -11,7 +11,7 @@ namespace LotteMES.DBAccess
 {
     static public class LocalDBAccessor
     {
-        static string strCon = "Server=127.0.0.1; Port=3406; Database=lottemes_local; uid=root; pwd=root;";
+        static string strCon = "Server=127.0.0.1; Port=3306; Database=lottemes_local; uid=root; pwd=root;";
 
         static MySqlConnection m_cnn = null;
 
