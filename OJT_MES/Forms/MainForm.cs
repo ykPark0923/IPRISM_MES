@@ -388,10 +388,11 @@ namespace LotteMES.Forms
             settingBasicInfoForm.ShowDialog();
         }
 
-
+        // 잔량등록 버튼
         private void textBoxPlannedQuantity_TextChanged(object sender, EventArgs e)
         {
-
+            RemainingAmountRegisterForm remainingAmountRegisterForm = new RemainingAmountRegisterForm();
+            remainingAmountRegisterForm.ShowDialog();
         }
 
         // 바코드일괄출력버튼
