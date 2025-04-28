@@ -373,6 +373,7 @@
             this.Controls.Add(this.labelTitle);
             this.Name = "WorkerConfigurationForm";
             this.Text = "WorkerConfigurationForm";
+            this.Load += new System.EventHandler(this.WorkerConfigurationForm_Load);
             this.groupBoxWorkDataChange.ResumeLayout(false);
             this.groupBoxWorkDataChange.PerformLayout();
             this.groupBoxFactoryLineSetting.ResumeLayout(false);

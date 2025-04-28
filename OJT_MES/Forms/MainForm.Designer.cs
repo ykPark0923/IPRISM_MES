@@ -150,6 +150,7 @@
             this.buttonPause.Text = "일시\r\n정지";
             this.buttonPause.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonPause.UseVisualStyleBackColor = false;
+            this.buttonPause.Click += new System.EventHandler(this.buttonPause_Click);
             // 
             // pictureBoxLogo
             // 
@@ -848,6 +849,7 @@
             this.buttonPopDeviceHistory.TabIndex = 17;
             this.buttonPopDeviceHistory.Text = "POP 장비\r\n관리이력";
             this.buttonPopDeviceHistory.UseVisualStyleBackColor = false;
+            this.buttonPopDeviceHistory.Click += new System.EventHandler(this.buttonPopDeviceHistory_Click);
             // 
             // buttonBulkBarcodePrint
             // 
@@ -860,6 +862,7 @@
             this.buttonBulkBarcodePrint.TabIndex = 16;
             this.buttonBulkBarcodePrint.Text = "바코드\r\n일괄출력";
             this.buttonBulkBarcodePrint.UseVisualStyleBackColor = false;
+            this.buttonBulkBarcodePrint.Click += new System.EventHandler(this.buttonBulkBarcodePrint_Click);
             // 
             // buttonProductionPlan
             // 
@@ -885,6 +888,7 @@
             this.buttonCreateWorker.TabIndex = 14;
             this.buttonCreateWorker.Text = "작업자\r\n설정";
             this.buttonCreateWorker.UseVisualStyleBackColor = false;
+            this.buttonCreateWorker.Click += new System.EventHandler(this.buttonCreateWorker_Click);
             // 
             // buttonCreateBasicInfo
             // 
@@ -949,6 +953,7 @@
             this.buttonExit.TabIndex = 9;
             this.buttonExit.Text = "종료";
             this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // buttonHelp
             // 
@@ -961,6 +966,7 @@
             this.buttonHelp.TabIndex = 8;
             this.buttonHelp.Text = "도움말";
             this.buttonHelp.UseVisualStyleBackColor = false;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
             // 
             // buttonPrintTest
             // 
@@ -973,6 +979,7 @@
             this.buttonPrintTest.TabIndex = 7;
             this.buttonPrintTest.Text = "인쇄\r\n테스트";
             this.buttonPrintTest.UseVisualStyleBackColor = false;
+            this.buttonPrintTest.Click += new System.EventHandler(this.buttonPrintTest_Click);
             // 
             // buttonReissue
             // 
@@ -985,6 +992,7 @@
             this.buttonReissue.TabIndex = 6;
             this.buttonReissue.Text = "재발행";
             this.buttonReissue.UseVisualStyleBackColor = false;
+            this.buttonReissue.Click += new System.EventHandler(this.buttonReissue_Click);
             // 
             // buttonReset
             // 
@@ -1000,6 +1008,7 @@
             this.buttonReset.Text = "리셋";
             this.buttonReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonReset.UseVisualStyleBackColor = false;
+            this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
             // 
             // buttonStop
             // 
@@ -1015,6 +1024,7 @@
             this.buttonStop.Text = "중지";
             this.buttonStop.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonStop.UseVisualStyleBackColor = false;
+            this.buttonStop.Click += new System.EventHandler(this.buttonStop_Click);
             // 
             // MainForm
             // 
@@ -1029,6 +1039,8 @@
             this.Controls.Add(this.panelHeader);
             this.Name = "MainForm";
             this.Text = "MainForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxServer)).EndInit();

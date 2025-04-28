@@ -11,11 +11,14 @@ using LotteMES.Bases;
 using LotteMES.FormData;
 using LotteMES.Styles;
 using LotteMES.Helpers;
+using LotteMES.Constants;
 
 namespace LotteMES.Forms
 {
     public partial class MainForm : MESFormBase
     {
+        const string DATE_FORMAT = "yyyy-MM-dd";
+
         MainFormData m_data = new MainFormData();
 
 
@@ -30,6 +33,11 @@ namespace LotteMES.Forms
             // 작업 표시줄을 포함한 화면 전체로 설정
             //this.WindowState = FormWindowState.Maximized;
 
+        }
+
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
             SetStyles();
         }
 
@@ -86,7 +94,7 @@ namespace LotteMES.Forms
             textBoxRemainingRibbon.Text = m_data.RemainingRibbon.ToString();
             textBoxRemainingLabel.Text = m_data.RemainingLabel.ToString();
             textBoxProductionLine.Text = m_data.ProductionLine;
-            textBoxProductionDate.Text = m_data.ProductionDate.ToString("yyyy-MM-dd"); // 날짜 포맷
+            textBoxProductionDate.Text = m_data.ProductionDate.ToString(Constant.DATE_FORMAT); // 날짜 포맷
             textBoxShiftType.Text = m_data.ShiftType;
             textBoxProductName.Text = m_data.ProductName;
             textBoxUnit.Text = m_data.Unit;
@@ -95,7 +103,7 @@ namespace LotteMES.Forms
             textBoxStorageLocation.Text = m_data.StorageLocation;
             textBoxBoxPerPallet.Text = m_data.BoxPerPallet.ToString();
             textBoxBoxCode.Text = m_data.BoxCode;
-            textBoxExpirationDate.Text = m_data.ExpirationDate.ToString("yyyy-MM-dd"); // 날짜 포맷
+            textBoxExpirationDate.Text = m_data.ExpirationDate.ToString(Constant.DATE_FORMAT); // 날짜 포맷
             textBoxShelfLife.Text = m_data.ShelfLife.ToString();
 
         }
@@ -317,42 +325,49 @@ namespace LotteMES.Forms
             #endregion            
         }
 
+        // 생산계획버튼
         private void buttonProductionPlan_Click(object sender, EventArgs e)
         {
             ProductionPlanForm productionPlanForm = new ProductionPlanForm();
             productionPlanForm.ShowDialog();
         }
 
+        // 실적관리버튼
         private void buttonProductionResult_Click(object sender, EventArgs e)
         {
             PerformanceManageForm performanceManageForm = new PerformanceManageForm();
             performanceManageForm.ShowDialog();
         }
 
+        // 각종이력조회버튼
         private void buttonVariousHistoryInquiry_Click(object sender, EventArgs e)
         {
             AllHistoryViewForm allHistoryViewForm = new AllHistoryViewForm();
             allHistoryViewForm.ShowDialog();
         }
 
+        // 실적전송이력조회버튼
         private void buttonResultTransferHistory_Click(object sender, EventArgs e)
         {
             PerformanceSendLogForm performanceSendLogForm = new PerformanceSendLogForm();
             performanceSendLogForm.ShowDialog();
         }
 
+        // 잔량등록버튼
         private void buttonRemainingAmountRegister_Click(object sender, EventArgs e)
         {
             RemainingAmountRegisterForm remainingAmountRegisterForm = new RemainingAmountRegisterForm();
             remainingAmountRegisterForm.ShowDialog();
         }
 
+        // 작업환경설정버튼 - 작업자환경설정폼
         private void buttonWorkEnvironmentSettings_Click(object sender, EventArgs e)
         {
             WorkerConfigurationForm workerConfigurationForm = new WorkerConfigurationForm();
             workerConfigurationForm.ShowDialog();
         }
 
+        // 시스템환경설정버튼
         private void buttonSystemEnvironmentSettings_Click(object sender, EventArgs e)
         {
             SystemConfigurationForm systemConfigurationForm = new SystemConfigurationForm();
@@ -365,6 +380,7 @@ namespace LotteMES.Forms
             hardwareConfigurationForm.ShowDialog();
         }
 
+        // 기본정보생성버튼
         private void buttonCreateBasicInfo_Click(object sender, EventArgs e)
         {
             SettingBasicInfoForm settingBasicInfoForm = new SettingBasicInfoForm();
@@ -376,5 +392,71 @@ namespace LotteMES.Forms
         {
 
         }
+
+        // 바코드일괄출력버튼
+        private void buttonBulkBarcodePrint_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // POP장비관리이력버튼
+        private void buttonPopDeviceHistory_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // 작업자설정버튼 - 접근암호입력해 작업자설정
+        private void buttonCreateWorker_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // 일시정지버튼 - 시작버튼과 토글
+        private void buttonPause_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // 중지버튼
+        private void buttonStop_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // 리셋버튼
+        private void buttonReset_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // 재발행버튼
+        private void buttonReissue_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // 인쇄테스트버튼
+        private void buttonPrintTest_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // 도움말버튼
+        private void buttonHelp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // 종료버튼
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
+        }
+
     }
 }

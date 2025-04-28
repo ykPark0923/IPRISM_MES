@@ -18,12 +18,17 @@ namespace LotteMES.Forms
     {
         public PerformanceSendLogForm()
         {
-            InitializeComponent();// 테두리 제거
-            this.FormBorderStyle = FormBorderStyle.None;
+            InitializeComponent();
 
-            SetStyles();
-        
+            //테두리
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
+
+        private void PerformanceSendLogForm_Load(object sender, EventArgs e)
+        {
+            SetStyles();
+        }
+
         protected override void SetStyles()
         {
             #region BackColor
@@ -96,5 +101,6 @@ namespace LotteMES.Forms
         {
             this.Close();
         }
+
     }
 }

@@ -117,10 +117,12 @@
     <Compile Include="Bases\MESFormBase.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Constants\Constant.cs" />
     <Compile Include="DBAccess\LocalDBAccessor.cs" />
     <Compile Include="DBAccess\ServerDBAccessor.cs" />
     <Compile Include="DBData\ProductPlanAdvanced.cs" />
     <Compile Include="DBData\ProductPlanBasic.cs" />
+    <Compile Include="Enumerators\UploadSecond.cs" />
     <Compile Include="FormData\LoginFormData.cs" />
     <Compile Include="FormData\MainFormData.cs" />
     <Compile Include="Forms\AllHistoryViewForm.cs">

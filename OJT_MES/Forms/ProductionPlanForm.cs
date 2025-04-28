@@ -22,9 +22,13 @@ namespace LotteMES.Forms
         public ProductionPlanForm()
         {
             InitializeComponent();
-            // 테두리 제거
-            this.FormBorderStyle = FormBorderStyle.None;
 
+            //테두리
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+        }
+
+        private void ProductionPlanForm_Load(object sender, EventArgs e)
+        {
             SetStyles();
             UpdateControlsFromObject();
         }
@@ -198,5 +202,6 @@ namespace LotteMES.Forms
         {
             this.Close();
         }
+
     }
 }

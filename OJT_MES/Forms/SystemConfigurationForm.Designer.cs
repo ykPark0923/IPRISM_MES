@@ -420,6 +420,7 @@
             this.Controls.Add(this.labelTitle);
             this.Name = "SystemConfigurationForm";
             this.Text = "SystemConfigurationForm";
+            this.Load += new System.EventHandler(this.SystemConfigurationForm_Load);
             this.groupBoxCommunicationSettings.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBoxGeneralSettings.ResumeLayout(false);

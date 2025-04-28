@@ -284,6 +284,7 @@
             this.Controls.Add(this.labelTitle);
             this.Name = "HardwareConfigurationForm";
             this.Text = "HardwareConfigurationForm";
+            this.Load += new System.EventHandler(this.HardwareConfigurationForm_Load);
             this.groupBoxPrinterSetting.ResumeLayout(false);
             this.groupBoxPrinterSetting.PerformLayout();
             this.groupBoxBarcodeFormatSetting.ResumeLayout(false);

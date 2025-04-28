@@ -19,11 +19,16 @@ namespace LotteMES.Forms
         public WorkerConfigurationForm()
         {
             InitializeComponent();
-            // 테두리 제거
-            this.FormBorderStyle = FormBorderStyle.None;
 
+            //테두리
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+        }
+
+        private void WorkerConfigurationForm_Load(object sender, EventArgs e)
+        {
             SetStyles();
         }
+
         protected override void SetStyles()
         {
             #region BackColor
@@ -145,5 +150,6 @@ namespace LotteMES.Forms
         {
             this.Close();
         }
+
     }
 }

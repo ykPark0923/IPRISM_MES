@@ -25,16 +25,17 @@ namespace LotteMES.Forms
         {
             InitializeComponent();
 
-            // 테두리 제거
-            this.FormBorderStyle = FormBorderStyle.None;
-
+            //테두리
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+        }
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
             SetStyles();
         }
-        
-        
-         /// <summary>
-         /// 컨트롤로부터 데이터 객체의 값들을 업데이트
-         /// </summary>
+
+        /// <summary>
+        /// 컨트롤로부터 데이터 객체의 값들을 업데이트
+        /// </summary>
         protected override void SetObjectFromControls()
         {
             // 텍스트박스에서 데이터를 가져와 객체에 설정
@@ -101,5 +102,6 @@ namespace LotteMES.Forms
         {
             this.Close();
         }
+
     }
 }

@@ -183,6 +183,7 @@
             this.Controls.Add(this.labelSearchType);
             this.Name = "AllHistoryViewForm";
             this.Text = "AllHistoryViewForm";
+            this.Load += new System.EventHandler(this.AllHistoryViewForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHistory)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

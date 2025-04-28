@@ -9,6 +9,9 @@ namespace LotteMES.Styles
 {
     public class Style
     {
+        const string FONT_DODUM = "돋움체";
+        const int FONT_SIZE_COMMON = 10;
+
         #region Common
         private static Font commonFont = new Font("돋움체", 10);  // 기본 폰트 설정
         /// <summary>

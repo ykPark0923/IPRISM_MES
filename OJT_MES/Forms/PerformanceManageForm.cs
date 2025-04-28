@@ -20,12 +20,17 @@ namespace LotteMES.Forms
         public PerformanceManageForm()
         {
             InitializeComponent();
-            // 테두리 제거
-            this.FormBorderStyle = FormBorderStyle.None;
 
+            //테두리
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+        }
+
+        private void PerformanceManageForm_Load(object sender, EventArgs e)
+        {
             SetStyles();
             SetGridListViewDataFromLocalDB();
         }
+
         private void SetGridListViewDataFromLocalDB()
         {
 
@@ -189,5 +194,6 @@ namespace LotteMES.Forms
         {
             this.Close();
         }
+
     }
 }

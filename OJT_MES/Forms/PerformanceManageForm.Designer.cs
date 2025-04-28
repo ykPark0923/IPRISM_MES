@@ -317,6 +317,7 @@
             this.Controls.Add(this.labelTitle);
             this.Name = "PerformanceManageForm";
             this.Text = "PerformanceManageForm";
+            this.Load += new System.EventHandler(this.PerformanceManageForm_Load);
             this.groupBoxBoxInfo.ResumeLayout(false);
             this.groupBoxBoxInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPerformance)).EndInit();

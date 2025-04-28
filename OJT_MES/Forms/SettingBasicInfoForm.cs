@@ -22,9 +22,12 @@ namespace LotteMES.Forms
         {
             InitializeComponent();
 
-            // 테두리 제거
-            this.FormBorderStyle = FormBorderStyle.None;
+            //테두리
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+        }
 
+        private void SettingBasicInfoForm_Load(object sender, EventArgs e)
+        {
             SetStyles();
         }
 
@@ -165,5 +168,6 @@ namespace LotteMES.Forms
         {
             this.Close();
         }
+
     }
 }

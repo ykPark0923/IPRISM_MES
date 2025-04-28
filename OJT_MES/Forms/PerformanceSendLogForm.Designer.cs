@@ -255,6 +255,7 @@
             this.Controls.Add(this.buttonSearch);
             this.Name = "PerformanceSendLogForm";
             this.Text = "PerformanceSendLogForm";
+            this.Load += new System.EventHandler(this.PerformanceSendLogForm_Load);
             this.groupBoxDataInput.ResumeLayout(false);
             this.groupBoxDataInput.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransmissionLog)).EndInit();

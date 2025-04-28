@@ -240,6 +240,7 @@
             this.Controls.Add(this.labelTitle);
             this.Name = "RemainingAmountRegisterForm";
             this.Text = "RemainingAmountRegisterForm";
+            this.Load += new System.EventHandler(this.RemainingAmountRegisterForm_Load);
             this.panelData.ResumeLayout(false);
             this.panelData.PerformLayout();
             this.ResumeLayout(false);

@@ -160,6 +160,7 @@
             this.Controls.Add(this.buttonDownloadProductInfo);
             this.Name = "SettingBasicInfoForm";
             this.Text = "CreateBasicInfoForm";
+            this.Load += new System.EventHandler(this.SettingBasicInfoForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSettingBasicInfo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

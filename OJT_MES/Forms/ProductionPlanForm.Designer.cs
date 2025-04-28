@@ -386,6 +386,7 @@
             this.Controls.Add(this.buttonDownloadPlan);
             this.Name = "ProductionPlanForm";
             this.Text = "ProductionPlanForm";
+            this.Load += new System.EventHandler(this.ProductionPlanForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlanList)).EndInit();
             this.groupBoxProductionPlan.ResumeLayout(false);
             this.groupBoxProductionPlan.PerformLayout();

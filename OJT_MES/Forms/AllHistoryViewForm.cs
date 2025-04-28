@@ -18,12 +18,16 @@ namespace LotteMES.Forms
         public AllHistoryViewForm()
         {
             InitializeComponent();
-            // 테두리 제거
-            this.FormBorderStyle = FormBorderStyle.None;
 
-            SetStyles();
-
+            //테두리
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
+
+        private void AllHistoryViewForm_Load(object sender, EventArgs e)
+        {
+            SetStyles();
+        }
+
         protected override void SetStyles()
         {
             #region BackColor
@@ -78,5 +82,6 @@ namespace LotteMES.Forms
         {
             this.Close();
         }
+
     }
 }
