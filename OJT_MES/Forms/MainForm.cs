@@ -410,7 +410,8 @@ namespace LotteMES.Forms
         // 작업자설정버튼 - 접근암호입력해 작업자설정
         private void buttonWorkerSetting_Click(object sender, EventArgs e)
         {
-
+            LoginForm loginForm = new LoginForm();
+            loginForm.ShowDialog();
         }
 
         // 일시정지버튼 - 시작버튼과 토글
