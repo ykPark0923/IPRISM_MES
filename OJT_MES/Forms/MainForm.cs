@@ -12,6 +12,7 @@ using LotteMES.FormData;
 using LotteMES.Styles;
 using LotteMES.Helpers;
 using LotteMES.Constants;
+using LotteMES.DBAccess;
 
 namespace LotteMES.Forms
 {
@@ -455,7 +456,8 @@ namespace LotteMES.Forms
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-
+            LocalDBAccessor.Destroy();
+            ServerDBAccessor.Destroy();
         }
 
     }
