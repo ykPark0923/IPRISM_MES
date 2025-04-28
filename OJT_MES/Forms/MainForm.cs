@@ -120,15 +120,15 @@ namespace LotteMES.Forms
 
             buttonProductionPlan.BackColor = Style.MainFormButtonBackgroundColor;
             buttonBulkBarcodePrint.BackColor = Style.MainFormButtonBackgroundColor;
-            buttonPopDeviceHistory.BackColor = Style.MainFormButtonBackgroundColor;
-            buttonProductionResult.BackColor = Style.MainFormButtonBackgroundColor;
-            buttonVariousHistoryInquiry.BackColor = Style.MainFormButtonBackgroundColor;
-            buttonResultTransferHistory.BackColor = Style.MainFormButtonBackgroundColor;
-            buttonWorkEnvironmentSettings.BackColor = Style.MainFormButtonBackgroundColor;
-            buttonSystemEnvironmentSettings.BackColor = Style.MainFormButtonBackgroundColor;
-            buttonHardwareEnvironmentSettings.BackColor = Style.MainFormButtonBackgroundColor;
-            buttonCreateBasicInfo.BackColor = Style.MainFormButtonBackgroundColor;
-            buttonCreateWorker.BackColor = Style.MainFormButtonBackgroundColor;
+            buttonPopDeviceLog.BackColor = Style.MainFormButtonBackgroundColor;
+            buttonPerformanceManage.BackColor = Style.MainFormButtonBackgroundColor;
+            buttonAllHistoryView.BackColor = Style.MainFormButtonBackgroundColor;
+            buttonPerformanceSendLog.BackColor = Style.MainFormButtonBackgroundColor;
+            buttonWorkerConfiguration.BackColor = Style.MainFormButtonBackgroundColor;
+            buttonSystemConfiguration.BackColor = Style.MainFormButtonBackgroundColor;
+            buttonHardwareConfiguration.BackColor = Style.MainFormButtonBackgroundColor;
+            buttonSettingBasicInfo.BackColor = Style.MainFormButtonBackgroundColor;
+            buttonWorkerSetting.BackColor = Style.MainFormButtonBackgroundColor;
             buttonRemainingAmountRegister.BackColor = Style.MainFormButtonBackgroundColor;
             buttonPause.BackColor = Style.MainFormButtonBackgroundColor;
             buttonStop.BackColor = Style.MainFormButtonBackgroundColor;
@@ -239,15 +239,15 @@ namespace LotteMES.Forms
 
             buttonProductionPlan.ForeColor = Style.MainFormForeColorData;
             buttonBulkBarcodePrint.ForeColor = Style.CommonForeColor;
-            buttonPopDeviceHistory.ForeColor = Style.MainFormForeColorData;
-            buttonProductionResult.ForeColor = Style.MainFormForeColorData;
-            buttonVariousHistoryInquiry.ForeColor = Style.MainFormForeColorData;
-            buttonResultTransferHistory.ForeColor = Style.MainFormForeColorData;
-            buttonWorkEnvironmentSettings.ForeColor = Style.CommonForeColor;
-            buttonSystemEnvironmentSettings.ForeColor = Style.CommonForeColor;
-            buttonHardwareEnvironmentSettings.ForeColor = Style.CommonForeColor;
-            buttonCreateBasicInfo.ForeColor = Style.CommonForeColor;
-            buttonCreateWorker.ForeColor = Style.MainFormForeColorData;
+            buttonPopDeviceLog.ForeColor = Style.MainFormForeColorData;
+            buttonPerformanceManage.ForeColor = Style.MainFormForeColorData;
+            buttonAllHistoryView.ForeColor = Style.MainFormForeColorData;
+            buttonPerformanceSendLog.ForeColor = Style.MainFormForeColorData;
+            buttonWorkerConfiguration.ForeColor = Style.CommonForeColor;
+            buttonSystemConfiguration.ForeColor = Style.CommonForeColor;
+            buttonHardwareConfiguration.ForeColor = Style.CommonForeColor;
+            buttonSettingBasicInfo.ForeColor = Style.CommonForeColor;
+            buttonWorkerSetting.ForeColor = Style.MainFormForeColorData;
             buttonRemainingAmountRegister.ForeColor = Style.MainFormForeColorData;
             buttonPause.ForeColor = Style.CommonForeColor;
             buttonStop.ForeColor = Style.CommonForeColor;
@@ -306,15 +306,15 @@ namespace LotteMES.Forms
 
             buttonProductionPlan.Font = Style.CommonFont;
             buttonBulkBarcodePrint.Font = Style.CommonFont;
-            buttonPopDeviceHistory.Font = Style.CommonFont;
-            buttonProductionResult.Font = Style.CommonFont;
-            buttonVariousHistoryInquiry.Font = Style.CommonFont;
-            buttonResultTransferHistory.Font = Style.CommonFont;
-            buttonWorkEnvironmentSettings.Font = Style.CommonFont;
-            buttonSystemEnvironmentSettings.Font = Style.CommonFont;
-            buttonHardwareEnvironmentSettings.Font = Style.CommonFont;
-            buttonCreateBasicInfo.Font = Style.CommonFont;
-            buttonCreateWorker.Font = Style.CommonFont;
+            buttonPopDeviceLog.Font = Style.CommonFont;
+            buttonPerformanceManage.Font = Style.CommonFont;
+            buttonAllHistoryView.Font = Style.CommonFont;
+            buttonPerformanceSendLog.Font = Style.CommonFont;
+            buttonWorkerConfiguration.Font = Style.CommonFont;
+            buttonSystemConfiguration.Font = Style.CommonFont;
+            buttonHardwareConfiguration.Font = Style.CommonFont;
+            buttonSettingBasicInfo.Font = Style.CommonFont;
+            buttonWorkerSetting.Font = Style.CommonFont;
             buttonRemainingAmountRegister.Font = Style.CommonFont;
             buttonPause.Font = Style.CommonFont;
             buttonStop.Font = Style.CommonFont;
@@ -334,21 +334,21 @@ namespace LotteMES.Forms
         }
 
         // 실적관리버튼
-        private void buttonProductionResult_Click(object sender, EventArgs e)
+        private void buttonPerformanceManage_Click(object sender, EventArgs e)
         {
             PerformanceManageForm performanceManageForm = new PerformanceManageForm();
             performanceManageForm.ShowDialog();
         }
 
         // 각종이력조회버튼
-        private void buttonVariousHistoryInquiry_Click(object sender, EventArgs e)
+        private void buttonAllHistoryView_Click(object sender, EventArgs e)
         {
             AllHistoryViewForm allHistoryViewForm = new AllHistoryViewForm();
             allHistoryViewForm.ShowDialog();
         }
 
         // 실적전송이력조회버튼
-        private void buttonResultTransferHistory_Click(object sender, EventArgs e)
+        private void buttonPerformanceSendLog_Click(object sender, EventArgs e)
         {
             PerformanceSendLogForm performanceSendLogForm = new PerformanceSendLogForm();
             performanceSendLogForm.ShowDialog();
@@ -362,27 +362,27 @@ namespace LotteMES.Forms
         }
 
         // 작업환경설정버튼 - 작업자환경설정폼
-        private void buttonWorkEnvironmentSettings_Click(object sender, EventArgs e)
+        private void buttonWorkerConfiguration_Click(object sender, EventArgs e)
         {
             WorkerConfigurationForm workerConfigurationForm = new WorkerConfigurationForm();
             workerConfigurationForm.ShowDialog();
         }
 
         // 시스템환경설정버튼
-        private void buttonSystemEnvironmentSettings_Click(object sender, EventArgs e)
+        private void buttonSystemConfiguration_Click(object sender, EventArgs e)
         {
             SystemConfigurationForm systemConfigurationForm = new SystemConfigurationForm();
             systemConfigurationForm.ShowDialog();
         }
 
-        private void buttonHardwareEnvironmentSettings_Click(object sender, EventArgs e)
+        private void buttonHardwareConfiguration_Click(object sender, EventArgs e)
         {
             HardwareConfigurationForm hardwareConfigurationForm = new HardwareConfigurationForm();
             hardwareConfigurationForm.ShowDialog();
         }
 
         // 기본정보생성버튼
-        private void buttonCreateBasicInfo_Click(object sender, EventArgs e)
+        private void buttonSettingBasicInfo_Click(object sender, EventArgs e)
         {
             SettingBasicInfoForm settingBasicInfoForm = new SettingBasicInfoForm();
             settingBasicInfoForm.ShowDialog();
@@ -401,13 +401,13 @@ namespace LotteMES.Forms
         }
 
         // POP장비관리이력버튼
-        private void buttonPopDeviceHistory_Click(object sender, EventArgs e)
+        private void buttonPopDeviceLog_Click(object sender, EventArgs e)
         {
 
         }
 
         // 작업자설정버튼 - 접근암호입력해 작업자설정
-        private void buttonCreateWorker_Click(object sender, EventArgs e)
+        private void buttonWorkerSetting_Click(object sender, EventArgs e)
         {
 
         }
