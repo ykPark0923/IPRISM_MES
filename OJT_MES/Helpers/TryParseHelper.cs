@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace LotteMES.Helpers
 {
-    public class Helper
+    public class TryParseHelper
     {
         public static int TryParseInt(string input, int defaultValue = 0)
         {

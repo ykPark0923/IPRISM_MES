@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
+using System.ComponentModel;// enum Description 필요
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel; // enum Description 필요
+using System.Reflection;
 
 namespace LotteMES.Enumerators
 {

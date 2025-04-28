@@ -11,9 +11,6 @@ using LotteMES.Bases;
 using LotteMES.FormData;
 using LotteMES.Styles;
 using LotteMES.Helpers;
-using DevExpress.Utils.Drawing;
-using DevExpress.XtraEditors;
-using DevExpress.XtraPrinting.Native;
 using System.Reflection.Emit;
 
 namespace LotteMES.Forms

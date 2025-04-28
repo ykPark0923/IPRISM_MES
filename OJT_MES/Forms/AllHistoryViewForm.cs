@@ -10,11 +10,16 @@ using System.Windows.Forms;
 using LotteMES.Styles;
 using LotteMES.Helpers;
 using LotteMES.Bases;
+using LotteMES.FormData;
+using LotteMES.Constants;
+using LotteMES.Enumerators;
 
 namespace LotteMES.Forms
 {
     public partial class AllHistoryViewForm : MESFormBase
     {
+        AllHistoryViewFormData m_data = new AllHistoryViewFormData();
+
         public AllHistoryViewForm()
         {
             InitializeComponent();
@@ -26,7 +31,27 @@ namespace LotteMES.Forms
         private void AllHistoryViewForm_Load(object sender, EventArgs e)
         {
             SetStyles();
+            UpdateComboBoxFromEnum();
         }
+
+        /// <summary>
+        /// Enum attribute 업데이트
+        /// </summary>
+        private void UpdateComboBoxFromEnum()
+        {
+            foreach (HistorySearchItem item in Enum.GetValues(typeof(HistorySearchItem)))
+            {
+                comboBoxSearchType.Items.Add(new AllHistoryViewFormData
+                {
+                    Text = EnumHelper.GetDescription(item),
+                    Value = item
+                });
+            }
+
+            comboBoxSearchType.DisplayMember = "Text";
+            comboBoxSearchType.ValueMember = "Value";
+        }
+
 
         protected override void SetStyles()
         {

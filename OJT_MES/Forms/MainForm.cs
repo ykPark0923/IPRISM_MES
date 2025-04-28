@@ -39,6 +39,7 @@ namespace LotteMES.Forms
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            SetObjectFromControls();
             SetStyles();
         }
 
@@ -57,22 +58,22 @@ namespace LotteMES.Forms
 
             // 텍스트박스에서 데이터를 가져와 객체에 설정
             m_data.ManagerName = textBoxManagerName.Text;
-            m_data.PlannedQuantity = Helper.TryParseInt(textBoxPlannedQuantity.Text);
-            m_data.ProducedQuantity = Helper.TryParseInt(textBoxProducedQuantity.Text);
-            m_data.RemainingRibbon = Helper.TryParseInt(textBoxRemainingRibbon.Text);
-            m_data.RemainingLabel = Helper.TryParseInt(textBoxRemainingLabel.Text);
+            m_data.PlannedQuantity = TryParseHelper.TryParseInt(textBoxPlannedQuantity.Text);
+            m_data.ProducedQuantity = TryParseHelper.TryParseInt(textBoxProducedQuantity.Text);
+            m_data.RemainingRibbon = TryParseHelper.TryParseInt(textBoxRemainingRibbon.Text);
+            m_data.RemainingLabel = TryParseHelper.TryParseInt(textBoxRemainingLabel.Text);
             m_data.ProductionLine = textBoxProductionLine.Text;
-            m_data.ProductionDate = Helper.TryParseDateTime(textBoxProductionDate.Text);
+            m_data.ProductionDate = TryParseHelper.TryParseDateTime(textBoxProductionDate.Text);
             m_data.ShiftType = textBoxShiftType.Text;
             m_data.ProductName = textBoxProductName.Text;
             m_data.Unit = textBoxUnit.Text;
             m_data.SerialNumber = textBoxSerialNumber.Text;
             m_data.BomVersion = textBoxBomVersion.Text;
             m_data.StorageLocation = textBoxStorageLocation.Text;
-            m_data.BoxPerPallet = Helper.TryParseInt(textBoxBoxPerPallet.Text);
+            m_data.BoxPerPallet = TryParseHelper.TryParseInt(textBoxBoxPerPallet.Text);
             m_data.BoxCode = textBoxBoxCode.Text;
-            m_data.ExpirationDate = Helper.TryParseDateTime(textBoxExpirationDate.Text);
-            m_data.ShelfLife = Helper.TryParseInt(textBoxShelfLife.Text);
+            m_data.ExpirationDate = TryParseHelper.TryParseDateTime(textBoxExpirationDate.Text);
+            m_data.ShelfLife = TryParseHelper.TryParseInt(textBoxShelfLife.Text);
 
         }
 
