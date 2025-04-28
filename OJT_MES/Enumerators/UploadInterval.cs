@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LotteMES.Constants
+namespace LotteMES.Enumerators
 {
-    public class Constant
+    public enum UploadInterval
     {
-        public const string DATE_FORMAT = "yyyy-MM-dd";
     }
 }

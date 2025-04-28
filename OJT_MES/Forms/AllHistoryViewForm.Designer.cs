@@ -77,7 +77,7 @@
             // comboBoxSearchType
             // 
             this.comboBoxSearchType.FormattingEnabled = true;
-            this.comboBoxSearchType.Location = new System.Drawing.Point(117, 87);
+            this.comboBoxSearchType.Location = new System.Drawing.Point(117, 75);
             this.comboBoxSearchType.Name = "comboBoxSearchType";
             this.comboBoxSearchType.Size = new System.Drawing.Size(121, 20);
             this.comboBoxSearchType.TabIndex = 30;

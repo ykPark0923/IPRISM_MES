@@ -122,7 +122,8 @@
     <Compile Include="DBAccess\ServerDBAccessor.cs" />
     <Compile Include="DBData\ProductPlanAdvanced.cs" />
     <Compile Include="DBData\ProductPlanBasic.cs" />
-    <Compile Include="Enumerators\UploadSecond.cs" />
+    <Compile Include="Enumerators\HistorySearchItem.cs" />
+    <Compile Include="Enumerators\UploadInterval.cs" />
     <Compile Include="FormData\LoginFormData.cs" />
     <Compile Include="FormData\MainFormData.cs" />
     <Compile Include="Forms\AllHistoryViewForm.cs">
