@@ -13,12 +13,13 @@ using LotteMES.Bases;
 using LotteMES.FormData;
 using LotteMES.Constants;
 using LotteMES.Enumerators;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace LotteMES.Forms
 {
     public partial class AllHistoryViewForm : MESFormBase
     {
-        AllHistoryViewFormData m_data = new AllHistoryViewFormData();
+        EnumInfo m_data = new EnumInfo();
 
         public AllHistoryViewForm()
         {
@@ -41,7 +42,7 @@ namespace LotteMES.Forms
         {
             foreach (HistorySearchItem item in Enum.GetValues(typeof(HistorySearchItem)))
             {
-                comboBoxSearchType.Items.Add(new AllHistoryViewFormData
+                comboBoxSearchType.Items.Add(new EnumInfo
                 {
                     Text = EnumHelper.GetDescription(item),
                     Value = item
@@ -63,8 +64,8 @@ namespace LotteMES.Forms
             buttonSearch.BackColor = Style.CommonButtonBackgroundColor;
             buttonClose.BackColor = Style.CommonButtonBackgroundColor;
 
-            comboBoxDateFrom.BackColor = Style.CommonComboBoxBackgroundColor;
-            comboBoxDateTo.BackColor = Style.CommonComboBoxBackgroundColor;
+            dateTimePickerDateFrom.BackColor = Style.CommonComboBoxBackgroundColor;
+            dateTimePickerDateTo.BackColor = Style.CommonComboBoxBackgroundColor;
             comboBoxSearchType.BackColor = Style.CommonComboBoxBackgroundColor;
 
             labelTitle.BackColor = Style.CommonLabelBackgroundColor;
@@ -78,8 +79,7 @@ namespace LotteMES.Forms
             buttonSearch.ForeColor = Style.CommonForeColor;
             buttonClose.ForeColor = Style.CommonForeColor;
 
-            comboBoxDateFrom.ForeColor = Style.CommonSettingForeColor;
-            comboBoxDateTo.ForeColor = Style.CommonSettingForeColor;
+            dateTimePickerDateTo.ForeColor = Style.CommonSettingForeColor;
             comboBoxSearchType.ForeColor = Style.CommonSettingForeColor;
 
             labelTitle.ForeColor = Style.CommonForeColor;
@@ -93,8 +93,8 @@ namespace LotteMES.Forms
             buttonSearch.Font = Style.CommonFont;
             buttonClose.Font = Style.CommonFont;
 
-            comboBoxDateFrom.Font = Style.CommonFont;
-            comboBoxDateTo.Font = Style.CommonFont;
+            dateTimePickerDateFrom.Font = Style.CommonFont;
+            dateTimePickerDateTo.Font = Style.CommonFont;
             comboBoxSearchType.Font = Style.CommonFont;
 
             labelTitle.Font = Style.CommonTitleFont;
@@ -108,5 +108,16 @@ namespace LotteMES.Forms
             this.Close();
         }
 
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            HistorySearchItem selectedEnum;
+
+            if (comboBoxSearchType.SelectedItem is EnumInfo selectedItem)
+            {
+                selectedEnum = (HistorySearchItem)selectedItem.Value;
+                Console.WriteLine($"선택된 항목: {selectedEnum}");
+            }
+            
+        }
     }
 }

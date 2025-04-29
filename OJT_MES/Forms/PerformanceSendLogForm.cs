@@ -44,8 +44,8 @@ namespace LotteMES.Forms
 
             textBoxPlanNo.BackColor = Style.TextBoxBackgroundColorEditable;
 
-            comboBoxDateFrom.BackColor = Style.CommonComboBoxBackgroundColor;
-            comboBoxDateTo.BackColor = Style.CommonComboBoxBackgroundColor;
+            dateTimePickerDateFrom.BackColor = Style.CommonComboBoxBackgroundColor;
+            dateTimePickerDateTo.BackColor = Style.CommonComboBoxBackgroundColor;
             comboBoxShiftType.BackColor = Style.CommonComboBoxBackgroundColor;
 
             labelTitle.BackColor = Style.CommonLabelBackgroundColor;
@@ -65,8 +65,8 @@ namespace LotteMES.Forms
 
             textBoxPlanNo.ForeColor = Style.CommonSettingForeColor;
 
-            comboBoxDateFrom.ForeColor = Style.CommonSettingForeColor;
-            comboBoxDateTo.ForeColor = Style.CommonSettingForeColor;
+            dateTimePickerDateFrom.ForeColor = Style.CommonSettingForeColor;
+            dateTimePickerDateTo.ForeColor = Style.CommonSettingForeColor;
             comboBoxShiftType.ForeColor = Style.CommonSettingForeColor;
 
             labelTitle.ForeColor = Style.CommonForeColor;
@@ -86,8 +86,8 @@ namespace LotteMES.Forms
 
             textBoxPlanNo.Font = Style.CommonFont;
 
-            comboBoxDateFrom.Font = Style.CommonFont;
-            comboBoxDateTo.Font = Style.CommonFont;
+            dateTimePickerDateFrom.Font = Style.CommonFont;
+            dateTimePickerDateTo.Font = Style.CommonFont;
             comboBoxShiftType.Font = Style.CommonFont;
 
             labelTitle.Font = Style.CommonTitleFont;

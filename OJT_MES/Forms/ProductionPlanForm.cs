@@ -54,10 +54,10 @@ namespace LotteMES.Forms
 
             comboBoxMismatchProduct.BackColor = Style.CommonComboBoxBackgroundColor;
             comboBoxProductName.BackColor = Style.CommonComboBoxBackgroundColor;
-            comboBoxProductionDate.BackColor = Style.CommonComboBoxBackgroundColor;
+            dateTimePickerProductionDate.BackColor = Style.CommonComboBoxBackgroundColor;
             comboBoxShiftType.BackColor = Style.CommonComboBoxBackgroundColor;
-            comboBoxTestPeriod.BackColor = Style.CommonComboBoxBackgroundColor;
-            comboBoxTotalPeriod.BackColor = Style.CommonComboBoxBackgroundColor;
+            dateTimePickerTestPeriod.BackColor = Style.CommonComboBoxBackgroundColor;
+            dateTimePickerTotalPeriod.BackColor = Style.CommonComboBoxBackgroundColor;
 
             labelTitle.BackColor = Style.CommonLabelBackgroundColor;
             labelMismatchInfo.BackColor = Style.CommonLabelBackgroundColor;
@@ -86,10 +86,10 @@ namespace LotteMES.Forms
 
             comboBoxMismatchProduct.ForeColor = Style.CommonComboBoxForeColor;
             comboBoxProductName.ForeColor = Style.CommonComboBoxForeColor;
-            comboBoxProductionDate.ForeColor = Style.CommonComboBoxForeColor;
+            dateTimePickerProductionDate.ForeColor = Style.CommonComboBoxForeColor;
             comboBoxShiftType.ForeColor = Style.CommonComboBoxForeColor;
-            comboBoxTestPeriod.ForeColor = Style.CommonComboBoxForeColor;
-            comboBoxTotalPeriod.ForeColor = Style.CommonComboBoxForeColor;
+            dateTimePickerTestPeriod.ForeColor = Style.CommonComboBoxForeColor;
+            dateTimePickerTotalPeriod.ForeColor = Style.CommonComboBoxForeColor;
 
             labelTitle.ForeColor = Style.CommonForeColor;
             labelMismatchInfo.ForeColor = Style.CommonForeColor;
@@ -119,10 +119,10 @@ namespace LotteMES.Forms
 
             comboBoxMismatchProduct.Font = Style.CommonFont;
             comboBoxProductName.Font = Style.PoductionPlanFormComboBoxFont;
-            comboBoxProductionDate.Font = Style.CommonFont;
+            dateTimePickerProductionDate.Font = Style.CommonFont;
             comboBoxShiftType.Font = Style.PoductionPlanFormComboBoxFont;
-            comboBoxTestPeriod.Font = Style.CommonFont;
-            comboBoxTotalPeriod.Font = Style.CommonFont;
+            dateTimePickerTestPeriod.Font = Style.CommonFont;
+            dateTimePickerTotalPeriod.Font = Style.CommonFont;
 
             labelTitle.Font = Style.CommonTitleFont;
             labelMismatchInfo.Font = Style.CommonFont;

@@ -110,6 +110,7 @@
             this.buttonSearch.TabIndex = 33;
             this.buttonSearch.Text = "조회";
             this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // labelSearchType
             // 

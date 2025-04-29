@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LotteMES.FormData
+namespace LotteMES.Enumerators
 {
-    public class AllHistoryViewFormData
+    public class EnumInfo
     {
         #region ComboBox
         public string Text { get; set; }

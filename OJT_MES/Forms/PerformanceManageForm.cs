@@ -70,8 +70,8 @@ namespace LotteMES.Forms
             textBoxStartBoxNo.BackColor = Style.TextBoxBackgroundColorEditable;
             textBoxEndBoxNo.BackColor = Style.TextBoxBackgroundColorEditable;
 
-            comboBoxTestPeriod.BackColor = Style.CommonComboBoxBackgroundColor;
-            comboBoxTotalPeriod.BackColor = Style.CommonComboBoxBackgroundColor;
+            dateTimePickerTestPeriod.BackColor = Style.CommonComboBoxBackgroundColor;
+            dateTimePickerTotalPeriod.BackColor = Style.CommonComboBoxBackgroundColor;
             comboBoxTransmissionMedia.BackColor = Style.CommonComboBoxBackgroundColor;
 
             labelTitle.BackColor = Style.CommonLabelBackgroundColor;
@@ -97,8 +97,8 @@ namespace LotteMES.Forms
             textBoxStartBoxNo.ForeColor = Style.CommonSettingForeColor;
             textBoxEndBoxNo.ForeColor = Style.CommonSettingForeColor;
 
-            comboBoxTestPeriod.ForeColor = Style.CommonComboBoxForeColor;
-            comboBoxTotalPeriod.ForeColor = Style.CommonComboBoxForeColor;
+            dateTimePickerTestPeriod.ForeColor = Style.CommonComboBoxForeColor;
+            dateTimePickerTotalPeriod.ForeColor = Style.CommonComboBoxForeColor;
             comboBoxTransmissionMedia.ForeColor = Style.CommonComboBoxForeColor;
 
             labelTitle.ForeColor = Style.CommonForeColor;
@@ -124,8 +124,8 @@ namespace LotteMES.Forms
             textBoxStartBoxNo.Font = Style.CommonFont;
             textBoxEndBoxNo.Font = Style.CommonFont;
 
-            comboBoxTestPeriod.Font = Style.CommonFont;
-            comboBoxTotalPeriod.Font = Style.CommonFont;
+            dateTimePickerTestPeriod.Font = Style.CommonFont;
+            dateTimePickerTotalPeriod.Font = Style.CommonFont;
             comboBoxTransmissionMedia.Font = Style.CommonFont;
 
             labelTitle.Font = Style.CommonTitleFont;
