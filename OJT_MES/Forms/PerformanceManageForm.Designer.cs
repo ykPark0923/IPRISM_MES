@@ -53,8 +53,8 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelSplitBar = new System.Windows.Forms.Panel();
-            this.comboBoxTestPeriod = new System.Windows.Forms.ComboBox();
-            this.comboBoxTotalPeriod = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerTestPeriod = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerTotalPeriod = new System.Windows.Forms.DateTimePicker();
             this.groupBoxBoxInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPerformance)).BeginInit();
             this.SuspendLayout();
@@ -156,7 +156,7 @@
             // 
             this.labelTotalPeriod.AutoSize = true;
             this.labelTotalPeriod.Font = new System.Drawing.Font("굴림", 13F);
-            this.labelTotalPeriod.Location = new System.Drawing.Point(484, 64);
+            this.labelTotalPeriod.Location = new System.Drawing.Point(439, 64);
             this.labelTotalPeriod.Name = "labelTotalPeriod";
             this.labelTotalPeriod.Size = new System.Drawing.Size(62, 18);
             this.labelTotalPeriod.TabIndex = 49;
@@ -166,7 +166,7 @@
             // 
             this.labelTestPeriod.AutoSize = true;
             this.labelTestPeriod.Font = new System.Drawing.Font("굴림", 13F);
-            this.labelTestPeriod.Location = new System.Drawing.Point(465, 34);
+            this.labelTestPeriod.Location = new System.Drawing.Point(421, 35);
             this.labelTestPeriod.Name = "labelTestPeriod";
             this.labelTestPeriod.Size = new System.Drawing.Size(80, 18);
             this.labelTestPeriod.TabIndex = 48;
@@ -175,7 +175,7 @@
             // comboBoxTransmissionMedia
             // 
             this.comboBoxTransmissionMedia.FormattingEnabled = true;
-            this.comboBoxTransmissionMedia.Location = new System.Drawing.Point(347, 62);
+            this.comboBoxTransmissionMedia.Location = new System.Drawing.Point(300, 61);
             this.comboBoxTransmissionMedia.Name = "comboBoxTransmissionMedia";
             this.comboBoxTransmissionMedia.Size = new System.Drawing.Size(108, 20);
             this.comboBoxTransmissionMedia.TabIndex = 45;
@@ -184,7 +184,7 @@
             // 
             this.labelTransmissionMedia.AutoSize = true;
             this.labelTransmissionMedia.Font = new System.Drawing.Font("굴림", 13F);
-            this.labelTransmissionMedia.Location = new System.Drawing.Point(371, 36);
+            this.labelTransmissionMedia.Location = new System.Drawing.Point(324, 35);
             this.labelTransmissionMedia.Name = "labelTransmissionMedia";
             this.labelTransmissionMedia.Size = new System.Drawing.Size(80, 18);
             this.labelTransmissionMedia.TabIndex = 44;
@@ -280,29 +280,27 @@
             this.panelSplitBar.Size = new System.Drawing.Size(787, 3);
             this.panelSplitBar.TabIndex = 56;
             // 
-            // comboBoxTestPeriod
+            // dateTimePickerTestPeriod
             // 
-            this.comboBoxTestPeriod.FormattingEnabled = true;
-            this.comboBoxTestPeriod.Location = new System.Drawing.Point(552, 29);
-            this.comboBoxTestPeriod.Name = "comboBoxTestPeriod";
-            this.comboBoxTestPeriod.Size = new System.Drawing.Size(108, 20);
-            this.comboBoxTestPeriod.TabIndex = 57;
+            this.dateTimePickerTestPeriod.Location = new System.Drawing.Point(507, 34);
+            this.dateTimePickerTestPeriod.Name = "dateTimePickerTestPeriod";
+            this.dateTimePickerTestPeriod.Size = new System.Drawing.Size(170, 21);
+            this.dateTimePickerTestPeriod.TabIndex = 59;
             // 
-            // comboBoxTotalPeriod
+            // dateTimePickerTotalPeriod
             // 
-            this.comboBoxTotalPeriod.FormattingEnabled = true;
-            this.comboBoxTotalPeriod.Location = new System.Drawing.Point(552, 66);
-            this.comboBoxTotalPeriod.Name = "comboBoxTotalPeriod";
-            this.comboBoxTotalPeriod.Size = new System.Drawing.Size(108, 20);
-            this.comboBoxTotalPeriod.TabIndex = 58;
+            this.dateTimePickerTotalPeriod.Location = new System.Drawing.Point(507, 63);
+            this.dateTimePickerTotalPeriod.Name = "dateTimePickerTotalPeriod";
+            this.dateTimePickerTotalPeriod.Size = new System.Drawing.Size(170, 21);
+            this.dateTimePickerTotalPeriod.TabIndex = 60;
             // 
             // PerformanceManageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(816, 699);
-            this.Controls.Add(this.comboBoxTotalPeriod);
-            this.Controls.Add(this.comboBoxTestPeriod);
+            this.Controls.Add(this.dateTimePickerTotalPeriod);
+            this.Controls.Add(this.dateTimePickerTestPeriod);
             this.Controls.Add(this.panelSplitBar);
             this.Controls.Add(this.dataGridViewPerformance);
             this.Controls.Add(this.buttonClose);
@@ -352,7 +350,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.Panel panelSplitBar;
-        private System.Windows.Forms.ComboBox comboBoxTestPeriod;
-        private System.Windows.Forms.ComboBox comboBoxTotalPeriod;
+        private System.Windows.Forms.DateTimePicker dateTimePickerTestPeriod;
+        private System.Windows.Forms.DateTimePicker dateTimePickerTotalPeriod;
     }
 }

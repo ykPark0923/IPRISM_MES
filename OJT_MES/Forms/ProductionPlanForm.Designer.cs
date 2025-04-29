@@ -52,7 +52,6 @@
             this.comboBoxShiftType = new System.Windows.Forms.ComboBox();
             this.labelShiftType = new System.Windows.Forms.Label();
             this.comboBoxProductName = new System.Windows.Forms.ComboBox();
-            this.comboBoxProductionDate = new System.Windows.Forms.ComboBox();
             this.textBoxPlanNo = new System.Windows.Forms.TextBox();
             this.labelPlanNo = new System.Windows.Forms.Label();
             this.labelProductionDate = new System.Windows.Forms.Label();
@@ -60,8 +59,9 @@
             this.labelBarcodeNo = new System.Windows.Forms.Label();
             this.labelProductName = new System.Windows.Forms.Label();
             this.panelSplitBar = new System.Windows.Forms.Panel();
-            this.comboBoxTestPeriod = new System.Windows.Forms.ComboBox();
-            this.comboBoxTotalPeriod = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerProductionDate = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerTotalPeriod = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerTestPeriod = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlanList)).BeginInit();
             this.groupBoxProductionPlan.SuspendLayout();
             this.SuspendLayout();
@@ -121,7 +121,7 @@
             // comboBoxMismatchProduct
             // 
             this.comboBoxMismatchProduct.FormattingEnabled = true;
-            this.comboBoxMismatchProduct.Location = new System.Drawing.Point(387, 45);
+            this.comboBoxMismatchProduct.Location = new System.Drawing.Point(380, 45);
             this.comboBoxMismatchProduct.Name = "comboBoxMismatchProduct";
             this.comboBoxMismatchProduct.Size = new System.Drawing.Size(181, 20);
             this.comboBoxMismatchProduct.TabIndex = 30;
@@ -160,7 +160,7 @@
             // 
             this.labelMismatchInfo.AutoSize = true;
             this.labelMismatchInfo.Font = new System.Drawing.Font("굴림", 13F);
-            this.labelMismatchInfo.Location = new System.Drawing.Point(378, 22);
+            this.labelMismatchInfo.Location = new System.Drawing.Point(371, 22);
             this.labelMismatchInfo.Name = "labelMismatchInfo";
             this.labelMismatchInfo.Size = new System.Drawing.Size(190, 18);
             this.labelMismatchInfo.TabIndex = 29;
@@ -190,7 +190,7 @@
             // 
             this.labelTestPeriod.AutoSize = true;
             this.labelTestPeriod.Font = new System.Drawing.Font("굴림", 13F);
-            this.labelTestPeriod.Location = new System.Drawing.Point(585, 22);
+            this.labelTestPeriod.Location = new System.Drawing.Point(574, 18);
             this.labelTestPeriod.Name = "labelTestPeriod";
             this.labelTestPeriod.Size = new System.Drawing.Size(80, 18);
             this.labelTestPeriod.TabIndex = 41;
@@ -200,7 +200,7 @@
             // 
             this.labelTotalPeriod.AutoSize = true;
             this.labelTotalPeriod.Font = new System.Drawing.Font("굴림", 13F);
-            this.labelTotalPeriod.Location = new System.Drawing.Point(599, 49);
+            this.labelTotalPeriod.Location = new System.Drawing.Point(592, 47);
             this.labelTotalPeriod.Name = "labelTotalPeriod";
             this.labelTotalPeriod.Size = new System.Drawing.Size(62, 18);
             this.labelTotalPeriod.TabIndex = 42;
@@ -217,12 +217,12 @@
             // 
             // groupBoxProductionPlan
             // 
+            this.groupBoxProductionPlan.Controls.Add(this.dateTimePickerProductionDate);
             this.groupBoxProductionPlan.Controls.Add(this.textBoxPlanQuantity);
             this.groupBoxProductionPlan.Controls.Add(this.labelPlanQuantity);
             this.groupBoxProductionPlan.Controls.Add(this.comboBoxShiftType);
             this.groupBoxProductionPlan.Controls.Add(this.labelShiftType);
             this.groupBoxProductionPlan.Controls.Add(this.comboBoxProductName);
-            this.groupBoxProductionPlan.Controls.Add(this.comboBoxProductionDate);
             this.groupBoxProductionPlan.Controls.Add(this.textBoxPlanNo);
             this.groupBoxProductionPlan.Controls.Add(this.labelPlanNo);
             this.groupBoxProductionPlan.Controls.Add(this.labelProductionDate);
@@ -277,14 +277,6 @@
             this.comboBoxProductName.Name = "comboBoxProductName";
             this.comboBoxProductName.Size = new System.Drawing.Size(547, 20);
             this.comboBoxProductName.TabIndex = 24;
-            // 
-            // comboBoxProductionDate
-            // 
-            this.comboBoxProductionDate.FormattingEnabled = true;
-            this.comboBoxProductionDate.Location = new System.Drawing.Point(85, 75);
-            this.comboBoxProductionDate.Name = "comboBoxProductionDate";
-            this.comboBoxProductionDate.Size = new System.Drawing.Size(152, 20);
-            this.comboBoxProductionDate.TabIndex = 23;
             // 
             // textBoxPlanNo
             // 
@@ -348,29 +340,34 @@
             this.panelSplitBar.Size = new System.Drawing.Size(911, 3);
             this.panelSplitBar.TabIndex = 45;
             // 
-            // comboBoxTestPeriod
+            // dateTimePickerProductionDate
             // 
-            this.comboBoxTestPeriod.FormattingEnabled = true;
-            this.comboBoxTestPeriod.Location = new System.Drawing.Point(667, 24);
-            this.comboBoxTestPeriod.Name = "comboBoxTestPeriod";
-            this.comboBoxTestPeriod.Size = new System.Drawing.Size(130, 20);
-            this.comboBoxTestPeriod.TabIndex = 29;
+            this.dateTimePickerProductionDate.Location = new System.Drawing.Point(90, 74);
+            this.dateTimePickerProductionDate.Name = "dateTimePickerProductionDate";
+            this.dateTimePickerProductionDate.Size = new System.Drawing.Size(147, 21);
+            this.dateTimePickerProductionDate.TabIndex = 29;
             // 
-            // comboBoxTotalPeriod
+            // dateTimePickerTotalPeriod
             // 
-            this.comboBoxTotalPeriod.FormattingEnabled = true;
-            this.comboBoxTotalPeriod.Location = new System.Drawing.Point(667, 51);
-            this.comboBoxTotalPeriod.Name = "comboBoxTotalPeriod";
-            this.comboBoxTotalPeriod.Size = new System.Drawing.Size(130, 20);
-            this.comboBoxTotalPeriod.TabIndex = 46;
+            this.dateTimePickerTotalPeriod.Location = new System.Drawing.Point(653, 44);
+            this.dateTimePickerTotalPeriod.Name = "dateTimePickerTotalPeriod";
+            this.dateTimePickerTotalPeriod.Size = new System.Drawing.Size(147, 21);
+            this.dateTimePickerTotalPeriod.TabIndex = 30;
+            // 
+            // dateTimePickerTestPeriod
+            // 
+            this.dateTimePickerTestPeriod.Location = new System.Drawing.Point(653, 17);
+            this.dateTimePickerTestPeriod.Name = "dateTimePickerTestPeriod";
+            this.dateTimePickerTestPeriod.Size = new System.Drawing.Size(147, 21);
+            this.dateTimePickerTestPeriod.TabIndex = 31;
             // 
             // ProductionPlanForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 570);
-            this.Controls.Add(this.comboBoxTotalPeriod);
-            this.Controls.Add(this.comboBoxTestPeriod);
+            this.Controls.Add(this.dateTimePickerTotalPeriod);
+            this.Controls.Add(this.dateTimePickerTestPeriod);
             this.Controls.Add(this.panelSplitBar);
             this.Controls.Add(this.groupBoxProductionPlan);
             this.Controls.Add(this.buttonSearch);
@@ -414,7 +411,6 @@
         private System.Windows.Forms.ComboBox comboBoxShiftType;
         private System.Windows.Forms.Label labelShiftType;
         private System.Windows.Forms.ComboBox comboBoxProductName;
-        private System.Windows.Forms.ComboBox comboBoxProductionDate;
         private System.Windows.Forms.TextBox textBoxPlanNo;
         private System.Windows.Forms.Label labelPlanNo;
         private System.Windows.Forms.Label labelProductionDate;
@@ -422,8 +418,6 @@
         private System.Windows.Forms.Label labelBarcodeNo;
         private System.Windows.Forms.Label labelProductName;
         private System.Windows.Forms.Panel panelSplitBar;
-        private System.Windows.Forms.ComboBox comboBoxTestPeriod;
-        private System.Windows.Forms.ComboBox comboBoxTotalPeriod;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -431,5 +425,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DateTimePicker dateTimePickerProductionDate;
+        private System.Windows.Forms.DateTimePicker dateTimePickerTotalPeriod;
+        private System.Windows.Forms.DateTimePicker dateTimePickerTestPeriod;
     }
 }

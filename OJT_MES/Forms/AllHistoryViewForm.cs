@@ -35,7 +35,7 @@ namespace LotteMES.Forms
         }
 
         /// <summary>
-        /// Enum attribute 업데이트
+        /// Enum list 업데이트
         /// </summary>
         private void UpdateComboBoxFromEnum()
         {

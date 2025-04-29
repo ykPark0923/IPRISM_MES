@@ -8,6 +8,7 @@ namespace LotteMES.FormData
 {
     public class AllHistoryViewFormData
     {
+        #region ComboBox
         public string Text { get; set; }
         public object Value { get; set; }
 
@@ -15,5 +16,6 @@ namespace LotteMES.FormData
         {
             return Text;
         }
+        #endregion
     }
 }

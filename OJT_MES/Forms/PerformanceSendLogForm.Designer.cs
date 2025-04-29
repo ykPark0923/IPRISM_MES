@@ -30,11 +30,9 @@
         {
             this.groupBoxDataInput = new System.Windows.Forms.GroupBox();
             this.comboBoxShiftType = new System.Windows.Forms.ComboBox();
-            this.comboBoxDateTo = new System.Windows.Forms.ComboBox();
             this.textBoxPlanNo = new System.Windows.Forms.TextBox();
             this.labelPlan = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBoxDateFrom = new System.Windows.Forms.ComboBox();
             this.labelShiftType = new System.Windows.Forms.Label();
             this.labelDateInput = new System.Windows.Forms.Label();
             this.dataGridViewTransmissionLog = new System.Windows.Forms.DataGridView();
@@ -50,6 +48,8 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelSplitBar = new System.Windows.Forms.Panel();
+            this.dateTimePickerDateFrom = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerDateTo = new System.Windows.Forms.DateTimePicker();
             this.groupBoxDataInput.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransmissionLog)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransmissionSummary)).BeginInit();
@@ -57,12 +57,12 @@
             // 
             // groupBoxDataInput
             // 
+            this.groupBoxDataInput.Controls.Add(this.dateTimePickerDateFrom);
+            this.groupBoxDataInput.Controls.Add(this.dateTimePickerDateTo);
             this.groupBoxDataInput.Controls.Add(this.comboBoxShiftType);
-            this.groupBoxDataInput.Controls.Add(this.comboBoxDateTo);
             this.groupBoxDataInput.Controls.Add(this.textBoxPlanNo);
             this.groupBoxDataInput.Controls.Add(this.labelPlan);
             this.groupBoxDataInput.Controls.Add(this.label8);
-            this.groupBoxDataInput.Controls.Add(this.comboBoxDateFrom);
             this.groupBoxDataInput.Controls.Add(this.labelShiftType);
             this.groupBoxDataInput.Controls.Add(this.labelDateInput);
             this.groupBoxDataInput.Location = new System.Drawing.Point(380, 356);
@@ -78,14 +78,6 @@
             this.comboBoxShiftType.Name = "comboBoxShiftType";
             this.comboBoxShiftType.Size = new System.Drawing.Size(79, 20);
             this.comboBoxShiftType.TabIndex = 30;
-            // 
-            // comboBoxDateTo
-            // 
-            this.comboBoxDateTo.FormattingEnabled = true;
-            this.comboBoxDateTo.Location = new System.Drawing.Point(286, 25);
-            this.comboBoxDateTo.Name = "comboBoxDateTo";
-            this.comboBoxDateTo.Size = new System.Drawing.Size(124, 20);
-            this.comboBoxDateTo.TabIndex = 29;
             // 
             // textBoxPlanNo
             // 
@@ -108,19 +100,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("굴림", 10F);
-            this.label8.Location = new System.Drawing.Point(248, 31);
+            this.label8.Location = new System.Drawing.Point(260, 31);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(18, 14);
             this.label8.TabIndex = 25;
             this.label8.Text = "~";
-            // 
-            // comboBoxDateFrom
-            // 
-            this.comboBoxDateFrom.FormattingEnabled = true;
-            this.comboBoxDateFrom.Location = new System.Drawing.Point(103, 25);
-            this.comboBoxDateFrom.Name = "comboBoxDateFrom";
-            this.comboBoxDateFrom.Size = new System.Drawing.Size(124, 20);
-            this.comboBoxDateFrom.TabIndex = 23;
             // 
             // labelShiftType
             // 
@@ -241,6 +225,20 @@
             this.panelSplitBar.Size = new System.Drawing.Size(800, 3);
             this.panelSplitBar.TabIndex = 60;
             // 
+            // dateTimePickerDateFrom
+            // 
+            this.dateTimePickerDateFrom.Location = new System.Drawing.Point(101, 26);
+            this.dateTimePickerDateFrom.Name = "dateTimePickerDateFrom";
+            this.dateTimePickerDateFrom.Size = new System.Drawing.Size(154, 21);
+            this.dateTimePickerDateFrom.TabIndex = 61;
+            // 
+            // dateTimePickerDateTo
+            // 
+            this.dateTimePickerDateTo.Location = new System.Drawing.Point(282, 26);
+            this.dateTimePickerDateTo.Name = "dateTimePickerDateTo";
+            this.dateTimePickerDateTo.Size = new System.Drawing.Size(161, 21);
+            this.dateTimePickerDateTo.TabIndex = 62;
+            // 
             // PerformanceSendLogForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -271,7 +269,6 @@
         private System.Windows.Forms.TextBox textBoxPlanNo;
         private System.Windows.Forms.Label labelPlan;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBoxDateFrom;
         private System.Windows.Forms.Label labelShiftType;
         private System.Windows.Forms.Label labelDateInput;
         private System.Windows.Forms.DataGridView dataGridViewTransmissionLog;
@@ -279,7 +276,6 @@
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Button buttonSearch;
         private System.Windows.Forms.ComboBox comboBoxShiftType;
-        private System.Windows.Forms.ComboBox comboBoxDateTo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -289,5 +285,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.Panel panelSplitBar;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDateFrom;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDateTo;
     }
 }

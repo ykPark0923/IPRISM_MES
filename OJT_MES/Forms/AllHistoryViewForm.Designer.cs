@@ -37,11 +37,11 @@
             this.buttonClose = new System.Windows.Forms.Button();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.labelSearchType = new System.Windows.Forms.Label();
-            this.comboBoxDateTo = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBoxDateFrom = new System.Windows.Forms.ComboBox();
             this.labelDateInput = new System.Windows.Forms.Label();
             this.panelSplitBar = new System.Windows.Forms.Panel();
+            this.dateTimePickerDateFrom = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerDateTo = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHistory)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,31 +121,15 @@
             this.labelSearchType.TabIndex = 29;
             this.labelSearchType.Text = "조회항목";
             // 
-            // comboBoxDateTo
-            // 
-            this.comboBoxDateTo.FormattingEnabled = true;
-            this.comboBoxDateTo.Location = new System.Drawing.Point(269, 122);
-            this.comboBoxDateTo.Name = "comboBoxDateTo";
-            this.comboBoxDateTo.Size = new System.Drawing.Size(124, 20);
-            this.comboBoxDateTo.TabIndex = 39;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("굴림", 10F);
-            this.label8.Location = new System.Drawing.Point(247, 123);
+            this.label8.Location = new System.Drawing.Point(286, 129);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(18, 14);
             this.label8.TabIndex = 38;
             this.label8.Text = "~";
-            // 
-            // comboBoxDateFrom
-            // 
-            this.comboBoxDateFrom.FormattingEnabled = true;
-            this.comboBoxDateFrom.Location = new System.Drawing.Point(117, 121);
-            this.comboBoxDateFrom.Name = "comboBoxDateFrom";
-            this.comboBoxDateFrom.Size = new System.Drawing.Size(124, 20);
-            this.comboBoxDateFrom.TabIndex = 37;
             // 
             // labelDateInput
             // 
@@ -165,15 +149,29 @@
             this.panelSplitBar.Size = new System.Drawing.Size(800, 3);
             this.panelSplitBar.TabIndex = 46;
             // 
+            // dateTimePickerDateFrom
+            // 
+            this.dateTimePickerDateFrom.Location = new System.Drawing.Point(111, 122);
+            this.dateTimePickerDateFrom.Name = "dateTimePickerDateFrom";
+            this.dateTimePickerDateFrom.Size = new System.Drawing.Size(169, 21);
+            this.dateTimePickerDateFrom.TabIndex = 60;
+            // 
+            // dateTimePickerDateTo
+            // 
+            this.dateTimePickerDateTo.Location = new System.Drawing.Point(310, 122);
+            this.dateTimePickerDateTo.Name = "dateTimePickerDateTo";
+            this.dateTimePickerDateTo.Size = new System.Drawing.Size(170, 21);
+            this.dateTimePickerDateTo.TabIndex = 61;
+            // 
             // AllHistoryViewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(825, 648);
+            this.Controls.Add(this.dateTimePickerDateTo);
+            this.Controls.Add(this.dateTimePickerDateFrom);
             this.Controls.Add(this.panelSplitBar);
-            this.Controls.Add(this.comboBoxDateTo);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboBoxDateFrom);
             this.Controls.Add(this.labelDateInput);
             this.Controls.Add(this.dataGridViewHistory);
             this.Controls.Add(this.comboBoxSearchType);
@@ -201,10 +199,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.ComboBox comboBoxDateTo;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBoxDateFrom;
         private System.Windows.Forms.Label labelDateInput;
         private System.Windows.Forms.Panel panelSplitBar;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDateFrom;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDateTo;
     }
 }
