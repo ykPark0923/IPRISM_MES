@@ -252,5 +252,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="SourceImage\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SourceImage\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SourceImage\reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SourceImage\stop.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
