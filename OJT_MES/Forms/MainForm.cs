@@ -21,7 +21,7 @@ namespace LotteMES.Forms
         const string DATE_FORMAT = "yyyy-MM-dd";
 
         //true : start버튼보임(정지 또는 일시정지 상태), false : pause버튼보임(작동중)
-        private bool isToggledStartAndPause = true;
+        private bool isPaused = true;
 
         MainFormData m_data = new MainFormData();
 
@@ -241,24 +241,24 @@ namespace LotteMES.Forms
             textBoxShelfLife.ForeColor = Style.CommonForeColor;
 
             buttonProductionPlan.ForeColor = Style.MainFormForeColorData;
-            buttonBulkBarcodePrint.ForeColor = Style.CommonForeColor;
+            buttonBulkBarcodePrint.ForeColor = Style.MainFormForeColorData;
             buttonPopDeviceLog.ForeColor = Style.MainFormForeColorData;
             buttonPerformanceManage.ForeColor = Style.MainFormForeColorData;
             buttonAllHistoryView.ForeColor = Style.MainFormForeColorData;
             buttonPerformanceSendLog.ForeColor = Style.MainFormForeColorData;
-            buttonWorkerConfiguration.ForeColor = Style.CommonForeColor;
-            buttonSystemConfiguration.ForeColor = Style.CommonForeColor;
-            buttonHardwareConfiguration.ForeColor = Style.CommonForeColor;
-            buttonSettingBasicInfo.ForeColor = Style.CommonForeColor;
+            buttonWorkerConfiguration.ForeColor = Style.MainFormForeColorData;
+            buttonSystemConfiguration.ForeColor = Style.MainFormForeColorData;
+            buttonHardwareConfiguration.ForeColor = Style.MainFormForeColorData;
+            buttonSettingBasicInfo.ForeColor = Style.MainFormForeColorData;
             buttonWorkerSetting.ForeColor = Style.MainFormForeColorData;
             buttonRemainingAmountRegister.ForeColor = Style.MainFormForeColorData;
             buttonPause.ForeColor = Style.CommonForeColor;
             buttonStop.ForeColor = Style.CommonForeColor;
             buttonReset.ForeColor = Style.CommonForeColor;
-            buttonReissue.ForeColor = Style.CommonForeColor;
-            buttonPrintTest.ForeColor = Style.CommonForeColor;
+            buttonReissue.ForeColor = Style.MainFormForeColorData;
+            buttonPrintTest.ForeColor = Style.MainFormForeColorData;
             buttonHelp.ForeColor = Style.MainFormForeColorData;
-            buttonExit.ForeColor = Style.CommonForeColor;
+            buttonExit.ForeColor = Style.MainFormForeColorData;
             #endregion
 
             #region Font
@@ -367,6 +367,8 @@ namespace LotteMES.Forms
         // 작업환경설정버튼 - 작업자환경설정폼
         private void buttonWorkerConfiguration_Click(object sender, EventArgs e)
         {
+            if (isPaused) return;
+
             WorkerConfigurationForm workerConfigurationForm = new WorkerConfigurationForm();
             workerConfigurationForm.ShowDialog();
         }
@@ -374,12 +376,16 @@ namespace LotteMES.Forms
         // 시스템환경설정버튼
         private void buttonSystemConfiguration_Click(object sender, EventArgs e)
         {
+            if (isPaused) return;
+
             SystemConfigurationForm systemConfigurationForm = new SystemConfigurationForm();
             systemConfigurationForm.ShowDialog();
         }
 
         private void buttonHardwareConfiguration_Click(object sender, EventArgs e)
         {
+            if (isPaused) return;
+
             HardwareConfigurationForm hardwareConfigurationForm = new HardwareConfigurationForm();
             hardwareConfigurationForm.ShowDialog();
         }
@@ -387,6 +393,8 @@ namespace LotteMES.Forms
         // 기본정보생성버튼
         private void buttonSettingBasicInfo_Click(object sender, EventArgs e)
         {
+            if (isPaused) return;
+
             SettingBasicInfoForm settingBasicInfoForm = new SettingBasicInfoForm();
             settingBasicInfoForm.ShowDialog();
         }
@@ -401,7 +409,7 @@ namespace LotteMES.Forms
         // 바코드일괄출력버튼
         private void buttonBulkBarcodePrint_Click(object sender, EventArgs e)
         {
-
+            if (isPaused) return;
         }
 
         // POP장비관리이력버튼
@@ -420,14 +428,13 @@ namespace LotteMES.Forms
         // 시작/일시정지버튼 - 토글로 제어
         private void buttonPause_Click(object sender, EventArgs e)
         {
-
             //true : start버튼보임(정지 또는 일시정지 상태), false : pause버튼보임(작동중)
-            isToggledStartAndPause = !isToggledStartAndPause;
+            isPaused = !isPaused;
 
             #region 잔량등록
-            buttonPause.Text = isToggledStartAndPause ? "일시\n정지" : "시작";
+            buttonPause.Text = isPaused ? "일시\n정지" : "시작";
 
-            if (isToggledStartAndPause)
+            if (isPaused)
             {
                 buttonRemainingAmountRegister.Visible = false;
             }
@@ -436,7 +443,7 @@ namespace LotteMES.Forms
                 buttonRemainingAmountRegister.Visible = true;
             }
 
-            string imagePath = isToggledStartAndPause
+            string imagePath = isPaused
                  ? @"..\..\SourceImage\pause.png"
                  : @"..\..\SourceImage\play.png";
 
@@ -451,8 +458,45 @@ namespace LotteMES.Forms
             #endregion
 
             #region 버튼 forecolor, enabled
+            buttonPause.Text = isPaused ? "일시\n정지" : "시작";
 
+            if (isPaused)
+            {
+                buttonRemainingAmountRegister.Visible = false;
+                SetButtonPausedState();
+            }
+            else
+            {
+                buttonRemainingAmountRegister.Visible = true;
+                SetButtonStartedState();
+            }
             #endregion
+        }
+
+        //정지 또는 일시정지된 상태
+        private void SetButtonPausedState()
+        {
+            buttonBulkBarcodePrint.ForeColor = Style.CommonForeColor;
+            buttonWorkerConfiguration.ForeColor = Style.CommonForeColor;
+            buttonSystemConfiguration.ForeColor = Style.CommonForeColor;
+            buttonHardwareConfiguration.ForeColor = Style.CommonForeColor;
+            buttonSettingBasicInfo.ForeColor = Style.CommonForeColor;
+            buttonReissue.ForeColor = Style.CommonForeColor;
+            buttonPrintTest.ForeColor = Style.CommonForeColor;
+            buttonExit.ForeColor = Style.CommonForeColor;
+        }
+
+        //작동중인 상태
+        private void SetButtonStartedState()
+        {
+            buttonBulkBarcodePrint.ForeColor = Style.MainFormForeColorData;
+            buttonWorkerConfiguration.ForeColor = Style.MainFormForeColorData;
+            buttonSystemConfiguration.ForeColor = Style.MainFormForeColorData;
+            buttonHardwareConfiguration.ForeColor = Style.MainFormForeColorData;
+            buttonSettingBasicInfo.ForeColor = Style.MainFormForeColorData;
+            buttonReissue.ForeColor = Style.MainFormForeColorData;
+            buttonPrintTest.ForeColor = Style.MainFormForeColorData;
+            buttonExit.ForeColor = Style.MainFormForeColorData;
         }
 
         // 중지버튼
@@ -470,13 +514,13 @@ namespace LotteMES.Forms
         // 재발행버튼
         private void buttonReissue_Click(object sender, EventArgs e)
         {
-
+            if (isPaused) return;
         }
 
         // 인쇄테스트버튼
         private void buttonPrintTest_Click(object sender, EventArgs e)
         {
-
+            if (isPaused) return;
         }
 
         // 도움말버튼
@@ -488,7 +532,7 @@ namespace LotteMES.Forms
         // 종료버튼
         private void buttonExit_Click(object sender, EventArgs e)
         {
-
+            if (isPaused) return;
         }
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
@@ -496,6 +540,6 @@ namespace LotteMES.Forms
             LocalDBAccessor.Destroy();
             ServerDBAccessor.Destroy();
         }
-
+    
     }
 }
