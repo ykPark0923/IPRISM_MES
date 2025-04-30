@@ -33,7 +33,6 @@ namespace LotteMES.Forms
 
             // 작업 표시줄을 포함한 화면 전체로 설정
             //this.WindowState = FormWindowState.Maximized;
-
         }
 
 

@@ -123,6 +123,12 @@
     <Compile Include="Forms\AllHistoryViewForm.Designer.cs">
       <DependentUpon>AllHistoryViewForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\CustomKeyboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomKeyboardForm.Designer.cs">
+      <DependentUpon>CustomKeyboardForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\PerformanceManageForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,7 @@
     </Compile>
     <Compile Include="Helpers\EnumHelper.cs" />
     <Compile Include="Helpers\TryParseHelper.cs" />
+    <Compile Include="Keyboard\KeyboardBinder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Styles\Style.cs" />

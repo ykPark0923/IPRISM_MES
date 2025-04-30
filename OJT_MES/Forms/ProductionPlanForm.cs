@@ -14,6 +14,7 @@ using LotteMES.Helpers;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
 using LotteMES.DBAccess;
+using LotteMES.Keyboard;
 
 namespace LotteMES.Forms
 {
@@ -31,6 +32,8 @@ namespace LotteMES.Forms
         {
             SetStyles();
             UpdateControlsFromObject();
+
+            KeyboardBinder.BindTextBoxes(this); // 현재 폼 전체에 대해 바인딩
         }
 
         protected override void SetStyles()

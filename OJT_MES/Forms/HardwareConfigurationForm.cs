@@ -11,6 +11,7 @@ using LotteMES.Bases;
 using LotteMES.FormData;
 using LotteMES.Styles;
 using LotteMES.Helpers;
+using LotteMES.Keyboard;
 
 namespace LotteMES.Forms
 {
@@ -27,6 +28,8 @@ namespace LotteMES.Forms
         private void HardwareConfigurationForm_Load(object sender, EventArgs e)
         {
             SetStyles();
+
+            KeyboardBinder.BindTextBoxes(this); // 현재 폼 전체에 대해 바인딩
         }
 
         protected override void SetStyles()
