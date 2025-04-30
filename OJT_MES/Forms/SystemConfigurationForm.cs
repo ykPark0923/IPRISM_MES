@@ -26,6 +26,8 @@ namespace LotteMES.Forms
         private void SystemConfigurationForm_Load(object sender, EventArgs e)
         {
             SetStyles();
+            SetDateGridView();
+
         }
 
         protected override void SetStyles()
@@ -140,6 +142,32 @@ namespace LotteMES.Forms
             labelLabelPrintDirection.Font = Style.CommonFont;
             labelStartNumberBasis.Font = Style.CommonFont;
             #endregion            
+        }
+
+        private void SetDateGridView()
+        {
+
+            dataGridViewCommunicationSettings.Rows.Add("PLC");
+            dataGridViewCommunicationSettings.Rows.Add("PRINT");
+            dataGridViewCommunicationSettings.Rows.Add("SCAN");
+
+            //row fill 기능
+            int totalHeight = dataGridViewCommunicationSettings.Height;
+            int headerHeight = dataGridViewCommunicationSettings.ColumnHeadersHeight;
+
+
+            int rowCount = dataGridViewCommunicationSettings.RowCount;
+
+            if (rowCount == 0)
+                return;
+
+            // 각 행 높이 계산
+            int rowHeight = (totalHeight - headerHeight) / rowCount;
+
+            foreach (DataGridViewRow row in dataGridViewCommunicationSettings.Rows)
+            {
+                row.Height = rowHeight;
+            }
         }
 
         private void buttonClose_Click(object sender, EventArgs e)

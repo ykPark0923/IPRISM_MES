@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBoxCommunicationSettings = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewCommunicationSettings = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
@@ -64,13 +65,13 @@
             this.labelTitle = new System.Windows.Forms.Label();
             this.panelSplitBar = new System.Windows.Forms.Panel();
             this.groupBoxCommunicationSettings.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCommunicationSettings)).BeginInit();
             this.groupBoxGeneralSettings.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxCommunicationSettings
             // 
-            this.groupBoxCommunicationSettings.Controls.Add(this.dataGridView1);
+            this.groupBoxCommunicationSettings.Controls.Add(this.dataGridViewCommunicationSettings);
             this.groupBoxCommunicationSettings.Location = new System.Drawing.Point(20, 311);
             this.groupBoxCommunicationSettings.Name = "groupBoxCommunicationSettings";
             this.groupBoxCommunicationSettings.Size = new System.Drawing.Size(674, 254);
@@ -78,21 +79,34 @@
             this.groupBoxCommunicationSettings.TabStop = false;
             this.groupBoxCommunicationSettings.Text = "통신설정";
             // 
-            // dataGridView1
+            // dataGridViewCommunicationSettings
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewCommunicationSettings.AllowUserToAddRows = false;
+            this.dataGridViewCommunicationSettings.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewCommunicationSettings.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCommunicationSettings.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dataGridView1.Location = new System.Drawing.Point(7, 20);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(661, 228);
-            this.dataGridView1.TabIndex = 0;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewCommunicationSettings.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewCommunicationSettings.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewCommunicationSettings.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
+            this.dataGridViewCommunicationSettings.Location = new System.Drawing.Point(3, 17);
+            this.dataGridViewCommunicationSettings.Name = "dataGridViewCommunicationSettings";
+            this.dataGridViewCommunicationSettings.RowHeadersVisible = false;
+            this.dataGridViewCommunicationSettings.RowTemplate.Height = 23;
+            this.dataGridViewCommunicationSettings.Size = new System.Drawing.Size(668, 234);
+            this.dataGridViewCommunicationSettings.TabIndex = 0;
             // 
             // Column1
             // 
@@ -422,7 +436,7 @@
             this.Text = "SystemConfigurationForm";
             this.Load += new System.EventHandler(this.SystemConfigurationForm_Load);
             this.groupBoxCommunicationSettings.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCommunicationSettings)).EndInit();
             this.groupBoxGeneralSettings.ResumeLayout(false);
             this.groupBoxGeneralSettings.PerformLayout();
             this.ResumeLayout(false);
@@ -459,7 +473,7 @@
         private System.Windows.Forms.Label labelDownloadMinutes;
         private System.Windows.Forms.Label labelUploadMinutes;
         private System.Windows.Forms.RadioButton radioButtonUnset;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewCommunicationSettings;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewComboBoxColumn Column2;
         private System.Windows.Forms.DataGridViewComboBoxColumn Column3;
