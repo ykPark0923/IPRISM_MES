@@ -229,6 +229,16 @@ namespace LotteMES.Styles
             set => mainFormButtonBackgroundColor = value;
         }
 
+        private static Color mainFormBoxInfoPanelBackgroundColor = Color.DimGray;
+        /// <summary>
+        /// 메인폼 바코드, 박스패널 배경컬러 블랙
+        /// </summary>
+        internal static Color MainFormBoxInfoPanelBackgroundColor
+        {
+            get => mainFormBoxInfoPanelBackgroundColor;
+            set => mainFormBoxInfoPanelBackgroundColor = value;
+        }
+
 
         private static Color mainFormCommStatusColorError = Color.Red;
         /// <summary>
@@ -251,24 +261,24 @@ namespace LotteMES.Styles
             set => mainFormCommStatusColorGood = value;
         }
 
-        private static Color mainFormLabel2ForeColor = Color.Red;
+        private static Color mainFormBarcodeNumberForeColor = Color.Red;
         /// <summary>
-        /// 메인폼 라벨2 글씨컬러
+        /// 메인폼 바코드넘버 글씨컬러
         /// </summary>
-        internal static Color MainFormLabel2ForeColor
+        internal static Color MainFormBarcodeNumberForeColor
         {
-            get => mainFormLabel2ForeColor;
-            set => mainFormLabel2ForeColor = value;
+            get => mainFormBarcodeNumberForeColor;
+            set => mainFormBarcodeNumberForeColor = value;
         }
 
-        private static Color mainFormLabel3ForeColor = Color.Cyan;
+        private static Color mainFormBoxNumberForeColor = Color.Cyan;
         /// <summary>
-        /// 메인폼 라벨3 글씨컬러
+        /// 메인폼 박스넘버 글씨컬러
         /// </summary>
-        internal static Color MainFormLabel3ForeColor
+        internal static Color MainFormBoxNumberForeColor
         {
-            get => mainFormLabel3ForeColor;
-            set => mainFormLabel3ForeColor = value;
+            get => mainFormBoxNumberForeColor;
+            set => mainFormBoxNumberForeColor = value;
         }
 
         private static Font mainFormDatetimeFontSize = new Font("돋움체", 15, FontStyle.Bold);  // 기본 폰트에 크기설정
@@ -281,24 +291,24 @@ namespace LotteMES.Styles
             set => mainFormDatetimeFontSize = value ?? new Font("돋움체", 15, FontStyle.Bold);  // null 방지 및 기본값 설정
         }
 
-        private static Font mainFormLabel2FontSize = new Font("돋움체", 30, FontStyle.Bold);  // 기본 폰트에 크기설정
+        private static Font mainFormBarcodeNumberFontSize = new Font("돋움체", 30, FontStyle.Bold);  // 기본 폰트에 크기설정
         /// <summary>
-        /// 메인폼 라벨2 폰트크기 설정
+        /// 메인폼 바코드넘버 폰트크기 설정
         /// </summary>
-        internal static Font MainFormLabel2FontSize
+        internal static Font MainFormBarcodeNumberFontSize
         {
-            get => mainFormLabel2FontSize;
-            set => mainFormLabel2FontSize = value ?? new Font("돋움체", 30, FontStyle.Bold);  // null 방지 및 기본값 설정
+            get => mainFormBarcodeNumberFontSize;
+            set => mainFormBarcodeNumberFontSize = value ?? new Font("돋움체", 30, FontStyle.Bold);  // null 방지 및 기본값 설정
         }
 
-        private static Font mainFormLabel3FontSize = new Font("맑은고딕", 30, FontStyle.Bold);  // 기본 폰트에 크기설정
+        private static Font mainFormBoxNumberFontSize = new Font("맑은고딕", 30, FontStyle.Bold);  // 기본 폰트에 크기설정
         /// <summary>
-        /// 메인폼 라벨3 폰트크기 설정
+        /// 메인폼 박스넘버 폰트크기 설정
         /// </summary>
-        internal static Font MainFormLabel3FontSize
+        internal static Font MainFormBoxNumberFontSize
         {
-            get => mainFormLabel3FontSize;
-            set => mainFormLabel3FontSize = value ?? new Font("맑은고딕", 30, FontStyle.Bold);  // null 방지 및 기본값 설정
+            get => mainFormBoxNumberFontSize;
+            set => mainFormBoxNumberFontSize = value ?? new Font("맑은고딕", 30, FontStyle.Bold);  // null 방지 및 기본값 설정
         }
         #endregion
 

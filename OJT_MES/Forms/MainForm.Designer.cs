@@ -33,11 +33,11 @@
             this.textBoxManagerName = new System.Windows.Forms.TextBox();
             this.buttonPause = new System.Windows.Forms.Button();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelBarcodeNumber = new System.Windows.Forms.Label();
+            this.labelBoxStartNumber = new System.Windows.Forms.Label();
             this.labelCommStatus = new System.Windows.Forms.Label();
             this.labelAL = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelVersion = new System.Windows.Forms.Label();
             this.labelManagerName = new System.Windows.Forms.Label();
             this.pictureBoxAL = new System.Windows.Forms.PictureBox();
             this.pictureBoxServer = new System.Windows.Forms.PictureBox();
@@ -47,8 +47,8 @@
             this.panelHeader = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelCommStatus = new System.Windows.Forms.Panel();
-            this.panel = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.panelBoxInfo = new System.Windows.Forms.Panel();
+            this.labelBoxEndNumber = new System.Windows.Forms.Label();
             this.panelData = new System.Windows.Forms.Panel();
             this.labelProducedQuantity = new System.Windows.Forms.Label();
             this.textBoxProducedQuantity = new System.Windows.Forms.TextBox();
@@ -108,7 +108,7 @@
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelCommStatus.SuspendLayout();
-            this.panel.SuspendLayout();
+            this.panelBoxInfo.SuspendLayout();
             this.panelData.SuspendLayout();
             this.panelButton.SuspendLayout();
             this.SuspendLayout();
@@ -164,29 +164,29 @@
             this.pictureBoxLogo.TabIndex = 4;
             this.pictureBoxLogo.TabStop = false;
             // 
-            // label2
+            // labelBarcodeNumber
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("돋움체", 30F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(33, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(437, 40);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "33222503112018269155";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelBarcodeNumber.AutoSize = true;
+            this.labelBarcodeNumber.Font = new System.Drawing.Font("돋움체", 30F, System.Drawing.FontStyle.Bold);
+            this.labelBarcodeNumber.ForeColor = System.Drawing.SystemColors.Control;
+            this.labelBarcodeNumber.Location = new System.Drawing.Point(33, 39);
+            this.labelBarcodeNumber.Name = "labelBarcodeNumber";
+            this.labelBarcodeNumber.Size = new System.Drawing.Size(531, 40);
+            this.labelBarcodeNumber.TabIndex = 5;
+            this.labelBarcodeNumber.Text = "진행되는 작업이 없습니다.";
+            this.labelBarcodeNumber.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label3
+            // labelBoxStartNumber
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(841, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 54);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "20450";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelBoxStartNumber.AutoSize = true;
+            this.labelBoxStartNumber.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelBoxStartNumber.ForeColor = System.Drawing.Color.Red;
+            this.labelBoxStartNumber.Location = new System.Drawing.Point(841, 0);
+            this.labelBoxStartNumber.Name = "labelBoxStartNumber";
+            this.labelBoxStartNumber.Size = new System.Drawing.Size(138, 54);
+            this.labelBoxStartNumber.TabIndex = 6;
+            this.labelBoxStartNumber.Text = "00001";
+            this.labelBoxStartNumber.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // labelCommStatus
             // 
@@ -213,17 +213,17 @@
             this.labelAL.Text = "AL";
             this.labelAL.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label1
+            // labelVersion
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(895, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 17);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "cPV199";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelVersion.AutoSize = true;
+            this.labelVersion.Font = new System.Drawing.Font("돋움체", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelVersion.ForeColor = System.Drawing.SystemColors.Control;
+            this.labelVersion.Location = new System.Drawing.Point(869, 9);
+            this.labelVersion.Name = "labelVersion";
+            this.labelVersion.Size = new System.Drawing.Size(136, 17);
+            this.labelVersion.TabIndex = 15;
+            this.labelVersion.Text = "신형POPv11.06";
+            this.labelVersion.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // labelManagerName
             // 
@@ -319,7 +319,7 @@
             this.panelCommStatus.Controls.Add(this.labelCommStatus);
             this.panelCommStatus.Controls.Add(this.labelAL);
             this.panelCommStatus.Controls.Add(this.pictureBoxDemon);
-            this.panelCommStatus.Controls.Add(this.label1);
+            this.panelCommStatus.Controls.Add(this.labelVersion);
             this.panelCommStatus.Controls.Add(this.pictureBoxAL);
             this.panelCommStatus.Controls.Add(this.labelDemon);
             this.panelCommStatus.Controls.Add(this.labelServer);
@@ -329,27 +329,28 @@
             this.panelCommStatus.Size = new System.Drawing.Size(1008, 34);
             this.panelCommStatus.TabIndex = 24;
             // 
-            // panel
+            // panelBoxInfo
             // 
-            this.panel.Controls.Add(this.label4);
-            this.panel.Controls.Add(this.label2);
-            this.panel.Controls.Add(this.label3);
-            this.panel.Location = new System.Drawing.Point(0, 92);
-            this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(1008, 113);
-            this.panel.TabIndex = 25;
+            this.panelBoxInfo.BackColor = System.Drawing.Color.DimGray;
+            this.panelBoxInfo.Controls.Add(this.labelBoxEndNumber);
+            this.panelBoxInfo.Controls.Add(this.labelBarcodeNumber);
+            this.panelBoxInfo.Controls.Add(this.labelBoxStartNumber);
+            this.panelBoxInfo.Location = new System.Drawing.Point(0, 92);
+            this.panelBoxInfo.Name = "panelBoxInfo";
+            this.panelBoxInfo.Size = new System.Drawing.Size(1008, 113);
+            this.panelBoxInfo.TabIndex = 25;
             // 
-            // label4
+            // labelBoxEndNumber
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.ForeColor = System.Drawing.Color.Cyan;
-            this.label4.Location = new System.Drawing.Point(841, 54);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 54);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "20592";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelBoxEndNumber.AutoSize = true;
+            this.labelBoxEndNumber.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelBoxEndNumber.ForeColor = System.Drawing.Color.Cyan;
+            this.labelBoxEndNumber.Location = new System.Drawing.Point(841, 54);
+            this.labelBoxEndNumber.Name = "labelBoxEndNumber";
+            this.labelBoxEndNumber.Size = new System.Drawing.Size(138, 54);
+            this.labelBoxEndNumber.TabIndex = 7;
+            this.labelBoxEndNumber.Text = "00000";
+            this.labelBoxEndNumber.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panelData
             // 
@@ -1034,7 +1035,7 @@
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.panelButton);
             this.Controls.Add(this.panelData);
-            this.Controls.Add(this.panel);
+            this.Controls.Add(this.panelBoxInfo);
             this.Controls.Add(this.panelCommStatus);
             this.Controls.Add(this.panelHeader);
             this.Name = "MainForm";
@@ -1049,8 +1050,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelCommStatus.ResumeLayout(false);
             this.panelCommStatus.PerformLayout();
-            this.panel.ResumeLayout(false);
-            this.panel.PerformLayout();
+            this.panelBoxInfo.ResumeLayout(false);
+            this.panelBoxInfo.PerformLayout();
             this.panelData.ResumeLayout(false);
             this.panelData.PerformLayout();
             this.panelButton.ResumeLayout(false);
@@ -1064,11 +1065,11 @@
         private System.Windows.Forms.TextBox textBoxManagerName;
         private System.Windows.Forms.Button buttonPause;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelBarcodeNumber;
+        private System.Windows.Forms.Label labelBoxStartNumber;
         private System.Windows.Forms.Label labelCommStatus;
         private System.Windows.Forms.Label labelAL;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelVersion;
         private System.Windows.Forms.Label labelManagerName;
         private System.Windows.Forms.PictureBox pictureBoxAL;
         private System.Windows.Forms.PictureBox pictureBoxServer;
@@ -1077,8 +1078,8 @@
         private System.Windows.Forms.Label labelDemon;
         private System.Windows.Forms.Panel panelHeader;
         private System.Windows.Forms.Panel panelCommStatus;
-        private System.Windows.Forms.Panel panel;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panelBoxInfo;
+        private System.Windows.Forms.Label labelBoxEndNumber;
         private System.Windows.Forms.Panel panelData;
         private System.Windows.Forms.Panel panelButton;
         private System.Windows.Forms.Label labelRemainingRibbon;

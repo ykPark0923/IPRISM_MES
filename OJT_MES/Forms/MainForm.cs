@@ -52,10 +52,10 @@ namespace LotteMES.Forms
         {
             // 라벨 데이터 가져오기 (UI에서 Text 속성 가져오기)
             m_data.CurrentDateTime = labelCurrentDateTime.Text;
-            m_data.Label1 = label1.Text;
-            m_data.Label2 = label2.Text;
-            m_data.Label3 = label3.Text;
-            m_data.Label4 = label4.Text;
+            m_data.Label1 = labelVersion.Text;
+            m_data.Label2 = labelBarcodeNumber.Text;
+            m_data.Label3 = labelBoxStartNumber.Text;
+            m_data.Label4 = labelBoxEndNumber.Text;
 
 
             // 텍스트박스에서 데이터를 가져와 객체에 설정
@@ -86,10 +86,10 @@ namespace LotteMES.Forms
         {
             // 라벨에 데이터 설정
             labelCurrentDateTime.Text = m_data.CurrentDateTime;
-            label1.Text = m_data.Label1;
-            label2.Text = m_data.Label2;
-            label3.Text = m_data.Label3;
-            label4.Text = m_data.Label4;
+            labelVersion.Text = m_data.Label1;
+            labelBarcodeNumber.Text = m_data.Label2;
+            labelBoxStartNumber.Text = m_data.Label3;
+            labelBoxEndNumber.Text = m_data.Label4;
 
             // 텍스트박스에 데이터 설정
             textBoxManagerName.Text = m_data.ManagerName;
@@ -118,6 +118,7 @@ namespace LotteMES.Forms
             this.BackColor = Style.CommonBackgroundColor;
             panelHeader.BackColor = Style.CommonLabelBackgroundColor;
             panelCommStatus.BackColor = Style.CommonLabelBackgroundColor;
+            panelBoxInfo.BackColor = Style.MainFormBoxInfoPanelBackgroundColor;
             panelData.BackColor = Style.CommonLabelBackgroundColor;
             panelButton.BackColor = Style.CommonLabelBackgroundColor;
 
@@ -164,10 +165,10 @@ namespace LotteMES.Forms
             labelAL.BackColor = Style.CommonLabelBackgroundColor;
             labelServer.BackColor = Style.CommonLabelBackgroundColor;
             labelDemon.BackColor = Style.CommonLabelBackgroundColor;
-            label1.BackColor = Style.CommonLabelBackgroundColor;
-            label2.BackColor = Style.CommonLabelBackgroundColor;
-            label3.BackColor = Style.CommonLabelBackgroundColor;
-            label4.BackColor = Style.CommonLabelBackgroundColor;
+            labelVersion.BackColor = Style.CommonLabelBackgroundColor;
+            labelBarcodeNumber.BackColor = Style.CommonLabelBackgroundColor;
+            labelBoxStartNumber.BackColor = Style.CommonLabelBackgroundColor;
+            labelBoxEndNumber.BackColor = Style.CommonLabelBackgroundColor;
             labelManagerName.BackColor = Style.CommonLabelBackgroundColor;
             labelPlannedQuantity.BackColor = Style.CommonLabelBackgroundColor;
             labelProducedQuantity.BackColor = Style.CommonLabelBackgroundColor;
@@ -199,10 +200,10 @@ namespace LotteMES.Forms
             labelServer.ForeColor = Style.CommonForeColor;
             labelDemon.ForeColor = Style.CommonForeColor;
 
-            label1.ForeColor = Style.CommonForeColor;
-            label2.ForeColor = Style.CommonForeColor;
-            label3.ForeColor = Style.MainFormLabel2ForeColor;
-            label4.ForeColor = Style.MainFormLabel3ForeColor;
+            labelVersion.ForeColor = Style.CommonForeColor;
+            labelBarcodeNumber.ForeColor = Style.CommonForeColor;
+            labelBoxStartNumber.ForeColor = Style.MainFormBarcodeNumberForeColor;
+            labelBoxEndNumber.ForeColor = Style.MainFormBoxNumberForeColor;
 
             labelManagerName.ForeColor = Style.MainFormForeColorData;
             labelPlannedQuantity.ForeColor = Style.MainFormForeColorData;
@@ -267,10 +268,10 @@ namespace LotteMES.Forms
             labelAL.Font = Style.CommonFont;
             labelServer.Font = Style.CommonFont;
             labelDemon.Font = Style.CommonFont;
-            label1.Font = Style.CommonFont;
-            label2.Font = Style.MainFormLabel2FontSize;
-            label3.Font = Style.MainFormLabel3FontSize;
-            label4.Font = Style.MainFormLabel3FontSize;
+            labelVersion.Font = Style.CommonFont;
+            labelBarcodeNumber.Font = Style.MainFormBarcodeNumberFontSize;
+            labelBoxStartNumber.Font = Style.MainFormBoxNumberFontSize;
+            labelBoxEndNumber.Font = Style.MainFormBoxNumberFontSize;
             labelManagerName.Font = Style.CommonFont;
             labelPlannedQuantity.Font = Style.CommonFont;
             labelProducedQuantity.Font = Style.CommonFont;
