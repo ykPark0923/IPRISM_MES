@@ -73,7 +73,7 @@ namespace LotteMES.Forms
             m_data.BoxPerPallet = TryParseHelper.TryParseInt(textBoxBoxPerPallet.Text);
             m_data.BoxCode = textBoxBoxCode.Text;
             m_data.ExpirationDate = TryParseHelper.TryParseDateTime(textBoxExpirationDate.Text);
-            m_data.ShelfLife = TryParseHelper.TryParseInt(textBoxShelfLife.Text);
+            m_data.ShelfLife = textBoxShelfLife.Text;
 
         }
 

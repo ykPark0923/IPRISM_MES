@@ -75,8 +75,8 @@ namespace LotteMES.FormData
         private DateTime expirationDate = DateTime.Now;
         public DateTime ExpirationDate { get => expirationDate; set => expirationDate = value; }
 
-        private int shelfLife = 0;
-        public int ShelfLife { get => shelfLife; set => shelfLife = value; }
+        private string shelfLife = string.Empty;
+        public string ShelfLife { get => shelfLife; set => shelfLife = value; }
         #endregion
     }
 }

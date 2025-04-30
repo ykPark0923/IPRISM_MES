@@ -413,7 +413,7 @@
             this.textBoxProducedQuantity.Name = "textBoxProducedQuantity";
             this.textBoxProducedQuantity.Size = new System.Drawing.Size(183, 27);
             this.textBoxProducedQuantity.TabIndex = 47;
-            this.textBoxProducedQuantity.Text = "20,449";
+            this.textBoxProducedQuantity.Text = "20449";
             // 
             // labelRemainingLabel
             // 
@@ -757,7 +757,7 @@
             this.textBoxPlannedQuantity.Name = "textBoxPlannedQuantity";
             this.textBoxPlannedQuantity.Size = new System.Drawing.Size(183, 27);
             this.textBoxPlannedQuantity.TabIndex = 17;
-            this.textBoxPlannedQuantity.Text = "20,000";
+            this.textBoxPlannedQuantity.Text = "20000";
             this.textBoxPlannedQuantity.TextChanged += new System.EventHandler(this.textBoxPlannedQuantity_TextChanged);
             // 
             // panelButton
