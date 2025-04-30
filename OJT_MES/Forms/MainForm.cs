@@ -421,8 +421,10 @@ namespace LotteMES.Forms
         private void buttonPause_Click(object sender, EventArgs e)
         {
 
+            //true : start버튼보임(정지 또는 일시정지 상태), false : pause버튼보임(작동중)
             isToggledStartAndPause = !isToggledStartAndPause;
 
+            #region 잔량등록
             buttonPause.Text = isToggledStartAndPause ? "일시\n정지" : "시작";
 
             if (isToggledStartAndPause)
@@ -446,6 +448,11 @@ namespace LotteMES.Forms
             {
                 MessageBox.Show("이미지 파일을 찾을 수 없습니다:\n" + imagePath);
             }
+            #endregion
+
+            #region 버튼 forecolor, enabled
+
+            #endregion
         }
 
         // 중지버튼
