@@ -425,6 +425,15 @@ namespace LotteMES.Forms
 
             buttonPause.Text = isToggledStartAndPause ? "일시\n정지" : "시작";
 
+            if (isToggledStartAndPause)
+            {
+                buttonRemainingAmountRegister.Visible = false;
+            }
+            else
+            {
+                buttonRemainingAmountRegister.Visible = true;
+            }
+
             string imagePath = isToggledStartAndPause
                  ? @"..\..\SourceImage\pause.png"
                  : @"..\..\SourceImage\play.png";
