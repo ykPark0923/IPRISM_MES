@@ -147,7 +147,7 @@
             this.buttonPause.Name = "buttonPause";
             this.buttonPause.Size = new System.Drawing.Size(106, 63);
             this.buttonPause.TabIndex = 3;
-            this.buttonPause.Text = "일시\r\n정지";
+            this.buttonPause.Text = "시작";
             this.buttonPause.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonPause.UseVisualStyleBackColor = false;
             this.buttonPause.Click += new System.EventHandler(this.buttonPause_Click);
