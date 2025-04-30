@@ -47,6 +47,7 @@
             // 
             // dataGridViewHistory
             // 
+            this.dataGridViewHistory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -54,6 +55,7 @@
             this.Column3});
             this.dataGridViewHistory.Location = new System.Drawing.Point(12, 170);
             this.dataGridViewHistory.Name = "dataGridViewHistory";
+            this.dataGridViewHistory.RowHeadersVisible = false;
             this.dataGridViewHistory.RowTemplate.Height = 23;
             this.dataGridViewHistory.Size = new System.Drawing.Size(801, 466);
             this.dataGridViewHistory.TabIndex = 35;

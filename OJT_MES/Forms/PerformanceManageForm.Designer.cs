@@ -222,6 +222,7 @@
             // 
             // dataGridViewPerformance
             // 
+            this.dataGridViewPerformance.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewPerformance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPerformance.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -233,6 +234,7 @@
             this.dataGridViewTextBoxColumn7});
             this.dataGridViewPerformance.Location = new System.Drawing.Point(18, 110);
             this.dataGridViewPerformance.Name = "dataGridViewPerformance";
+            this.dataGridViewPerformance.RowHeadersVisible = false;
             this.dataGridViewPerformance.RowTemplate.Height = 23;
             this.dataGridViewPerformance.Size = new System.Drawing.Size(781, 455);
             this.dataGridViewPerformance.TabIndex = 1;

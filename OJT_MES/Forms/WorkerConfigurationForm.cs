@@ -12,6 +12,8 @@ using LotteMES.FormData;
 using LotteMES.Styles;
 using LotteMES.Helpers;
 using LotteMES.Keyboard;
+using LotteMES.DBAccess;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace LotteMES.Forms
 {
@@ -28,6 +30,7 @@ namespace LotteMES.Forms
         private void WorkerConfigurationForm_Load(object sender, EventArgs e)
         {
             SetStyles();
+            LoadComboBoxListFromLocalDB();
 
             KeyboardBinder.BindTextBoxes(this); // 현재 폼 전체에 대해 바인딩
         }
@@ -152,6 +155,31 @@ namespace LotteMES.Forms
         private void buttonClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void LoadComboBoxListFromLocalDB()
+        {
+            // 서버 DB에서 데이터 조회
+            string strSelect = "SELECT WERKSNM, PRODLINENM FROM TPLINEINFO_LOCAL";
+            DataTable dt = LocalDBAccessor.Maria_Data(strSelect);
+
+            if (dt == null || dt.Rows.Count == 0)
+            {
+                MessageBox.Show("DB로부터 정보를 불러오지 못했습니다.");
+                return;
+            }
+
+            comboBoxFactoryName.Items.Clear(); // 기존 항목 초기화
+            comboBoxLineName.Items.Clear(); // 기존 항목 초기화
+
+            //콤보박스 리스트에 값 추가
+
+            //콤보박스 리스트에 값 추가
+            foreach (DataRow row in dt.Rows)
+            {
+                comboBoxFactoryName.Items.Add(row["WERKSNM"].ToString());
+                comboBoxLineName.Items.Add(row["PRODLINENM"].ToString());
+            }
         }
 
     }

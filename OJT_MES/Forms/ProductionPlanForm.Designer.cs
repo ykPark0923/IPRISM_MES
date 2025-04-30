@@ -47,6 +47,7 @@
             this.labelTotalPeriod = new System.Windows.Forms.Label();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.groupBoxProductionPlan = new System.Windows.Forms.GroupBox();
+            this.dateTimePickerProductionDate = new System.Windows.Forms.DateTimePicker();
             this.textBoxPlanQuantity = new System.Windows.Forms.TextBox();
             this.labelPlanQuantity = new System.Windows.Forms.Label();
             this.comboBoxShiftType = new System.Windows.Forms.ComboBox();
@@ -59,7 +60,6 @@
             this.labelBarcodeNo = new System.Windows.Forms.Label();
             this.labelProductName = new System.Windows.Forms.Label();
             this.panelSplitBar = new System.Windows.Forms.Panel();
-            this.dateTimePickerProductionDate = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerTotalPeriod = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerTestPeriod = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlanList)).BeginInit();
@@ -68,6 +68,7 @@
             // 
             // dataGridViewPlanList
             // 
+            this.dataGridViewPlanList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewPlanList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPlanList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -79,6 +80,7 @@
             this.Column7});
             this.dataGridViewPlanList.Location = new System.Drawing.Point(12, 85);
             this.dataGridViewPlanList.Name = "dataGridViewPlanList";
+            this.dataGridViewPlanList.RowHeadersVisible = false;
             this.dataGridViewPlanList.RowTemplate.Height = 23;
             this.dataGridViewPlanList.Size = new System.Drawing.Size(907, 277);
             this.dataGridViewPlanList.TabIndex = 35;
@@ -235,6 +237,13 @@
             this.groupBoxProductionPlan.TabIndex = 44;
             this.groupBoxProductionPlan.TabStop = false;
             // 
+            // dateTimePickerProductionDate
+            // 
+            this.dateTimePickerProductionDate.Location = new System.Drawing.Point(90, 74);
+            this.dateTimePickerProductionDate.Name = "dateTimePickerProductionDate";
+            this.dateTimePickerProductionDate.Size = new System.Drawing.Size(147, 21);
+            this.dateTimePickerProductionDate.TabIndex = 29;
+            // 
             // textBoxPlanQuantity
             // 
             this.textBoxPlanQuantity.Location = new System.Drawing.Point(500, 73);
@@ -339,13 +348,6 @@
             this.panelSplitBar.Name = "panelSplitBar";
             this.panelSplitBar.Size = new System.Drawing.Size(911, 3);
             this.panelSplitBar.TabIndex = 45;
-            // 
-            // dateTimePickerProductionDate
-            // 
-            this.dateTimePickerProductionDate.Location = new System.Drawing.Point(90, 74);
-            this.dateTimePickerProductionDate.Name = "dateTimePickerProductionDate";
-            this.dateTimePickerProductionDate.Size = new System.Drawing.Size(147, 21);
-            this.dateTimePickerProductionDate.TabIndex = 29;
             // 
             // dateTimePickerTotalPeriod
             // 

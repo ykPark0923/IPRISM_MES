@@ -15,6 +15,7 @@ using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
 using LotteMES.DBAccess;
 using LotteMES.Keyboard;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace LotteMES.Forms
 {
@@ -32,6 +33,7 @@ namespace LotteMES.Forms
         {
             SetStyles();
             UpdateControlsFromObject();
+            LoadComboBoxListFromLocalDB();
 
             KeyboardBinder.BindTextBoxes(this); // 현재 폼 전체에 대해 바인딩
         }
@@ -206,5 +208,25 @@ namespace LotteMES.Forms
             this.Close();
         }
 
+        private void LoadComboBoxListFromLocalDB()
+        {
+            // 서버 DB에서 데이터 조회
+            string strSelect = "SELECT ITEMNM FROM TPITEMINFO_LOCAL";
+            DataTable dt = LocalDBAccessor.Maria_Data(strSelect);
+
+            if (dt == null || dt.Rows.Count == 0)
+            {
+                MessageBox.Show("DB로부터 정보를 불러오지 못했습니다.");
+                return;
+            }
+
+            comboBoxProductName.Items.Clear(); // 기존 항목 초기화
+
+            //콤보박스 리스트에 값 추가
+            foreach (DataRow row in dt.Rows)
+            {
+                comboBoxProductName.Items.Add(row["ITEMNM"].ToString());
+            }
+        }
     }
 }
