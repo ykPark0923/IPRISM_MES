@@ -169,7 +169,7 @@
             this.labelBarcodeNumber.AutoSize = true;
             this.labelBarcodeNumber.Font = new System.Drawing.Font("돋움체", 30F, System.Drawing.FontStyle.Bold);
             this.labelBarcodeNumber.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelBarcodeNumber.Location = new System.Drawing.Point(33, 39);
+            this.labelBarcodeNumber.Location = new System.Drawing.Point(13, 39);
             this.labelBarcodeNumber.Name = "labelBarcodeNumber";
             this.labelBarcodeNumber.Size = new System.Drawing.Size(531, 40);
             this.labelBarcodeNumber.TabIndex = 5;
@@ -181,7 +181,7 @@
             this.labelBoxStartNumber.AutoSize = true;
             this.labelBoxStartNumber.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelBoxStartNumber.ForeColor = System.Drawing.Color.Red;
-            this.labelBoxStartNumber.Location = new System.Drawing.Point(841, 0);
+            this.labelBoxStartNumber.Location = new System.Drawing.Point(841, 2);
             this.labelBoxStartNumber.Name = "labelBoxStartNumber";
             this.labelBoxStartNumber.Size = new System.Drawing.Size(138, 54);
             this.labelBoxStartNumber.TabIndex = 6;
