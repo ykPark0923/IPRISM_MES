@@ -20,6 +20,9 @@ namespace LotteMES.Forms
     {
         const string DATE_FORMAT = "yyyy-MM-dd";
 
+        //true : start버튼보임(정지 또는 일시정지 상태), false : pause버튼보임(작동중)
+        private bool isToggledStartAndPause = true;
+
         MainFormData m_data = new MainFormData();
 
 
@@ -414,10 +417,26 @@ namespace LotteMES.Forms
             loginForm.ShowDialog();
         }
 
-        // 일시정지버튼 - 시작버튼과 토글
+        // 시작/일시정지버튼 - 토글로 제어
         private void buttonPause_Click(object sender, EventArgs e)
         {
 
+            isToggledStartAndPause = !isToggledStartAndPause;
+
+            buttonPause.Text = isToggledStartAndPause ? "일시\n정지" : "시작";
+
+            string imagePath = isToggledStartAndPause
+                 ? @"..\..\SourceImage\pause.png"
+                 : @"..\..\SourceImage\play.png";
+
+            if (System.IO.File.Exists(imagePath))
+            {
+                buttonPause.Image = Image.FromFile(imagePath);
+            }
+            else
+            {
+                MessageBox.Show("이미지 파일을 찾을 수 없습니다:\n" + imagePath);
+            }
         }
 
         // 중지버튼
