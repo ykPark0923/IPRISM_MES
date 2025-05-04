@@ -56,11 +56,11 @@
             // labelTitle
             // 
             this.labelTitle.AutoSize = true;
-            this.labelTitle.Font = new System.Drawing.Font("굴림", 35F);
+            this.labelTitle.Font = new System.Drawing.Font("돋움", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelTitle.ForeColor = System.Drawing.Color.White;
             this.labelTitle.Location = new System.Drawing.Point(10, 14);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(208, 47);
+            this.labelTitle.Size = new System.Drawing.Size(177, 40);
             this.labelTitle.TabIndex = 31;
             this.labelTitle.Text = "작업정보";
             // 

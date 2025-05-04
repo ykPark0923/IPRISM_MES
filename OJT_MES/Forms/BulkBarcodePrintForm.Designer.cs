@@ -32,6 +32,11 @@
             this.dateTimePickerTestPeriod = new System.Windows.Forms.DateTimePicker();
             this.panelSplitBar = new System.Windows.Forms.Panel();
             this.groupBoxProductionPlan = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.dateTimePickerProductionDate = new System.Windows.Forms.DateTimePicker();
             this.textBoxPlanQuantity = new System.Windows.Forms.TextBox();
             this.labelPlanQuantity = new System.Windows.Forms.Label();
@@ -47,15 +52,6 @@
             this.labelTotalPeriod = new System.Windows.Forms.Label();
             this.labelTestPeriod = new System.Windows.Forms.Label();
             this.dataGridViewPlanList = new System.Windows.Forms.DataGridView();
-            this.labelTitle = new System.Windows.Forms.Label();
-            this.buttonOK = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,6 +59,10 @@
             this.단위 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.buttonOK = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBoxProductionPlan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlanList)).BeginInit();
             this.SuspendLayout();
@@ -115,6 +115,53 @@
             this.groupBoxProductionPlan.Size = new System.Drawing.Size(907, 124);
             this.groupBoxProductionPlan.TabIndex = 59;
             this.groupBoxProductionPlan.TabStop = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(696, 85);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(128, 21);
+            this.textBox2.TabIndex = 34;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("굴림", 13F);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(655, 88);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(31, 18);
+            this.label3.TabIndex = 33;
+            this.label3.Text = "TO";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("굴림", 13F);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(324, 89);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 18);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "일련번호 :";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(509, 85);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(128, 21);
+            this.textBox1.TabIndex = 31;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("굴림", 13F);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(436, 88);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 18);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "FROM";
             // 
             // dateTimePickerProductionDate
             // 
@@ -267,14 +314,49 @@
             this.dataGridViewPlanList.Size = new System.Drawing.Size(907, 277);
             this.dataGridViewPlanList.TabIndex = 54;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "No";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "생산일자";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "주/야";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "제품명";
+            this.Column4.Name = "Column4";
+            // 
+            // 단위
+            // 
+            this.단위.HeaderText = "단위";
+            this.단위.Name = "단위";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "계획수량";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "생산계획번호";
+            this.Column6.Name = "Column6";
+            // 
             // labelTitle
             // 
             this.labelTitle.AutoSize = true;
-            this.labelTitle.Font = new System.Drawing.Font("굴림", 35F);
+            this.labelTitle.Font = new System.Drawing.Font("돋움", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelTitle.ForeColor = System.Drawing.Color.White;
-            this.labelTitle.Location = new System.Drawing.Point(42, 8);
+            this.labelTitle.Location = new System.Drawing.Point(42, 12);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(365, 47);
+            this.labelTitle.Size = new System.Drawing.Size(310, 40);
             this.labelTitle.TabIndex = 50;
             this.labelTitle.Text = "바코드 일괄출력";
             // 
@@ -311,94 +393,12 @@
             this.button2.Text = "조회";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(509, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(128, 21);
-            this.textBox1.TabIndex = 31;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 13F);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(436, 88);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 18);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "FROM";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("굴림", 13F);
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(324, 89);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 18);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "일련번호 :";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(696, 85);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(128, 21);
-            this.textBox2.TabIndex = 34;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("굴림", 13F);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(655, 88);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 18);
-            this.label3.TabIndex = 33;
-            this.label3.Text = "TO";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "No";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "생산일자";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "주/야";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "제품명";
-            this.Column4.Name = "Column4";
-            // 
-            // 단위
-            // 
-            this.단위.HeaderText = "단위";
-            this.단위.Name = "단위";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "계획수량";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "생산계획번호";
-            this.Column6.Name = "Column6";
-            // 
             // BulkBarcodePrintForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.ClientSize = new System.Drawing.Size(990, 585);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonOK);
