@@ -117,7 +117,6 @@ namespace LotteMES.Forms
                 selectedEnum = (HistorySearchItem)selectedItem.Value;
                 Console.WriteLine($"선택된 항목: {selectedEnum}");
             }
-            
         }
     }
 }

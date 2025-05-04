@@ -123,6 +123,12 @@
     <Compile Include="Forms\AllHistoryViewForm.Designer.cs">
       <DependentUpon>AllHistoryViewForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\BulkBarcodePrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BulkBarcodePrintForm.Designer.cs">
+      <DependentUpon>BulkBarcodePrintForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CustomKeyboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,12 @@
     </Compile>
     <Compile Include="Forms\PerformanceSendLogForm.Designer.cs">
       <DependentUpon>PerformanceSendLogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PopDeviceLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PopDeviceLogForm.Designer.cs">
+      <DependentUpon>PopDeviceLogForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ProductionPlanForm.cs">
       <SubType>Form</SubType>
@@ -189,6 +201,18 @@
     <Compile Include="Forms\WorkerConfigurationForm.Designer.cs">
       <DependentUpon>WorkerConfigurationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\WorkerRegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WorkerRegistrationForm.Designer.cs">
+      <DependentUpon>WorkerRegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WorkInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WorkInfoForm.Designer.cs">
+      <DependentUpon>WorkInfoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Helpers\EnumHelper.cs" />
     <Compile Include="Helpers\TryParseHelper.cs" />
     <Compile Include="Keyboard\KeyboardBinder.cs" />
@@ -227,6 +251,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\WorkerConfigurationForm.resx">
       <DependentUpon>WorkerConfigurationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WorkInfoForm.resx">
+      <DependentUpon>WorkInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
