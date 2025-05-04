@@ -900,7 +900,7 @@
             this.buttonSettingBasicInfo.Name = "buttonSettingBasicInfo";
             this.buttonSettingBasicInfo.Size = new System.Drawing.Size(106, 63);
             this.buttonSettingBasicInfo.TabIndex = 13;
-            this.buttonSettingBasicInfo.Text = "기본정보\r\n생성";
+            this.buttonSettingBasicInfo.Text = "기본정보\r\n설정";
             this.buttonSettingBasicInfo.UseVisualStyleBackColor = false;
             this.buttonSettingBasicInfo.Click += new System.EventHandler(this.buttonSettingBasicInfo_Click);
             // 

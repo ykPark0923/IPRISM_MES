@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBoxDataInput = new System.Windows.Forms.GroupBox();
+            this.dateTimePickerDateFrom = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerDateTo = new System.Windows.Forms.DateTimePicker();
             this.comboBoxShiftType = new System.Windows.Forms.ComboBox();
             this.textBoxPlanNo = new System.Windows.Forms.TextBox();
             this.labelPlan = new System.Windows.Forms.Label();
@@ -48,8 +50,6 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelSplitBar = new System.Windows.Forms.Panel();
-            this.dateTimePickerDateFrom = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerDateTo = new System.Windows.Forms.DateTimePicker();
             this.groupBoxDataInput.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransmissionLog)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransmissionSummary)).BeginInit();
@@ -70,6 +70,20 @@
             this.groupBoxDataInput.Size = new System.Drawing.Size(449, 99);
             this.groupBoxDataInput.TabIndex = 58;
             this.groupBoxDataInput.TabStop = false;
+            // 
+            // dateTimePickerDateFrom
+            // 
+            this.dateTimePickerDateFrom.Location = new System.Drawing.Point(101, 26);
+            this.dateTimePickerDateFrom.Name = "dateTimePickerDateFrom";
+            this.dateTimePickerDateFrom.Size = new System.Drawing.Size(154, 21);
+            this.dateTimePickerDateFrom.TabIndex = 61;
+            // 
+            // dateTimePickerDateTo
+            // 
+            this.dateTimePickerDateTo.Location = new System.Drawing.Point(282, 26);
+            this.dateTimePickerDateTo.Name = "dateTimePickerDateTo";
+            this.dateTimePickerDateTo.Size = new System.Drawing.Size(161, 21);
+            this.dateTimePickerDateTo.TabIndex = 62;
             // 
             // comboBoxShiftType
             // 
@@ -128,6 +142,7 @@
             // 
             // dataGridViewTransmissionLog
             // 
+            this.dataGridViewTransmissionLog.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewTransmissionLog.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTransmissionLog.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -137,6 +152,7 @@
             this.Column5});
             this.dataGridViewTransmissionLog.Location = new System.Drawing.Point(12, 73);
             this.dataGridViewTransmissionLog.Name = "dataGridViewTransmissionLog";
+            this.dataGridViewTransmissionLog.RowHeadersVisible = false;
             this.dataGridViewTransmissionLog.RowTemplate.Height = 23;
             this.dataGridViewTransmissionLog.Size = new System.Drawing.Size(817, 268);
             this.dataGridViewTransmissionLog.TabIndex = 51;
@@ -197,12 +213,14 @@
             // 
             // dataGridViewTransmissionSummary
             // 
+            this.dataGridViewTransmissionSummary.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewTransmissionSummary.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTransmissionSummary.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.dataGridViewTransmissionSummary.Location = new System.Drawing.Point(11, 356);
             this.dataGridViewTransmissionSummary.Name = "dataGridViewTransmissionSummary";
+            this.dataGridViewTransmissionSummary.RowHeadersVisible = false;
             this.dataGridViewTransmissionSummary.RowTemplate.Height = 23;
             this.dataGridViewTransmissionSummary.Size = new System.Drawing.Size(346, 215);
             this.dataGridViewTransmissionSummary.TabIndex = 59;
@@ -224,20 +242,6 @@
             this.panelSplitBar.Name = "panelSplitBar";
             this.panelSplitBar.Size = new System.Drawing.Size(800, 3);
             this.panelSplitBar.TabIndex = 60;
-            // 
-            // dateTimePickerDateFrom
-            // 
-            this.dateTimePickerDateFrom.Location = new System.Drawing.Point(101, 26);
-            this.dateTimePickerDateFrom.Name = "dateTimePickerDateFrom";
-            this.dateTimePickerDateFrom.Size = new System.Drawing.Size(154, 21);
-            this.dateTimePickerDateFrom.TabIndex = 61;
-            // 
-            // dateTimePickerDateTo
-            // 
-            this.dateTimePickerDateTo.Location = new System.Drawing.Point(282, 26);
-            this.dateTimePickerDateTo.Name = "dateTimePickerDateTo";
-            this.dateTimePickerDateTo.Size = new System.Drawing.Size(161, 21);
-            this.dateTimePickerDateTo.TabIndex = 62;
             // 
             // PerformanceSendLogForm
             // 
