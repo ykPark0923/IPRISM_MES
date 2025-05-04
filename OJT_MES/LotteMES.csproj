@@ -222,6 +222,9 @@
     <EmbeddedResource Include="Forms\AllHistoryViewForm.resx">
       <DependentUpon>AllHistoryViewForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BulkBarcodePrintForm.resx">
+      <DependentUpon>BulkBarcodePrintForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\PerformanceManageForm.resx">
       <DependentUpon>PerformanceManageForm.cs</DependentUpon>
     </EmbeddedResource>

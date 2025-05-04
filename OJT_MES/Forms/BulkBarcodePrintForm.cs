@@ -16,5 +16,11 @@ namespace LotteMES.Forms
         {
             InitializeComponent();
         }
+
+
+        private void labelProductionDate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
