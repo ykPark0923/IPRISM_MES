@@ -196,7 +196,6 @@
             this.labelProductionDate.Size = new System.Drawing.Size(80, 18);
             this.labelProductionDate.TabIndex = 19;
             this.labelProductionDate.Text = "생산일자";
-            this.labelProductionDate.Click += new System.EventHandler(this.labelProductionDate_Click);
             // 
             // textBoxBarcodeNo
             // 

@@ -231,6 +231,9 @@
     <EmbeddedResource Include="Forms\PerformanceSendLogForm.resx">
       <DependentUpon>PerformanceSendLogForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PopDeviceLogForm.resx">
+      <DependentUpon>PopDeviceLogForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ProductionPlanForm.resx">
       <DependentUpon>ProductionPlanForm.cs</DependentUpon>
     </EmbeddedResource>
