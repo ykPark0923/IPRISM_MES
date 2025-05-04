@@ -258,6 +258,9 @@
     <EmbeddedResource Include="Forms\WorkerConfigurationForm.resx">
       <DependentUpon>WorkerConfigurationForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WorkerRegistrationForm.resx">
+      <DependentUpon>WorkerRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\WorkInfoForm.resx">
       <DependentUpon>WorkInfoForm.cs</DependentUpon>
     </EmbeddedResource>
