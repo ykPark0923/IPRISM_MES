@@ -61,7 +61,7 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelTitle = new System.Windows.Forms.Label();
             this.buttonOK = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonClose = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBoxProductionPlan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlanList)).BeginInit();
@@ -371,16 +371,17 @@
             this.buttonOK.Text = "바코드발행";
             this.buttonOK.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // buttonClose
             // 
-            this.button1.BackColor = System.Drawing.Color.Turquoise;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(531, 488);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(356, 84);
-            this.button1.TabIndex = 62;
-            this.button1.Text = "닫기";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonClose.BackColor = System.Drawing.Color.Turquoise;
+            this.buttonClose.ForeColor = System.Drawing.Color.White;
+            this.buttonClose.Location = new System.Drawing.Point(531, 488);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(356, 84);
+            this.buttonClose.TabIndex = 62;
+            this.buttonClose.Text = "닫기";
+            this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // button2
             // 
@@ -400,7 +401,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(990, 585);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.dateTimePickerTotalPeriod);
             this.Controls.Add(this.dateTimePickerTestPeriod);
@@ -443,7 +444,7 @@
         private System.Windows.Forms.DataGridView dataGridViewPlanList;
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Button buttonOK;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;

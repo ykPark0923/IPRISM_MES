@@ -43,7 +43,7 @@
             this.buttonHelp = new System.Windows.Forms.Button();
             this.buttonPrintTest = new System.Windows.Forms.Button();
             this.buttonReissue = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonClose = new System.Windows.Forms.Button();
             this.buttonOK = new System.Windows.Forms.Button();
             this.textBoxPlanNo = new System.Windows.Forms.TextBox();
             this.labelPlanNo = new System.Windows.Forms.Label();
@@ -231,16 +231,17 @@
             this.buttonReissue.Text = "기타소모품\r\n교체";
             this.buttonReissue.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // buttonClose
             // 
-            this.button1.BackColor = System.Drawing.Color.Turquoise;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(293, 454);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(276, 84);
-            this.button1.TabIndex = 65;
-            this.button1.Text = "닫기";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonClose.BackColor = System.Drawing.Color.Turquoise;
+            this.buttonClose.ForeColor = System.Drawing.Color.White;
+            this.buttonClose.Location = new System.Drawing.Point(293, 454);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(276, 84);
+            this.buttonClose.TabIndex = 65;
+            this.buttonClose.Text = "닫기";
+            this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // buttonOK
             // 
@@ -279,7 +280,7 @@
             this.ClientSize = new System.Drawing.Size(600, 550);
             this.Controls.Add(this.textBoxPlanNo);
             this.Controls.Add(this.labelPlanNo);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.groupBoxPrinterSetting);
             this.Controls.Add(this.panelSplitBar);
@@ -305,7 +306,7 @@
         private System.Windows.Forms.Button buttonHelp;
         private System.Windows.Forms.Button buttonPrintTest;
         private System.Windows.Forms.Button buttonReissue;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Button buttonOK;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

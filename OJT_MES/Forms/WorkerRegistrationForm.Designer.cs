@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.panelSplitBar = new System.Windows.Forms.Panel();
-            this.buttonOK = new System.Windows.Forms.Button();
+            this.buttonClose = new System.Windows.Forms.Button();
             this.labelTitle = new System.Windows.Forms.Label();
             this.dataGridViewWorker = new System.Windows.Forms.DataGridView();
             this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.WorkerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBoxDataInput = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.labelDateInput = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelDateInput = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewWorker)).BeginInit();
             this.groupBoxDataInput.SuspendLayout();
             this.SuspendLayout();
@@ -56,16 +56,17 @@
             this.panelSplitBar.Size = new System.Drawing.Size(680, 3);
             this.panelSplitBar.TabIndex = 39;
             // 
-            // buttonOK
+            // buttonClose
             // 
-            this.buttonOK.BackColor = System.Drawing.Color.Turquoise;
-            this.buttonOK.ForeColor = System.Drawing.Color.White;
-            this.buttonOK.Location = new System.Drawing.Point(4, 507);
-            this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(356, 84);
-            this.buttonOK.TabIndex = 38;
-            this.buttonOK.Text = "닫기";
-            this.buttonOK.UseVisualStyleBackColor = false;
+            this.buttonClose.BackColor = System.Drawing.Color.Turquoise;
+            this.buttonClose.ForeColor = System.Drawing.Color.White;
+            this.buttonClose.Location = new System.Drawing.Point(4, 507);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(356, 84);
+            this.buttonClose.TabIndex = 38;
+            this.buttonClose.Text = "닫기";
+            this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // labelTitle
             // 
@@ -116,7 +117,7 @@
             this.groupBoxDataInput.Controls.Add(this.label1);
             this.groupBoxDataInput.Controls.Add(this.textBox1);
             this.groupBoxDataInput.Controls.Add(this.labelDateInput);
-            this.groupBoxDataInput.Controls.Add(this.buttonOK);
+            this.groupBoxDataInput.Controls.Add(this.buttonClose);
             this.groupBoxDataInput.Location = new System.Drawing.Point(325, 69);
             this.groupBoxDataInput.Name = "groupBoxDataInput";
             this.groupBoxDataInput.Size = new System.Drawing.Size(363, 594);
@@ -124,39 +125,38 @@
             this.groupBoxDataInput.TabStop = false;
             this.groupBoxDataInput.Text = "신규등록 및 삭제";
             // 
-            // textBox1
+            // button3
             // 
-            this.textBox1.Location = new System.Drawing.Point(145, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(179, 21);
-            this.textBox1.TabIndex = 28;
+            this.button3.BackColor = System.Drawing.Color.Turquoise;
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(247, 176);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(113, 73);
+            this.button3.TabIndex = 45;
+            this.button3.Text = "삭제";
+            this.button3.UseVisualStyleBackColor = false;
             // 
-            // labelDateInput
+            // button2
             // 
-            this.labelDateInput.AutoSize = true;
-            this.labelDateInput.Font = new System.Drawing.Font("굴림", 10F);
-            this.labelDateInput.Location = new System.Drawing.Point(53, 54);
-            this.labelDateInput.Name = "labelDateInput";
-            this.labelDateInput.Size = new System.Drawing.Size(77, 14);
-            this.labelDateInput.TabIndex = 19;
-            this.labelDateInput.Text = "작업자이름";
+            this.button2.BackColor = System.Drawing.Color.Turquoise;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(128, 176);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(113, 73);
+            this.button2.TabIndex = 44;
+            this.button2.Text = "수정";
+            this.button2.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // button1
             // 
-            this.textBox2.Location = new System.Drawing.Point(145, 86);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(179, 21);
-            this.textBox2.TabIndex = 40;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 10F);
-            this.label1.Location = new System.Drawing.Point(39, 88);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 14);
-            this.label1.TabIndex = 39;
-            this.label1.Text = "작업자아이디";
+            this.button1.BackColor = System.Drawing.Color.Turquoise;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(6, 176);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 73);
+            this.button1.TabIndex = 43;
+            this.button1.Text = "등록";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // textBox3
             // 
@@ -175,38 +175,39 @@
             this.label2.TabIndex = 41;
             this.label2.Text = "작업자암호";
             // 
-            // button1
+            // textBox2
             // 
-            this.button1.BackColor = System.Drawing.Color.Turquoise;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(6, 176);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 73);
-            this.button1.TabIndex = 43;
-            this.button1.Text = "등록";
-            this.button1.UseVisualStyleBackColor = false;
+            this.textBox2.Location = new System.Drawing.Point(145, 86);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(179, 21);
+            this.textBox2.TabIndex = 40;
             // 
-            // button2
+            // label1
             // 
-            this.button2.BackColor = System.Drawing.Color.Turquoise;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(128, 176);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 73);
-            this.button2.TabIndex = 44;
-            this.button2.Text = "수정";
-            this.button2.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("굴림", 10F);
+            this.label1.Location = new System.Drawing.Point(39, 88);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 14);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "작업자아이디";
             // 
-            // button3
+            // textBox1
             // 
-            this.button3.BackColor = System.Drawing.Color.Turquoise;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(247, 176);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 73);
-            this.button3.TabIndex = 45;
-            this.button3.Text = "삭제";
-            this.button3.UseVisualStyleBackColor = false;
+            this.textBox1.Location = new System.Drawing.Point(145, 52);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(179, 21);
+            this.textBox1.TabIndex = 28;
+            // 
+            // labelDateInput
+            // 
+            this.labelDateInput.AutoSize = true;
+            this.labelDateInput.Font = new System.Drawing.Font("굴림", 10F);
+            this.labelDateInput.Location = new System.Drawing.Point(53, 54);
+            this.labelDateInput.Name = "labelDateInput";
+            this.labelDateInput.Size = new System.Drawing.Size(77, 14);
+            this.labelDateInput.TabIndex = 19;
+            this.labelDateInput.Text = "작업자이름";
             // 
             // WorkerRegistrationForm
             // 
@@ -231,7 +232,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panelSplitBar;
-        private System.Windows.Forms.Button buttonOK;
+        private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.DataGridView dataGridViewWorker;
         private System.Windows.Forms.DataGridViewTextBoxColumn No;

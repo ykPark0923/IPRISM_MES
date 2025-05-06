@@ -368,7 +368,7 @@ namespace LotteMES.Forms
         // 작업환경설정버튼 - 작업자환경설정폼
         private void buttonWorkerConfiguration_Click(object sender, EventArgs e)
         {
-            if (isPaused) return;
+            if (!isPaused) return;
 
             WorkerConfigurationForm workerConfigurationForm = new WorkerConfigurationForm();
             workerConfigurationForm.ShowDialog();
@@ -385,7 +385,7 @@ namespace LotteMES.Forms
 
         private void buttonHardwareConfiguration_Click(object sender, EventArgs e)
         {
-            if (isPaused) return;
+            if (!isPaused) return;
 
             HardwareConfigurationForm hardwareConfigurationForm = new HardwareConfigurationForm();
             hardwareConfigurationForm.ShowDialog();
@@ -394,7 +394,7 @@ namespace LotteMES.Forms
         // 기본정보생성버튼
         private void buttonSettingBasicInfo_Click(object sender, EventArgs e)
         {
-            if (isPaused) return;
+            if (!isPaused) return;
 
             SettingBasicInfoForm settingBasicInfoForm = new SettingBasicInfoForm();
             settingBasicInfoForm.ShowDialog();
@@ -410,20 +410,27 @@ namespace LotteMES.Forms
         // 바코드일괄출력버튼
         private void buttonBulkBarcodePrint_Click(object sender, EventArgs e)
         {
-            if (isPaused) return;
+            if (!isPaused) return;
+
+            BulkBarcodePrintForm bulkBarcodePrintForm = new BulkBarcodePrintForm();
+            bulkBarcodePrintForm.ShowDialog();
         }
 
         // POP장비관리이력버튼
         private void buttonPopDeviceLog_Click(object sender, EventArgs e)
         {
-
+            PopDeviceLogForm popDeviceLogForm = new PopDeviceLogForm();
+            popDeviceLogForm.ShowDialog();
         }
 
         // 작업자설정버튼 - 접근암호입력해 작업자설정
         private void buttonWorkerSetting_Click(object sender, EventArgs e)
         {
-            LoginForm loginForm = new LoginForm();
-            loginForm.ShowDialog();
+            WorkerRegistrationForm workerRegistrationForm = new WorkerRegistrationForm();
+            workerRegistrationForm.ShowDialog();
+
+            //LoginForm loginForm = new LoginForm();
+            //loginForm.ShowDialog();
         }
 
         // 시작/일시정지버튼 - 토글로 제어
@@ -515,13 +522,13 @@ namespace LotteMES.Forms
         // 재발행버튼
         private void buttonReissue_Click(object sender, EventArgs e)
         {
-            if (isPaused) return;
+            if (!isPaused) return;
         }
 
         // 인쇄테스트버튼
         private void buttonPrintTest_Click(object sender, EventArgs e)
         {
-            if (isPaused) return;
+            if (!isPaused) return;
         }
 
         // 도움말버튼
@@ -533,7 +540,7 @@ namespace LotteMES.Forms
         // 종료버튼
         private void buttonExit_Click(object sender, EventArgs e)
         {
-            if (isPaused) return;
+            if (!isPaused) return;
         }
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)

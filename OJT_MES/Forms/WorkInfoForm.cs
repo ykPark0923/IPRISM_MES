@@ -16,5 +16,10 @@ namespace LotteMES.Forms
         {
             InitializeComponent();
         }
+
+        private void buttonOK_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -52,6 +52,7 @@
             this.buttonOK.TabIndex = 33;
             this.buttonOK.Text = "확인";
             this.buttonOK.UseVisualStyleBackColor = false;
+            this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
             // labelTitle
             // 
