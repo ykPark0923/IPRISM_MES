@@ -377,7 +377,7 @@ namespace LotteMES.Forms
         // 시스템환경설정버튼
         private void buttonSystemConfiguration_Click(object sender, EventArgs e)
         {
-            if (isPaused) return;
+            if (!isPaused) return;
 
             SystemConfigurationForm systemConfigurationForm = new SystemConfigurationForm();
             systemConfigurationForm.ShowDialog();
@@ -439,21 +439,23 @@ namespace LotteMES.Forms
             //true : start버튼보임(정지 또는 일시정지 상태), false : pause버튼보임(작동중)
             isPaused = !isPaused;
 
-            #region 잔량등록
-            buttonPause.Text = isPaused ? "일시\n정지" : "시작";
+            #region 잔량등록, 버튼 forecolor, enabled
+            buttonPause.Text = isPaused ? "시작" : "일시\n정지";
 
             if (isPaused)
             {
-                buttonRemainingAmountRegister.Visible = false;
+                buttonRemainingAmountRegister.Visible = true;
+                SetButtonPausedState();
             }
             else
             {
-                buttonRemainingAmountRegister.Visible = true;
+                buttonRemainingAmountRegister.Visible = false;
+                SetButtonStartedState();
             }
 
             string imagePath = isPaused
-                 ? @"..\..\SourceImage\pause.png"
-                 : @"..\..\SourceImage\play.png";
+                 ? @"..\..\SourceImage\play.png"
+                 : @"..\..\SourceImage\pause.png";
 
             if (System.IO.File.Exists(imagePath))
             {
@@ -464,25 +466,10 @@ namespace LotteMES.Forms
                 MessageBox.Show("이미지 파일을 찾을 수 없습니다:\n" + imagePath);
             }
             #endregion
-
-            #region 버튼 forecolor, enabled
-            buttonPause.Text = isPaused ? "일시\n정지" : "시작";
-
-            if (isPaused)
-            {
-                buttonRemainingAmountRegister.Visible = false;
-                SetButtonPausedState();
-            }
-            else
-            {
-                buttonRemainingAmountRegister.Visible = true;
-                SetButtonStartedState();
-            }
-            #endregion
         }
 
         //정지 또는 일시정지된 상태
-        private void SetButtonPausedState()
+        private void SetButtonStartedState()
         {
             buttonBulkBarcodePrint.ForeColor = Style.CommonForeColor;
             buttonWorkerConfiguration.ForeColor = Style.CommonForeColor;
@@ -495,7 +482,7 @@ namespace LotteMES.Forms
         }
 
         //작동중인 상태
-        private void SetButtonStartedState()
+        private void SetButtonPausedState()
         {
             buttonBulkBarcodePrint.ForeColor = Style.MainFormForeColorData;
             buttonWorkerConfiguration.ForeColor = Style.MainFormForeColorData;
